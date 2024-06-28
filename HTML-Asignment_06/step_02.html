@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms_Stept_02</title>
+</head>
+<style>
+    body {
+
+        background-image: url('./Images/FORM2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: rgb(66, 55, 55);
+        font-family: "Merienda", cursive;
+
+    }
+
+    .inpt {
+        width: 350px;
+    }
+
+    .steps {
+        background-color: rgba(128, 128, 128, 0.556);
+        display: flex;
+        font-weight: bold;
+        margin-top: 10%;
+        height: 30px;
+        width: 550px;
+    }
+
+    input {
+        background-color: transparent;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .steps a {
+        text-decoration: none;
+        color: black;
+    }
+</style>
+
+<body>
+    <center>
+        <div class="steps">
+            <a style="background-color: #9ddd87; " href="./setp_01.html">
+                <span>&nbsp;&nbsp; Step 1:Account &nbsp;&nbsp;</span>
+            </a>
+            <a style="background-color: #61acf2; " href="./step_02.html">
+                <span>&nbsp;&nbsp; Step 2: Personal Details &nbsp;&nbsp;</span>
+            </a>
+            <a href="./step_03.html">
+                <span>&nbsp;&nbsp; Step 3: Your Review &nbsp;&nbsp;</span>
+            </a>
+        </div>
+        <br><br>
+        <fieldset style="width: 400px; border-radius: 5px; background-color: rgba(128, 128, 128, 0.144);  ">
+            <legend>Personal Details</legend>
+            <label for="fname" style="float: left;">First Name: <br></label><input class="inpt" type="text"
+                placeholder="Enter First Name" name="first_name" id="fname" style="float: left;"><br><br><br>
+
+
+            <label for="lname" style="float: left;">Last Name: <br></label><input class="inpt" type="text"
+                placeholder="Enter Last Name" name="last_name" id="lname" style="float: left;"><br><br><br>
+
+            <br>
+            <label for="cnic" style="float: left;">CNIC: <br></label><br>
+            <input style="width: 8px; height: 8px; float: left; margin: 2px;" type="text" maxlength="1" size="1" />
+            <input style="width: 8px; height: 8px; float: left; margin: 2px;" type="text" maxlength="1" size="1" />
+            <input style="width: 8px; height: 8px; float: left; margin: 2px;" type="text" maxlength="1" size="1" />
+            <input style="width: 8px; height: 8px; float: left; margin: 2px;" type="text" maxlength="1" size="1" />
+            <input style="width: 8px; height: 8px; float: left; margin: 2px;" type="text" maxlength="1" size="1" />
+            <input style="width: 8px; height: 8px; float: left; margin: 2px; border: none;" placeholder="-" type="text"
+                maxlength="1" size="1" height: 8px; />
+            <input style="width: 8px; height: 8px; float: left; margin: 2px;" type="text" maxlength="1" size="1" />
+            <input style="width: 8px; height: 8px; float: left; margin: 2px;" type="text" maxlength="1" size="1" />
+            <input style="width: 8px; height: 8px; float: left; margin: 2px;" type="text" maxlength="1" size="1" />
+            <input style="width: 8px; height: 8px; float: left; margin: 2px;" type="text" maxlength="1" size="1" />
+            <input style="width: 8px; height: 8px; float: left; margin: 2px;" type="text" maxlength="1" size="1" />
+            <input style="width: 8px; height: 8px; float: left; margin: 2px;" type="text" maxlength="1" size="1" />
+            <input style="width: 8px; height: 8px; float: left; margin: 2px;" type="text" maxlength="1" size="1" />
+            <input style="width: 8px; height: 8px; float: left; margin: 2px; border: none;" placeholder="-" type="text"
+                maxlength="1" size="1" />
+            <input style="width: 8px; height: 8px; float: left; margin: 2px;" type="text" maxlength="1" size="1" />
+
+            <br><br>
+
+            <label for="social_link" style="float: left;">Social Links: <br></label><input class="inpt" type="url"
+                placeholder="Enter Facebook/LinkedIn Profile Link" name="last_name" id="social_link"
+                style="float: left;"><br><br><br>
+            <a href="./setp_01.html"><input style="float: left;" type="image" src="./Images/back.png" width="110"
+                    name="button" id="btn"></a>
+            <a href="./step_03.html"><input style="float: left;" type="image" src="./Images/next.png" width="110"
+                    name="button" id="btn"></a>
+        </fieldset>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms_Stept_03</title>
+</head>
+<style>
+    body {
+
+        background-image: url('./Images/FORM2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: rgb(66, 55, 55);
+        font-family: "Merienda", cursive;
+
+    }
+
+    .inpt {
+        width: 350px;
+    }
+
+    .steps {
+        background-color: rgba(128, 128, 128, 0.556);
+        display: flex;
+        font-weight: bold;
+        margin-top: 10%;
+        height: 30px;
+        width: 580px;
+    }
+
+    input {
+        background-color: transparent;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .steps a {
+        text-decoration: none;
+        color: black;
+    }
+</style>
+
+<body>
+    <center>
+        <div class="steps">
+            <a style="background-color: #9ddd87; " href="./setp_01.html">
+                <span>&nbsp;&nbsp; Step 1:Account &nbsp;&nbsp;</span>
+            </a>
+            <a style="background-color: #9ddd87; " href="./step_02.html">
+                <span>&nbsp;&nbsp; Step 2: Personal Details &nbsp;&nbsp;</span>
+            </a>
+            <a style="background-color: #61acf2; " href="./step_03.html">
+                <span>&nbsp;&nbsp; Step 3: Your Review &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </a>
+        </div>
+        <br><br>
+        <fieldset style="width: 400px; border-radius: 5px; background-color: rgba(128, 128, 128, 0.144); ">
+            <legend>Your Review</legend>
+            <label for="place" style="float: left;">Where did you here about us ? <br></label>
+            <select style="border-radius: 5px; background-color:  rgba(128, 128, 128, 0.144);" id="place"
+                name="how you find us">
+                <option value="opt1">Social Media</option>
+                <option value="opt2">Newspaper</option>
+                <option value="opt3">Family member</option>
+                <option value="opt4">Other</option>
+            </select> <br><br>
+
+
+            <label style="float: left;">Would you like to visit again ? </label> <br>
+            <input style="float: left;" id="visit_again_?" name="visit" type="radio" value="visit" />
+            <label style="float: left;" for="visit_again_?">Yes</label>
+            <input style="float: left;" id="visit_again_?" name="visit" type="radio" value="visit" />
+            <label style="float: left;" for="visit_again_?">No</label>
+            <input style="float: left;" id="visit_again_?" name="visit" type="radio" value="visit" />
+            <label style="float: left;" for="visit_again_?">Maybe</label><br><br>
+
+            <label style="float: left;" for="comments">Comments:</label><br>
+            <textarea style="float: left; background-color:  rgba(128, 128, 128, 0.144);" name="add_comments"
+                id="comments" rows="3" cols="35">Enter your comments here...</textarea><br><br>
+
+            <br><br>
+            <label style="float: left;"><br> Documents: </label><br><br>
+            <input style="float: left; " type="file" id="choose_file">
+            <br><br>
+            <input style="float: left;" id="sign" name="SignUp" type="checkbox" value="SignUp" checked />
+            <label style="float: left;" for="sign">Sign me up for email updates</label>
+
+            <br><br>
+            <a href="./step_02.html"><input style="float: left;" type="image" src="./Images/back.png" width="110"
+                    name="button" id="btn"></a>
+            <a href="./index.html"><input style="float: left;" type="image" src="./Images/next.png" width="110"
+                    name="button" id="btn"></a>
+        </fieldset>
+    </center>
+</body>
+
+</html>
