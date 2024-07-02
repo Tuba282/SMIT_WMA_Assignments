@@ -28,9 +28,10 @@
   background-color: #0000008d;
 }
 .dp {
-  margin: 10vh 5px 0 25px;
-  width: 250px;
-  height: 250px;
+  margin: 60px 5px 0px 25px;
+  width: 225px;
+  height: 225px;
+  padding: 5px;
   border: 10px double rgba(255, 255, 255, 0.844);
   border-radius: 50%;
 }
@@ -149,7 +150,7 @@ span {
   margin: 10%;
 }
 .cont_2 {
-  margin: 17% 5%;
+  margin: 10%;
   border-top: 2px solid #eca53350;
   padding-top: 10%;
 }
@@ -172,4 +173,7 @@ span {
   margin: 10%;
   border-top: 2px solid #eca53350;
   padding-top: 10%;
+}
+.space{
+  padding: 30px;
 }
