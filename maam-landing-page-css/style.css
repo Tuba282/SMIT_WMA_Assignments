@@ -431,6 +431,7 @@ h2 span {
   display: block;
   font-size: 1em;
   color: white;
+  text-decoration: none;
   padding: 1rem 0;
   font-weight: lighter;
 }
