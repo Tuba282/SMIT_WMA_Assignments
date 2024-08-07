@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: para;
+  font-family: para;scroll-behavior: smooth;
 }
 body {
   background-color: #7b7b7c;
@@ -452,15 +452,18 @@ body {
   align-items: center;
   border-radius: 50%;
   transition: all ease 0.5s;
+  background-color: #6E6E6F;
 }
 .box p:hover {
   border: 2px solid white;
-  color: white;
+  color: white; background-color: #000000;
 }
 
 .box i {
   font-size: 30px;
 }
+
+
 .small-footer {
   display: flex;
   justify-content: center;
