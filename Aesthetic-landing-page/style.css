@@ -970,30 +970,55 @@ video {
   align-items: center;
   gap: 20px;
   padding: 2em;
-  background-color: gold;
 }
 .pricing-card {
   width: 280px;
-  height: 550px;
+  height: 652px;
   text-align: left;
-  padding: 1em;
+  padding: 10px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 10px;
-  background-color: #f28f4e;
+  background-color: #ffffff;
 }
 .pricing-cards .pro {
-  width: 100%;
-  min-height: 100%;
-  opacity: 0;
-  padding: 10px;
-  transition: opacity 0.5s cubic-bezier(0.12, 0, 0.39, 0) 0s;
-  background-color: var(--dark-brown);
-  color: var(--grey);
-}
-.pricing-card .pro p {
+  height: 40px;
+
   display: none;
 }
+.after-pro {
+  padding: 1em;
+}
+.bton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin-top: 1em;
+  border: 5px solid var(--dark-brown);
+  font-weight: bold;
+  border-radius: 4px;
+  color: var(--grey);
+}
+.pricing-card:hover .bton {
+  color: white;
+  background-color: var(--dark-brown);
+}
+.pricing-card:hover .pro {
+  display: block;
+  padding: 0em 1em;
+  background-color: var(--dark-brown);
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+}
+.pricing-card:hover {
+  background-color: var(--dark-brown);
+}
+.pricing-card:hover .after-pro {
+  background-color: white;
+  border-radius: 10px;
+}
+
 /*  
 xxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxx
