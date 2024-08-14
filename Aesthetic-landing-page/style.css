@@ -10,10 +10,18 @@
   --dark-brown: #a57c5c;
   --grey: #9ca0ac;
 }
+@font-face {
+  font-family: darling;
+  src: url(./assets/Darling.ttf);
+}
 /* making a wrapper name as mainConatiner */
 .mainContainer {
   max-width: 1920px;
   margin: 0 auto;
+}
+.span {
+  color: var(--light);
+  background-color: var(--dark-brown);
 }
 /* topbar CSS */
 .topbar {
@@ -24,7 +32,7 @@
 }
 .top-Sub-Div {
   max-width: 1300px;
-  height: 60px;
+  height: 80px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -44,13 +52,14 @@
 .nav {
   width: 50%;
   display: flex;
-  padding: 0em 10em !important;
+  padding: 0em 6em !important;
   justify-content: space-around;
   align-items: center;
 }
 .nav a {
   text-decoration: none;
-
+  font-size: 18px;
+  margin: 0em 0.2em;
   color: var(--dark-brown);
   font-weight: 600;
 }
@@ -360,7 +369,7 @@
   justify-content: center;
   align-items: center;
 }
-.small-cards .card p {
+.small-cards .card .hide {
   height: 163px;
   background-color: #ffffff;
   color: var(--dark-brown);
@@ -399,7 +408,7 @@
   );
 }
 
-.small-cards .card:hover p {
+.small-cards .card:hover .hide {
   opacity: 1;
   cursor: pointer;
 }
@@ -440,7 +449,7 @@
   margin-bottom: 1.54rem;
 }
 .wid-div-2 svg {
-  background-color: var(--light-brown);
+  background-color: var(--dark-brown);
   padding: 5px;
   border-radius: 2px;
 }
@@ -449,7 +458,7 @@
 .social-plateform {
   max-width: 1920px;
   min-height: 100%;
-  background: rgb(101, 101, 101);
+  background: rgb(157, 254, 217);
 }
 .social-Sub-Div {
   max-width: 1300px;
@@ -475,6 +484,7 @@
   padding: 20px;
   background: var(--light);
   border-radius: 5px;
+  cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .icon-card p {
@@ -489,7 +499,7 @@
 .double-Sec {
   max-width: 1920px;
   min-height: 100%;
-  background: rgb(101, 101, 101);
+  background: rgb(227, 167, 243);
 }
 .double-Sub-Sec {
   max-width: 1300px;
@@ -517,6 +527,8 @@
   color: var(--light);
   padding: 25px;
   border-radius: 10px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   background: var(--dark-brown);
 }
 .brand h3 {
@@ -546,7 +558,7 @@
 .exp {
   max-width: 1920px;
   min-height: 100%;
-  background: rgb(101, 101, 101);
+  background: rgb(255, 185, 247);
 }
 .exp-sub-div {
   max-width: 1300px;
@@ -591,6 +603,7 @@
   min-height: 90%;
   color: var(--light);
   border-radius: 10px;
+  cursor: pointer;
   background: var(--light-brown);
 }
 .exp-card img {
@@ -611,7 +624,7 @@
   max-width: 1920px;
   min-height: 100%;
   position: relative;
-  background: rgb(101, 101, 101);
+  background: rgb(170, 244, 255);
 }
 .work-sub-div {
   max-width: 1300px;
@@ -632,8 +645,7 @@ video {
 .divein {
   max-width: 1920px;
   min-height: 100%;
-  position: relative;
-  background: rgb(101, 101, 101);
+  background: rgb(244, 203, 134);
 }
 .divein-sub {
   max-width: 1300px;
@@ -647,14 +659,10 @@ video {
   background-color: var(--light);
 }
 .divein-text {
-  width: 45%;
+  width: 40%;
   height: 100%;
-  background: rgb(255, 255, 143);
-}
-.divein-cards {
-  width: 55%;
-  height: 100%;
-  background: rgb(255, 190, 110);
+  padding: 3em;
+  background: var(--light-brown);
 }
 .divein-text input {
   width: 200px;
@@ -677,8 +685,317 @@ video {
   border: 3px solid var(--dark-brown);
   background-color: var(--dark-brown);
 }
-/*  
+.divein-cards {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.diveCard {
+  width: 165px;
+  height: 288px;
+  color: var(--light);
+  cursor: pointer;
+  border-radius: 10px;
+}
+.diveCard-1 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.273),
+      rgba(255, 255, 255, 0.355)
+    ),
+    url(./assets/new-img7.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all ease 0.5s;
+}
+.diveCard-1:hover {
+  background-position: right bottom;
+}
+.diveCard-2 {
+  background-image: url(./assets/inner13.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all ease 0.5s;
+}
+.diveCard-2:hover {
+  background-position: left bottom;
+}
+.diveCard-3 {
+  background-image: url(./assets/img\(13\).png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all ease 0.5s;
+}
+.diveCard-3:hover {
+  background-position: left bottom;
+}
+.diveCard-4 {
+  background-image: url(./assets/new-img5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all ease 0.5s;
+}
+.diveCard-4:hover {
+  background-position: right bottom;
+}
+.upper {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.473),
+    rgba(255, 255, 255, 0)
+  );
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height: 80px;
+  color: rgb(245, 245, 245);
+}
+.upper {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+}
+.service-div {
+  max-width: 1920px;
+  min-height: 100%;
+  background: rgb(169, 245, 122);
+}
+.service-sub-div {
+  max-width: 1300px;
+  min-height: 100%;
+  padding: 2em !important;
+  margin: 0 auto;
+  display: grid;
+  gap: 3em 0em;
+  background-color: var(--light);
+}
+.service-sub-div h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.service-cards {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em;
+  gap: 20px;
+}
+.service-card {
+  width: 300px;
+  height: 250px;
+  padding: 20px;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background: rgb(255, 255, 255);
+}
+.service-card svg {
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: var(--dark-brown);
+}
+.service-card h6 {
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+/* short video section CSS */
 
+.short-video-div {
+  max-width: 1920px;
+  min-height: 100%;
+  background: rgb(169, 245, 122);
+}
+.short-sub-video {
+  max-width: 1300px;
+  min-height: 100%;
+  padding: 3em !important;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-brown);
+}
+.short-text {
+  width: 50%;
+  height: 100%;
+  padding: 2em 1em;
+}
+.short-men2 {
+  width: 200px;
+  height: 200px;
+  display: inline;
+  filter: drop-shadow(1px 14px 20px #000000);
+  margin-bottom: 1em;
+}
+.short-text h2,
+.short-text p {
+  margin-bottom: 27px;
+}
+.in-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.in-line p {
+  padding: 2em;
+}
+.in-line .darling {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.short-video {
+  width: 50%;
+  z-index: 1;
+  height: 100%;
+}
+.video2 {
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/* star ratinh section CSS */
+
+.rating-div {
+  max-width: 1920px;
+  min-height: 100%;
+  background: #96e1ef;
+}
+.rating-sub-div {
+  max-width: 1300px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 2em 5em !important;
+  background: var(--light);
+}
+.rating-text {
+  padding: 2em 5em;
+  text-align: center;
+}
+.rating-card-div {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.rat-Card {
+  width: 200px;
+  height: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background: rgb(255, 255, 255);
+}
+.gol-div {
+  padding: 0.5em 2.6em 0.5em 0em;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.gol-div p {
+  margin-top: 14px;
+  color: var(--grey);
+}
+/* pricing-div section CSS */
+.pricing-div {
+  max-width: 1920px;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: rgb(178, 250, 255);
+}
+.pricing-sub-div {
+  max-width: 1300px;
+  min-height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2em !important;
+  background-color: var(--light);
+}
+.pricing-text {
+  padding: 2em 5em !important;
+}
+.pricing-text button {
+  width: 350px;
+  height: 84px;
+  font-size: 20px;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.pricing-text button p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--grey);
+  margin-top: 6px;
+}
+.pa-btn {
+  background-color: var(--dark-brown);
+  padding: 1em 1em;
+  margin-left: -1em;
+  margin-top: 11px;
+  border-radius: 10px;
+  color: var(--light);
+}
+.pricing-cards {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 2em;
+  background-color: gold;
+}
+.pricing-card {
+  width: 280px;
+  height: 550px;
+  text-align: left;
+  padding: 1em;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 10px;
+  background-color: #f28f4e;
+}
+.pricing-cards .pro {
+  width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  padding: 10px;
+  transition: opacity 0.5s cubic-bezier(0.12, 0, 0.39, 0) 0s;
+  background-color: var(--dark-brown);
+  color: var(--grey);
+}
+.pricing-card .pro p {
+  display: none;
+}
+/*  
+xxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -722,13 +1039,27 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   .exp-sub-div .exp-text p {
     padding: 3em;
   }
+  .divein-text button,
   .divein-text input {
-    width: 250px;
+    width: 192px;
     margin: 0 auto;
   }
-  .divein-text button {
-    width: 250px;
-    margin: 0 auto;
+  .divein-sub {
+    padding: 0.5em !important;
+  }
+  .divein-text {
+    width: 30%;
+    text-align: center;
+    padding: 2em;
+  }
+  .divein-cards {
+    width: 70%;
+  }
+  .pricing-cards {
+    flex-wrap: wrap;
+  }
+  .pricing-card {
+    width: 330px;
   }
 }
 @media (max-width: 970px) {
@@ -802,6 +1133,36 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     flex-wrap: wrap;
     padding: 0;
   }
+  .divein-sub {
+    flex-wrap: wrap;
+    padding: 0.5em !important;
+  }
+  .divein-text {
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+  }
+  .divein-text button {
+    margin-left: -1%;
+  }
+  .divein-cards {
+    width: 100%;
+    padding: 1em 5em;
+  }
+  .short-sub-video {
+    flex-wrap: wrap;
+    padding: 3em 0em !important;
+  }
+  .short-text {
+    width: 80%;
+    text-align: center;
+  }
+  .short-video {
+    width: 80%;
+  }
+  .rating-text {
+    padding: 2em;
+  }
 }
 @media (max-width: 886px) {
   .wid-div-2 {
@@ -822,6 +1183,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   .exp-sub-div .exp-text {
     padding: 2em;
   }
+  .divein-cards {
+    padding: 1em 4em;
+  }
 }
 @media (max-width: 768px) {
   .home-left {
@@ -839,6 +1203,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   }
   .exp-sub-div .exp-text p {
     padding: 2em;
+  }
+  .divein-text button {
+    margin-left: 0;
+  }
+  .divein-cards {
+    padding: 1em 3em;
   }
 }
 @media (max-width: 668px) {
@@ -871,6 +1241,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   }
   .exp-sub-div .exp-text p {
     padding: 2em;
+  }
+  .divein-text button {
+    margin-left: 0;
+  }
+  .divein-cards {
+    padding: 1em;
   }
 }
 @media (max-width: 568px) {
@@ -908,6 +1284,21 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   }
   .exp-sub-div .exp-text p {
     padding: 3em;
+  }
+  .small-cards .card .pa {
+    display: none;
+  }
+  .small-cards .upper {
+    justify-content: center;
+  }
+  .rating-text {
+    padding: 2em 1em;
+  }
+  .rating-sub-div {
+    padding: 2em 3em !important;
+  }
+  .pricing-sub-div {
+    padding: 2em 1em !important;
   }
 }
 @media (max-width: 468px) {
@@ -955,6 +1346,25 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   }
   .exp-sub-div .exp-text p {
     padding: 3em;
+  }
+  .divein-cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .diveCard {
+    width: 185px;
+  }
+  .pricing-sub-div {
+    padding: 2em !important;
+  }
+  .pricing-text {
+    padding: 2em !important;
+  }
+  .pricing-sub-div {
+    padding: 1em !important;
+  }
+  .pricing-text {
+    padding: 1em !important;
   }
 }
 @media (max-width: 368px) {
@@ -1031,6 +1441,19 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   }
   .exp-sub-div .exp-text p {
     padding: 2em;
+  }
+  .diveCard {
+    width: 220px;
+  }
+  .service-card {
+    width: 270px;
+    height: 250px;
+  }
+  .pricing-sub-div {
+    padding: 0em !important;
+  }
+  .pricing-text {
+    padding: 10px !important;
   }
 }
 
