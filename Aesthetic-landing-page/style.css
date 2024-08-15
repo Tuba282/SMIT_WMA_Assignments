@@ -23,6 +23,9 @@
   color: var(--light);
   background-color: var(--dark-brown);
 }
+h1 {
+  font-weight: bolder;
+}
 /* topbar CSS */
 .topbar {
   max-width: 1920px;
@@ -1018,7 +1021,129 @@ video {
   background-color: white;
   border-radius: 10px;
 }
+.FAQs-Sec {
+  max-width: 1920px;
+  min-height: 100%;
+  margin: 0 auto;
+  background: rgb(245, 218, 151);
+}
+.FAQs-Sub-Sec {
+  max-width: 1300px;
+  min-height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2em 5em !important;
+  background: var(--light);
+}
+.Q-A-div {
+  width: 100%;
+  min-height: 100%;
+  padding: 0em 5em;
+}
+.ques {
+  width: 50%;
+  min-height: 100%;
+  font-weight: 700;
+  display: flex;
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--grey);
+}
+.ans {
+  width: 50%;
+  min-height: 100%;
+  font-weight: lighter;
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin: 0 auto;
+  text-align: justify;
+  justify-content: space-between;
+  align-items: center;
+}
+.ques:hover + .ans {
+  opacity: 1;
+  padding: 10px;
+}
+/* icons-div sec CSS */
 
+.Icons-Sec {
+  max-width: 1920px;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: #16181b39;
+}
+.Icons-Sub-Sec {
+  max-width: 1300px;
+  min-height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2em 7em !important;
+  background-color: var(--light);
+}
+.Icons-Sub-Sec h1 {
+  margin: 3em 0em;
+}
+.icon-div {
+  width: 100%;
+  min-height: 100%;
+  padding: 0em 5em;
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.icon-div img {
+  margin: 1em;
+}
+
+.semi-footer {
+  max-width: 1920px;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: rgb(192, 139, 102);
+}
+.semi-footer-sub {
+  max-width: 1300px;
+  min-height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2em 5em;
+  background-color: var(--light);
+}
+.semi-footer-sub p {
+  padding: 2em 5em;
+}
+.semi-footer-sub input,
+.semi-footer-sub button {
+  width: 250px;
+  height: 45px;
+  border: 3px solid var(--dark-brown);
+  outline: none;
+  margin: 0;
+  border-radius: 2px;
+  padding: 0.5em 1em;
+}
+.semi-footer-sub button {
+  width: 180px;
+  margin-left: -1%;
+  color: var(--light);
+  font-weight: 600;
+  background-color: var(--dark-brown);
+}
+.semi-footer-sub ul {
+  width: 430px;
+  height: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /*  
 xxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxx
@@ -1188,6 +1313,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   .rating-text {
     padding: 2em;
   }
+  .icon-div {
+    padding: 0em !important;
+  }
+  .Icons-Sub-Sec {
+    padding: 2em 4em !important;
+  }
 }
 @media (max-width: 886px) {
   .wid-div-2 {
@@ -1210,6 +1341,13 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   }
   .divein-cards {
     padding: 1em 4em;
+  }
+  .ques,
+  .ans {
+    width: 100%;
+  }
+  .semi-footer-sub p {
+    padding: 2em;
   }
 }
 @media (max-width: 768px) {
@@ -1234,6 +1372,18 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   }
   .divein-cards {
     padding: 1em 3em;
+  }
+  .semi-footer-sub input,
+  .semi-footer-sub button {
+    width: 315px;
+    height: 45px;
+    text-align: center;
+  }
+  .semi-footer-sub button {
+    margin-left: 0;
+  }
+  .semi-footer-sub ul {
+    width: 338px;
   }
 }
 @media (max-width: 668px) {
@@ -1325,6 +1475,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   .pricing-sub-div {
     padding: 2em 1em !important;
   }
+  .Q-A-div {
+    padding: 0em 1em;
+  }
+  .semi-footer-sub ul {
+    display: none;
+  }
 }
 @media (max-width: 468px) {
   .home-left input,
@@ -1390,6 +1546,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   }
   .pricing-text {
     padding: 1em !important;
+  }
+  .FAQs-Sub-Sec {
+    padding: 2em 3em !important;
   }
 }
 @media (max-width: 368px) {
@@ -1479,6 +1638,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   }
   .pricing-text {
     padding: 10px !important;
+  }
+  .semi-footer-sub {
+    padding: 2em;
   }
 }
 
