@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 :root {
   --dark: #000000;
@@ -63,7 +64,7 @@ h1 {
   text-decoration: none;
   font-size: 18px;
   margin: 0em 0.2em;
-  color: var(--dark-brown);
+  color: var(--light);
   font-weight: 600;
 }
 .top-btn {
@@ -93,7 +94,6 @@ h1 {
 .home {
   max-width: 1920px;
   min-height: 100%;
-  background: palegoldenrod;
 }
 .home-Sub-Sec {
   max-width: 1300px;
@@ -160,7 +160,7 @@ h1 {
   width: 35%;
   height: 280%;
   border-radius: 10px;
-  background-image: url(./assets/inner1.png);
+  background-image: linear-gradient(153deg, rgba(165, 124, 92, 0.427) 6%, rgba(151,142,138,0) 54%, rgba(165, 124, 92, 0.418) 85%), url(./assets/inner1.png);
   background-size: cover;
   background-position: end;
 }
@@ -168,7 +168,7 @@ h1 {
   width: 65%;
   height: 184%;
   border-radius: 10px;
-  background-image: url(./assets/inner2.png);
+  background-image:linear-gradient(153deg, rgba(165, 124, 92, 0.578) 6%, rgba(151,142,138,0) 54%, rgba(165, 124, 92, 0.696) 85%), url(./assets/inner2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -202,7 +202,7 @@ h1 {
   z-index: 10;
   margin-top: -14%;
   border-radius: 10px;
-  background-image: url(./assets/inner13.png);
+  background-image:linear-gradient(153deg, rgba(165, 124, 92, 0.358) 6%, rgba(151,142,138,0) 54%, rgba(165, 124, 92, 0.454) 85%), url(./assets/inner13.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
@@ -212,7 +212,7 @@ h1 {
   width: 100%;
   height: 150%;
   border-radius: 10px;
-  background-image: url(./assets/inner12.png);
+  background-image:linear-gradient(153deg, rgba(165, 124, 92, 0.578) 6%, rgba(151,142,138,0) 54%, rgba(165, 124, 92, 0.696) 85%), url(./assets/inner12.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -226,13 +226,17 @@ h1 {
     transform: rotate(360deg);
   }
 }
-
+.inner-img{
+  width: 100%;
+  height: 30px;
+  padding: .5em;
+  align-items: end;
+}
 /* Down Home Sec CSS */
 
 .down-home {
   max-width: 1920px;
   min-height: 100%;
-  background: palegoldenrod;
 }
 .down-Sub-home {
   max-width: 1300px;
@@ -256,7 +260,6 @@ h1 {
 .Widgets-Sec {
   max-width: 1920px;
   min-height: 100%;
-  background: rgb(101, 101, 101);
 }
 .Widgets-Sub-Sec {
   max-width: 1300px;
@@ -461,7 +464,6 @@ h1 {
 .social-plateform {
   max-width: 1920px;
   min-height: 100%;
-  background: rgb(157, 254, 217);
 }
 .social-Sub-Div {
   max-width: 1300px;
@@ -502,7 +504,6 @@ h1 {
 .double-Sec {
   max-width: 1920px;
   min-height: 100%;
-  background: rgb(227, 167, 243);
 }
 .double-Sub-Sec {
   max-width: 1300px;
@@ -561,7 +562,6 @@ h1 {
 .exp {
   max-width: 1920px;
   min-height: 100%;
-  background: rgb(255, 185, 247);
 }
 .exp-sub-div {
   max-width: 1300px;
@@ -627,7 +627,6 @@ h1 {
   max-width: 1920px;
   min-height: 100%;
   position: relative;
-  background: rgb(170, 244, 255);
 }
 .work-sub-div {
   max-width: 1300px;
@@ -648,7 +647,6 @@ video {
 .divein {
   max-width: 1920px;
   min-height: 100%;
-  background: rgb(244, 203, 134);
 }
 .divein-sub {
   max-width: 1300px;
@@ -682,7 +680,6 @@ video {
   outline: none;
   margin: 0;
   margin-left: -10px;
-  /* padding: 0.5em 1em; */
   color: var(--light);
   font-weight: 600;
   border: 3px solid var(--dark-brown);
@@ -763,10 +760,10 @@ video {
   gap: 5px;
   padding: 10px;
 }
+/* service-div CSS */
 .service-div {
   max-width: 1920px;
   min-height: 100%;
-  background: rgb(169, 245, 122);
 }
 .service-sub-div {
   max-width: 1300px;
@@ -817,7 +814,6 @@ video {
 .short-video-div {
   max-width: 1920px;
   min-height: 100%;
-  background: rgb(169, 245, 122);
 }
 .short-sub-video {
   max-width: 1300px;
@@ -875,7 +871,6 @@ video {
 .rating-div {
   max-width: 1920px;
   min-height: 100%;
-  background: #96e1ef;
 }
 .rating-sub-div {
   max-width: 1300px;
@@ -922,7 +917,6 @@ video {
   max-width: 1920px;
   min-height: 100%;
   margin: 0 auto;
-  background-color: rgb(178, 250, 255);
 }
 .pricing-sub-div {
   max-width: 1300px;
@@ -1021,11 +1015,11 @@ video {
   background-color: white;
   border-radius: 10px;
 }
+/* FAQs-Section CSS */
 .FAQs-Sec {
   max-width: 1920px;
   min-height: 100%;
   margin: 0 auto;
-  background: rgb(245, 218, 151);
 }
 .FAQs-Sub-Sec {
   max-width: 1300px;
@@ -1074,7 +1068,6 @@ video {
   max-width: 1920px;
   min-height: 100%;
   margin: 0 auto;
-  background-color: #16181b39;
 }
 .Icons-Sub-Sec {
   max-width: 1300px;
@@ -1101,12 +1094,11 @@ video {
 .icon-div img {
   margin: 1em;
 }
-
+/* Semi Footer CSS */
 .semi-footer {
   max-width: 1920px;
   min-height: 100%;
   margin: 0 auto;
-  background-color: rgb(192, 139, 102);
 }
 .semi-footer-sub {
   max-width: 1300px;
@@ -1114,7 +1106,7 @@ video {
   margin: 0 auto;
   text-align: center;
   padding: 2em 5em;
-  background-color: var(--light);
+  background-color: var(--light-brown);
 }
 .semi-footer-sub p {
   padding: 2em 5em;
@@ -1143,6 +1135,79 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Footer Section CSS */
+.footer {
+  max-width: 1920px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+.footer-sub {
+  max-width: 1300px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 2em 5em !important;
+  background-color: var(--dark-brown);
+}
+.footer-links {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: space-between;
+  align-items: center;
+  background: var(--dark-brown);
+}
+.footer-link {
+  width: 215px;
+  height: 320px;
+}
+.footer-link h5,
+.footer-link ul {
+  padding: 20px;
+  display: grid;
+  gap: 5px 0px;
+}
+.footer-link-1 {
+  width: 250px;
+  padding: 20px;
+}
+.footer-icons {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-icons a {
+  text-decoration: none;
+  color: white;
+}
+.footer-icon {
+  width: 60px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: var(--light);
+}
+.footer-icon svg {
+  padding: 5px;
+}
+.footer-design {
+  margin-top: 2em;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 20px;
 }
 /*  
 xxxxxxxxxxxxxxx
@@ -1210,6 +1275,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   }
   .pricing-card {
     width: 330px;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 }
 @media (max-width: 970px) {
@@ -1481,6 +1552,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   .semi-footer-sub ul {
     display: none;
   }
+  .footer-icons {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em 10px;
+    align-items: center;
+  }
 }
 @media (max-width: 468px) {
   .home-left input,
@@ -1641,6 +1718,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   }
   .semi-footer-sub {
     padding: 2em;
+  }
+  .footer-link-1 {
+    height: 340px;
+  }
+  .footer-sub {
+    padding: 2em 3em !important;
   }
 }
 
