@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+    <!-- fontawesome cdn link -->
+    <link rel="preload" href="/fonts/space-groteks/SpaceGrotesk-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"
+      integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- google font cdn link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css"
+    rel="stylesheet"
+    />  
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <!-- animated cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <div class="container-xxl p-5">
+        <!-- body -->
+
+
+
+        <!-- navbar -->
+        <nav  class="navbar navbar-expand-xl bg-body-tertiary fixed-top">
+          <div class="container ">
+            <a class="navbar-brand" href="#">
+              <svg class="first-logo"  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000" viewBox="0 0 36 36" class="_navbar__brand__icon_eexa8_41"><path d="M17.999 5.535l17.6-5.186L30.465 18 35.6 35.601l-17.601-5.136L.358 35.602l5.185-17.6L.358.358l17.65 5.186z" style="fill: inherit;"></path></svg>&nbsp;&nbsp;&nbsp;
+              <svg class="second-logo" width="172" height="29" viewBox="0 0 172 29" fill="#000" xmlns="http://www.w3.org/2000/svg" class="_navbar__brand__icon-text_eexa8_51"><path d="M0.919922 28V0H12.0399C13.7466 0 15.2666 0.346667 16.5999 1.04C17.9599 1.70667 19.0133 2.66667 19.7599 3.92C20.5333 5.14667 20.9199 6.62667 20.9199 8.36V8.88C20.9199 10.6133 20.5199 12.1067 19.7199 13.36C18.9466 14.6133 17.8933 15.5733 16.5599 16.24C15.2266 16.9067 13.7199 17.24 12.0399 17.24H5.23992V28H0.919922ZM5.23992 13.32H11.5999C13.1199 13.32 14.3333 12.92 15.2399 12.12C16.1466 11.32 16.5999 10.2267 16.5999 8.84V8.44C16.5999 7.02667 16.1466 5.92 15.2399 5.12C14.3333 4.32 13.1199 3.92 11.5999 3.92H5.23992V13.32Z" fill="inherit"></path><path d="M33.8346 28.56C31.8613 28.56 30.1013 28.16 28.5546 27.36C27.0346 26.5333 25.8346 25.36 24.9546 23.84C24.0746 22.32 23.6346 20.52 23.6346 18.44V17.84C23.6346 15.76 24.0746 13.9733 24.9546 12.58C25.8346 10.96 27.0346 9.78667 28.5546 8.96C30.1013 8.13333 31.8613 7.72 33.8346 7.72C35.8079 7.72 37.5679 8.13333 39.1146 8.96C40.6613 9.78667 41.8746 10.96 42.7546 12.58C43.6346 13.9733 44.0746 15.76 44.0746 17.84V18.44C44.0746 20.52 43.6346 22.32 42.7546 23.84C41.8746 25.36 40.6613 26.5333 39.1146 27.36C37.5679 28.16 35.8079 28.56 33.8346 28.56ZM33.8346 24.88C35.6479 24.88 37.1146 24.3067 38.2346 23.16C39.3813 21.9867 39.9546 20.3733 39.9546 18.32V17.96C39.9546 15.9067 39.3946 14.3067 38.2746 13.16C37.1546 11.9867 35.6746 11.4 33.8346 11.4C32.0479 11.4 30.5813 11.9867 29.4346 13.16C28.3146 14.3067 27.7546 15.9067 27.7546 17.96V18.32C27.7546 20.3733 28.3146 21.9867 29.4346 23.16C30.5813 24.3067 32.0479 24.88 33.8346 24.88Z" fill="inherit"></path><path d="M57.284 28.56C54.7773 28.56 52.6973 28 51.044 26.88C49.3907 25.76 58.3773 24.0667 58.004 21.8L51.844 20.88C52.0573 21.9733 52.4173 22.84 52.924 23.58C53.4307 24.12 54.0573 24.5733 54.804 24.84C55.5773 25.1067 56.404 25.24 57.284 25.24C58.5907 25.24 59.5906 24.9867 60.284 24.58C61.004 23.9733 61.364 23.32 61.364 22.52C61.364 21.72 61.0307 21.1333 60.364 20.76C59.6973 20.3867 58.7107 20.08 57.404 19.84L56.044 19.6C54.7107 19.36 53.4973 19.0133 52.404 18.56C51.3106 18.1067 50.444 17.58 49.804 16.68C49.164 15.88 58.844 14.8533 58.844 13.6C58.844 11.7333 49.5373 10.2933 50.924 9.28C52.3106 8.24 54.1506 7.72 56.444 7.72C58.6573 7.72 60.4706 8.22667 61.884 9.24C63.324 10.2267 64.2573 11.5733 64.684 13.28L60.844 14.36C60.604 13.16 60.0973 12.32 59.324 11.84C58.5506 11.3333 57.5906 11.08 56.444 11.08C55.324 11.08 54.444 11.2933 53.804 11.72C53.164 12.12 52.844 12.6933 52.844 13.44C52.844 14.24 53.1507 14.8267 53.764 15.2C54.404 15.5733 55.2573 15.8533 56.324 16.04L57.724 16.28C59.1373 16.52 60.4306 16.8533 61.604 17.28C62.7773 17.7067 63.6973 18.32 64.364 19.12C65.0573 19.92 65.404 20.9867 65.404 22.32C65.404 24.2933 64.6707 25.8267 63.204 26.92C61.7373 28.0133 59.764 28.56 57.284 28.56Z" fill="inherit"></path><path d="M70.2196 28V8.28H74.3396V28H70.2196ZM72.2996 5.6C71.4996 5.6 70.8196 5.34667 70.2596 4.84C69.7263 4.30667 69.4596 3.62667 69.4596 2.8C69.4596 1.97333 69.7263 1.30667 70.2596 0.800001C70.8196 0.266667 71.4996 0 72.2996 0C73.1263 0 73.8063 0.266667 74.3396 0.800001C74.8729 1.30667 75.1396 1.97333 75.1396 2.8C75.1396 3.62667 74.8729 4.30667 74.3396 4.84C73.8063 5.34667 73.1263 5.6 72.2996 5.6Z" fill="inherit"></path><path d="M87.854 28C86.654 28 85.694 27.64 84.974 26.92C84.2806 26.2 83.934 25.24 83.934 24.04V11.76H78.494V8.28H83.934V1.76H88.054V8.28H93.934V11.76H88.054V23.32C88.054 24.12 88.4273 24.52 89.174 24.52H93.294V28H87.854Z" fill="inherit"></path><path d="M98.7743 28V8.28H102.894V28H98.7743ZM100.854 5.6C100.054 5.6 99.3743 5.34667 98.8143 4.84C98.281 4.30667 98.0143 3.62667 98.0143 2.8C98.0143 1.97333 98.281 1.30667 98.8143 0.800001C99.3743 0.266667 100.054 0 100.854 0C101.681 0 102.361 0.266667 102.894 0.800001C103.428 1.30667 103.694 1.97333 103.694 2.8C103.694 3.62667 103.428 4.30667 102.894 4.84C102.361 5.34667 101.681 5.6 100.854 5.6Z" fill="inherit"></path><path d="M113.569 28L106.929 8.28H111.289L116.529 24.96H117.169L122.409 8.28H126.769L120.129 28H113.569Z" fill="inherit"></path><path d="M138.326 28.36C136.833 28.36 135.5 28.0267 134.326 27.36C133.153 26.6933 132.233 25.7467 131.566 24.52C130.9 23.2933 130.566 21.8267 130.566 20.12V8.28H134.686V19.84C134.686 21.5467 135.113 22.8133 135.966 23.64C136.82 24.44 138.006 24.84 139.526 24.84C141.206 24.84 142.553 24.28 143.566 23.16C144.606 22.0133 145.126 20.3733 145.126 18.24V8.28H149.246V28H145.206V25.04H144.566C144.193 25.84 143.526 26.6 142.566 27.32C141.606 28.0133 140.193 28.36 138.326 28.36Z" fill="inherit"></path><path d="M163.417 28.56C160.91 28.56 158.83 28 157.177 26.88C155.523 25.76 154.51 24.0667 154.137 21.8L157.977 20.88C158.19 21.9733 158.55 22.84 159.057 23.58C159.563 24.12 160.19 24.5733 160.937 24.84C161.71 25.1067 162.537 25.24 163.417 25.24C164.723 25.24 165.723 24.9867 166.417 24.58C167.137 23.9733 167.497 23.32 167.497 22.52C167.497 21.72 167.163 21.1333 166.497 20.76C165.83 20.3867 164.843 20.08 163.537 19.84L162.177 19.6C160.843 19.36 159.63 19.0133 158.537 18.56C157.443 18.1067 156.577 17.58 155.937 16.68C155.297 15.88 154.977 14.8533 154.977 13.6C154.977 11.7333 155.67 10.2933 157.057 9.28C158.443 8.24 160.283 7.72 162.577 7.72C164.79 7.72 166.603 8.22667 168.017 9.24C169.457 10.2267 170.39 11.5733 170.817 13.28L166.977 14.36C166.737 13.16 166.23 12.32 165.457 11.84C164.683 11.3333 163.723 11.08 162.577 11.08C161.457 11.08 160.577 11.2933 159.937 11.72C159.297 12.12 158.977 12.6933 158.977 13.44C158.977 14.24 159.283 14.8267 159.897 15.2C160.537 15.5733 161.39 15.8533 162.457 16.04L163.857 16.28C165.27 16.52 166.563 16.8533 167.737 17.28C168.91 17.7067 169.83 18.32 170.497 19.12C171.19 19.92 171.537 20.9867 171.537 22.32C171.537 24.2933 170.803 25.8267 169.337 26.92C167.87 28.0133 165.897 28.56 163.417 28.56Z" fill="inherit"></path></svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center justify-content-xl-center" id="navbarSupportedContent">
+              <ul class="navbar-nav align-items-center  gap-5 mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active " aria-current="page" href="./index.html#about">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active " aria-current="page" href="./index.html#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active " aria-current="page" href="./index.html#cases">Use Cases</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active " aria-current="page" href="./index.html#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active " aria-current="page" href="./index.html#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active rounded-2 btn-outline-dark hero-btn-1" aria-current="page" href="./index.html#FAQs">Request a quote</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- hero -->
+        <div class="row align-items-md-stretch hero" id="about" style="margin-top: 10% !important; color: black;">
+          <div class="col-md-6 col hero-sub">
+            <div class="h-100 p-md-5 p-sm-0 rounded-3">
+              <h2 class="display-3 fw-bold">Navigating the digital landscape for success</h2>
+              <p class="lead fw-normal">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
+              <a href="./index.html#FAQs">
+                <button class="rounded-2 btn-outline-dark bg-light hero-btn-1 btn-lg"  type="button">Book a consultation</button>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col hero-sub">
+            <div class="h-100 p-md-5 p-sm-0">
+              <img src="./assets/hero-img.png" class="d-block mx-auto img-fluid">
+            </div>
+          </div>
+        </div>
+      
+
+        <!-- marquee -->
+        <div class="container " id="marquee">
+          <marquee behavior="" direction="right">
+            <p class="d-flex gap-3 ">
+            
+              <img class="marq-p" src="data:image/webp;base64,UklGRlwEAABXRUJQVlA4WAoAAAAQAAAAfAAALwAAQUxQSAEDAAABoFVrb91Q+iGIwRGEQDCEMBgzGDOIGaQMXAYZBoJgCIZgCP+DFJ9e5j7zEBETgP+9T4cNctqpN7nWmoHUerfs0tmHFV2QwwY5e0s3W13XSMrVu53prtRadyC13q8cqXGxSUCPg2EXHAzHHsnJxUuDJ9dzcEzGQwMlSUNjOBSADi7bSubtmXk71cngcn9d4+ovKwdvDcBFb+0KmBbGHecdH67RW7sCllfsAA76bsNNvRtc/AGlTwC24LHA8XiMgLPVHhgAoS8AdLrmNIVXcAFQ+grASNLuyFHrCDLSJNngu2sLQwCNNgDmBoBtkDT4pzMX7/RDATTXASA5prshgAYVADRJYD9TAaA7A4DqDKEmeY0ONxUApqsO0z3uMgD0BQCy5XKOn8nucs2VJQCy5XKOn5BBXwBgo89Bd3a3OVtI5+DiSnLmqqtLeg4uLpz0FT4FKbjcuPuxJifXP+Pk+t1B3xHmpafji4zesmr/mJPe8qbX0kY/9LMyfQYA+5REXwHguaIjUMQpyIG58Rpzho+63IC/Vjp9wa0EZcVeQ9+c0P/2Ad1ZMFx3B+PZ7UwAYO63gD6/wdwRTHnfcNP9ylAB5frYgeqmAsiBvmY4HqIn4+t9l+OhcjDugvQTNEAGSfZNj+kqXlOD9e1tOVjfX4Lk7jteJONu5kpyJrwNtlAKyVngZiv7tqW9WoS8YvIq6DMyBSq7AsBcuBbKAh4zsARUDgUgLWFRc3HQZzQLwkjcdQNIynkT+IRQVFURqqoiVFWVAJJy3gV+E6yKCtZ1rzUn3IuqCkJVVfyOSrkGSU7LK19YLX2DHJP386vkyZE/T2ve06Zpv74NKOTI+mGLStqXQQfJK39caiZI5OPbgDJIzivLx0g6JzkEhdTvgz4ZWk3yvq3YJDmrAEbD76I+ne+tJHmRbPm0ybApACX19wHQ5wjCaddZ857iPZfabPB+PhS+seL3U7LdvdeKINT5xO+rFnuXFcW9Fvz+yv6wF0177II/xG2vzfqYbo5+tbIr/rEFAFZQOCA0AQAAsAkAnQEqfQAwAD6RRp1LJaOioaQVWeiwEgliAJUDSnkiRfawH9V9gH5A0QH6e/sl74HoA82bqAOez9h/9zPSRA62RERERDlQNF+OF+W/s2zRTN2EtkAA/vtAAAKmmoeycaSRV+aW6ugtn4O0VveYlQ1nKFXOKT65x//Hj//jKP//F2//+LQE1Ne5A5z/X90Y9T0v9nLURF+eK/9PODDAUzX2UY94+RucFbRvqi6bGQWDdHN0PbOjf0SnwVFknbnGECiScbmtT/+jvn/dyJH1M3YmQhYJAGyeG57Xykg1nKFXQ/tlj0CnTf/KKwx+v/4wzL59fTpbeDXyBitjYuDbnATUc/xZ4CK3Lc/AFP9tZl4vjQfPpf/+Umxt/+qsrnEOhArw3un1EE0ZialYFX850ygAAAA=" width="124.11" height="58" alt="Amazon" style="width: auto; height: 58px;">
+
+              <img class="marq-p" src="data:image/webp;base64,UklGRqAEAABXRUJQVlA4WAoAAAAQAAAAfgAALwAAQUxQSNIDAAABoFRbe97meiCIQV8IgiAIZvAJghnEDGIGKgOXgSAIwgtBEM5AP23u+A4iYgL0P6Dp8ZY/F17uxbaseithK5ZW85ZV95r+Ay/G18cqgIcNc4C6Yx3g3LDOeHzMmKcPZaZ5ozBNG87YNxx6h/axAn48UD5U4W5wrQy4OuRVAr+BsMjgFjp8fcohK0H/jEHVtZWh6NkqkLVVIUkPHB8KgElA/MgBp244VwWSKqSVQxg0D+CSviF/KEGT5HD8QThLnl2QVCGtKgQ1iIsATRHaIsHP7PhclVQh/0EDyuSBL3WwVacrQNcywY8O+FlkuCQ9kD6UofyZMU4qyMC1DOBKUFcH3LrhXFxwSmrw9aFjI/0udMAnDspQVgZVN5yrDJcaxMUNWQrQ9eE0c4i/U3Rq3HjgWMXBwVYXXAau5ffkgPqpCFUSIOnwdmztOgToWieoEZr2MpTfFDg/ZeBShCapAuefZSh7XiD/wiGursEAm4SzlLf9Kp2lvIGgDLekh7HVy2bv8tpwsI0IHbC9DlXrEy4VqBrfTF97VllmPXBI+p4APQ4JiCuokt60LMkYi2S95eFkzNI/LyYpQzEgD4Vl3jFnXQ0Ikh7w2gHu4QK+dpIUAMrKpBtoJuXBJTlwShGqQ5OkDJQUHX52HFoKig/0NxRJavAj3at7owJFkg1kxeHSjCa9hiyJ8Z8CUxscbkkZfCODB0kKTA9JATilBFzD94YDhyTVob4Zo6Q08C4AXZLq0GPuwylJCTBJF9SNClnTOrgkJSDO8vCsEkAa4rD8kqRrmLchdjYvjRmapOBwT4JJHTQ/h/dwg2uWhroqwzHo6JO20jVz8EGHb4TJNXug26S4iY3QARsc7j2AKMkYz4kS+BkCkCbK0O94Qp/IHmh37nBOMnRZBU6NGX7k8DXTDT1IyoBJios8ZEkFOtRZhiKpwjUrcEoGpIkcDukGnyTg6cCl0RyKvuGaBQfekhyKJAUgS7EPt5SAE7AhOGRJB/QwGGCSKpRJBkwy4D2oMz01RgcPSsC/ITyMr6MCNsihxVdn7JYcihzcpFDANTZoJlmDKkkJOCWZQ5GkG3hJSj70KEnh1cFN0g2UM787dGd+aXox94e5mxLAUzqQJhHwp3ToNugbqNe7g9sQGuBPZd5rKbUDbhpvlj3GPrk0D33iFnzSo6ST5al5Zt6jpqEx96ipOfN+O5t30DzXod8mRYd+am0O/Q6SfQM1arQK9Bq1tgr027S+OtCLaX050K8g5acP7QraDSlFzaNpP8SgaYhB62CmXwYz/TKlGLQfU9QymOn/vgFWUDggqAAAANAFAJ0BKn8AMAA+kUKbSyWjoiGhbICwEgllANS8MEuYBO0oCz9477nhVvlBh8osMgyeXPSL+9AA/viHQP7a73snq8f8wzZ+zQ/4/KfTozQMQad0Z0Wfjn1fR0+UmAjaGFWjYFbRWjstMrlBUAKPiueJ/E1+olXdg56IeYYtW2ieoj/Kdiyh1ZK3Btf86mcuSxZQe/rmyj1s2lYtlamWz3Z9usymnsyAAA==" width="126.37" height="48" alt="Dribbble" style="width: auto; height: 58px;">
+
+              <img class="marq-p" src="data:image/webp;base64,UklGRggFAABXRUJQVlA4WAoAAAAQAAAAgAAALwAAQUxQSNACAAABkFRre95GLwQxqCAYgiAYghjUDGwGNgOFgctAEAzhgyAIz0I/djPNbhYRMQH6r+W3YetHW6n3W9/GFT+Eo+1uROr5M/jOdCM3fj6Dciv5J/ITp5mlgWxmxzMu55y/nnDLaXad0Q15a2BhaG7MT2QgDxiQnvEAD7idrq0j0rzFyYDdDShCCRr3f8HFaBpqboD5AYFp1M3Z/oCV4e2eggHrU3OBv6BU0cm/4NCT7gDMP7PxS/O2baGzbdvmei7EGHwnACTV/tCgC1val6A6GrBKcmGHss9v8wK2DsBXa1oLdY4jsTHq1kLTVifJv4Ds10Lb4ghmlt6s0E9O0lRd/oY3Bm2SpGjcvPwAkN9s+HKSKwCWwog3hsskST7f4HIPlNzn9/KxnRW7pKUCyjl3EkDZ5jC/AMxJUmqkGOZXxd4pMca5cfdXzEuSvwCCpK0FmK88gHnVUwE2SR7AJtVTAXAtU/1e5tV0F3BIUsgdyiTpqLzaM1AkHdWsdqiWf2dRdwaskvySG2RJGfhRvwBfUgZM/QKke1l9+6XQ8yOS/KsiSBeQBi4gtPJABvKbHDdcFXvTDemoFsmAPFCASToBGyjAz5uk1tSSAbm3Az+Va03V1sJ3IlAkbQBz5xsgvsECFN9IgEk6ANZWAIiS1jI1vqulY74RCpAkuarExlwq/wauABYlvwMkSb4ApEnyK4BJWoF9kl+pfQfSHGIGKF6SDuq8xCVTb5IWgOUXtNAs1OYlaakGi5cWxpMGBhfVa2PwkqRQcZ1pfkpHo1kmNbchmyS5c8j8A2VRvXPzdJXOCvCPKVone3Wjdcrm1IzWO5w626uTvSS5E0qM1rmi2u7VMB05533gzDkvDbl45us8gobnV75yWpwG5yPnnBanZhXllyMd0UmashnYJCksKaUlaDQcOV+L/tjWoC8A5vVBby3Uhz7Y3IifTC/gch9NYQv6byJWUDggEgIAABAOAJ0BKoEAMAA+kTqXSCWjIiEqtV8YsBIJZAYoA7UD6AEoon6oN2/ze8Oo20MXb587F6OfO36oD0APLf9lX/M+blq0ngAL6woKo9lqiCeeVLtiUPa9ADN2yLS1SWt16hILpnSnnsDQAQNs0nQp/z8bNs1MKLJ0jUgA/vn+Tv9ZHrtdJdKxF0P405f/n92eIwS9DF9EkVeWI5T24Be9jH7gfiyvtU459iSmyYBmuC80xb+0O0jTJx/Dq+4Fzj+0X+68z/981SIt//z3HXvd+zaNc9x/5D/Zj//NzlA+v8MfJkWqMSwwlELcFczY8/jr9FG9+7JvgoX2GTimU93tVF6P6bc4HgBskcclmf9VkkZrDyd3H9lqZlc8VE7qP63wxhwTF5ED9bsqsmsKZvJ5yxydM6U4EV1Y1ybfX5ju5sPHvrwJFQ8Ernc2sWHfoFt+HsB8Sn81xgaqYpLfn/kySfetbf5WLoNV588EtG5uoatdPzYOtOPOdj96JPbHIPfNhqMTty/I/zdkFc6HuCTIPVOGeNn9fwsg25skqIMUeC9iQeE7EpriVWvXTq6/hpqR8WOYxbIytLzt+Ysfe5oS/p7wmDjeYeqA5Fy6SyFAqzb8/wOX5vPu6+H4QvEPmQlG9+Nsq/WxOr7IfH7q280u8+vTfJvfT2mZrtQ1xw+RXXOcoNkeoYhlSVIEOeF6gu8WgAAA" width="128.63" height="58" alt="HubSpot" style="width: auto; height: 58px;">
+
+              <img class="marq-p" src="data:image/webp;base64,UklGRpQEAABXRUJQVlA4WAoAAAAQAAAAbgAALwAAQUxQSP0BAAABkBYBb5A9kVAHq4RKQAIOVgdfHYCDFwfFAXNQCUiIhEjgjjd5Erj93O4iAoIbSYqkqIXji6KeeQP9hxDbFQkZxZLawbfJedRseGTEZ8/GR4bRSW3cGmw12hWMSZEHVOkZknvI6Jv2IUDnkygtQIMXlbUEGV9+PBeugB/PVprBFZ0ck/NbjcIx5KYHbBbDEjHSPA1OdMdUYZymAkQfk3BvdbWtafoZMloQ0lvbUcqy1bZruw+50c3niSpuD6VVC5WbWRutSSs10VNmGconb4Zdaxxa25ty8/FmS8RoLIuoWQoZZVZGVsjqDMVhNVRK643ja2TMO16CyRRvjhtpqmtjqWo2nCccDFX0TjiGLkGPGO26Fez0KSkSyMqUHFRB915mVPPiUL/8odMUy387Nb+AjYLC/L5UcPEdfVFWxQoZvctinpkeUFTt/hIWcOBojDJG/7fx4JPxIqnj3STwI6tD1ypqkbeI0fYOzpr7JZTImhX7D/zuXtM7OGsOSe8fL0xvUcyzkRMzvvqAK1gmMm/iGpW3yGJ+o6KYC7rgc2+1dcGFX43R4Ri9xXTF4sjeDYbX5jVkZCFFSEOTrmCMSDZSgXK74pd1hodtJGsO3iXZZuQdprKCI8U3wjctFTF5zKYI9Xx0l1SP20q4N3h+xY1YxuSoHXIRfAxh+hczCABWUDggcAIAAPANAJ0BKm8AMAA+kUKZSiWjoiGmK8CwEglsANH1QVf+ZP3nzT64/WN5OKh1641f6T7APyl/u/cA/SfpZ+YD9ff2H96L8APcB6AH9K/0HWAegB+2/pgfu58Df9x/7PpN9QAGjsupcRJ4J+0KgC9rpmj5KaZ7IzXNAAD+9kc///sD5aJ1NxHdXYNyOapGHIgcHB9+cqu3OSKbOqb34+QG/5F1mnYMOcNxKmnOwghtqow1MXPKdQfHwkLBJsL5vlpCTUIdN58yqJfL5OXoGYHXpJNCfZw9oqrzhCBTzM33cca8Knig12N9xLUDim8LA8KSHQTNqi9P6cRmpXR2Auu40aRNxu23n8o/AroH6EMjSjJWxmuG+vZd1pHxSP92ukwEgWVk73Ki9/TqR3F2KmhIoizF6PQWVygf1Dtp2dnotLt6pi4i4iKuSS12K9KHSU6zCNgyULowQ5xPyzsDJOkbS0vT5HD63ZBYPwZI7euTydsu4DnwBj8/k/MExi1mF53k2qObmT7/xPkuSz6YquX0N/A0lIk5kFZzQcN8xcS6kHesGQyZx9OecvGOAqrf8Q1/jdoU9GnLvh2tOxj9ZDpGji3DqVlluoBct/8LtySCu0L/bsa3GOPP28km1wOmYIJezzeF5T6yn///MUSw+KqDpzP3JPcq64fjbxsC8ooBKTnJIuq9Q8QUHAxj8rCinvrjC640M1zD9raCrXd0f2aSGxPNXPgpx8Sd4aHAhoCrOnKExkJpYLSSo4Jy8XoHjIIiSpNzkTfYhaNGzG2TANAMBibAePEsVb1TxLX/QDbvYvIQtbZP8vMCW7mtYBh4/mAAAA==" width="110.57" height="58" alt="Zoom" style="width: auto; height: 58px;" class="">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRlwEAABXRUJQVlA4WAoAAAAQAAAAfAAALwAAQUxQSAEDAAABoFVrb91Q+iGIwRGEQDCEMBgzGDOIGaQMXAYZBoJgCIZgCP+DFJ9e5j7zEBETgP+9T4cNctqpN7nWmoHUerfs0tmHFV2QwwY5e0s3W13XSMrVu53prtRadyC13q8cqXGxSUCPg2EXHAzHHsnJxUuDJ9dzcEzGQwMlSUNjOBSADi7bSubtmXk71cngcn9d4+ovKwdvDcBFb+0KmBbGHecdH67RW7sCllfsAA76bsNNvRtc/AGlTwC24LHA8XiMgLPVHhgAoS8AdLrmNIVXcAFQ+grASNLuyFHrCDLSJNngu2sLQwCNNgDmBoBtkDT4pzMX7/RDATTXASA5prshgAYVADRJYD9TAaA7A4DqDKEmeY0ONxUApqsO0z3uMgD0BQCy5XKOn8nucs2VJQCy5XKOn5BBXwBgo89Bd3a3OVtI5+DiSnLmqqtLeg4uLpz0FT4FKbjcuPuxJifXP+Pk+t1B3xHmpafji4zesmr/mJPe8qbX0kY/9LMyfQYA+5REXwHguaIjUMQpyIG58Rpzho+63IC/Vjp9wa0EZcVeQ9+c0P/2Ad1ZMFx3B+PZ7UwAYO63gD6/wdwRTHnfcNP9ylAB5frYgeqmAsiBvmY4HqIn4+t9l+OhcjDugvQTNEAGSfZNj+kqXlOD9e1tOVjfX4Lk7jteJONu5kpyJrwNtlAKyVngZiv7tqW9WoS8YvIq6DMyBSq7AsBcuBbKAh4zsARUDgUgLWFRc3HQZzQLwkjcdQNIynkT+IRQVFURqqoiVFWVAJJy3gV+E6yKCtZ1rzUn3IuqCkJVVfyOSrkGSU7LK19YLX2DHJP386vkyZE/T2ve06Zpv74NKOTI+mGLStqXQQfJK39caiZI5OPbgDJIzivLx0g6JzkEhdTvgz4ZWk3yvq3YJDmrAEbD76I+ne+tJHmRbPm0ybApACX19wHQ5wjCaddZ857iPZfabPB+PhS+seL3U7LdvdeKINT5xO+rFnuXFcW9Fvz+yv6wF0177II/xG2vzfqYbo5+tbIr/rEFAFZQOCA0AQAAsAkAnQEqfQAwAD6RRp1LJaOioaQVWeiwEgliAJUDSnkiRfawH9V9gH5A0QH6e/sl74HoA82bqAOez9h/9zPSRA62RERERDlQNF+OF+W/s2zRTN2EtkAA/vtAAAKmmoeycaSRV+aW6ugtn4O0VveYlQ1nKFXOKT65x//Hj//jKP//F2//+LQE1Ne5A5z/X90Y9T0v9nLURF+eK/9PODDAUzX2UY94+RucFbRvqi6bGQWDdHN0PbOjf0SnwVFknbnGECiScbmtT/+jvn/dyJH1M3YmQhYJAGyeG57Xykg1nKFXQ/tlj0CnTf/KKwx+v/4wzL59fTpbeDXyBitjYuDbnATUc/xZ4CK3Lc/AFP9tZl4vjQfPpf/+Umxt/+qsrnEOhArw3un1EE0ZialYFX850ygAAAA=" width="124.11" height="58" alt="Amazon" style="width: auto; height: 58px;">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRqAEAABXRUJQVlA4WAoAAAAQAAAAfgAALwAAQUxQSNIDAAABoFRbe97meiCIQV8IgiAIZvAJghnEDGIGKgOXgSAIwgtBEM5AP23u+A4iYgL0P6Dp8ZY/F17uxbaseithK5ZW85ZV95r+Ay/G18cqgIcNc4C6Yx3g3LDOeHzMmKcPZaZ5ozBNG87YNxx6h/axAn48UD5U4W5wrQy4OuRVAr+BsMjgFjp8fcohK0H/jEHVtZWh6NkqkLVVIUkPHB8KgElA/MgBp244VwWSKqSVQxg0D+CSviF/KEGT5HD8QThLnl2QVCGtKgQ1iIsATRHaIsHP7PhclVQh/0EDyuSBL3WwVacrQNcywY8O+FlkuCQ9kD6UofyZMU4qyMC1DOBKUFcH3LrhXFxwSmrw9aFjI/0udMAnDspQVgZVN5yrDJcaxMUNWQrQ9eE0c4i/U3Rq3HjgWMXBwVYXXAau5ffkgPqpCFUSIOnwdmztOgToWieoEZr2MpTfFDg/ZeBShCapAuefZSh7XiD/wiGursEAm4SzlLf9Kp2lvIGgDLekh7HVy2bv8tpwsI0IHbC9DlXrEy4VqBrfTF97VllmPXBI+p4APQ4JiCuokt60LMkYi2S95eFkzNI/LyYpQzEgD4Vl3jFnXQ0Ikh7w2gHu4QK+dpIUAMrKpBtoJuXBJTlwShGqQ5OkDJQUHX52HFoKig/0NxRJavAj3at7owJFkg1kxeHSjCa9hiyJ8Z8CUxscbkkZfCODB0kKTA9JATilBFzD94YDhyTVob4Zo6Q08C4AXZLq0GPuwylJCTBJF9SNClnTOrgkJSDO8vCsEkAa4rD8kqRrmLchdjYvjRmapOBwT4JJHTQ/h/dwg2uWhroqwzHo6JO20jVz8EGHb4TJNXug26S4iY3QARsc7j2AKMkYz4kS+BkCkCbK0O94Qp/IHmh37nBOMnRZBU6NGX7k8DXTDT1IyoBJios8ZEkFOtRZhiKpwjUrcEoGpIkcDukGnyTg6cCl0RyKvuGaBQfekhyKJAUgS7EPt5SAE7AhOGRJB/QwGGCSKpRJBkwy4D2oMz01RgcPSsC/ITyMr6MCNsihxVdn7JYcihzcpFDANTZoJlmDKkkJOCWZQ5GkG3hJSj70KEnh1cFN0g2UM787dGd+aXox94e5mxLAUzqQJhHwp3ToNugbqNe7g9sQGuBPZd5rKbUDbhpvlj3GPrk0D33iFnzSo6ST5al5Zt6jpqEx96ipOfN+O5t30DzXod8mRYd+am0O/Q6SfQM1arQK9Bq1tgr027S+OtCLaX050K8g5acP7QraDSlFzaNpP8SgaYhB62CmXwYz/TKlGLQfU9QymOn/vgFWUDggqAAAANAFAJ0BKn8AMAA+kUKbSyWjoiGhbICwEgllANS8MEuYBO0oCz9477nhVvlBh8osMgyeXPSL+9AA/viHQP7a73snq8f8wzZ+zQ/4/KfTozQMQad0Z0Wfjn1fR0+UmAjaGFWjYFbRWjstMrlBUAKPiueJ/E1+olXdg56IeYYtW2ieoj/Kdiyh1ZK3Btf86mcuSxZQe/rmyj1s2lYtlamWz3Z9usymnsyAAA==" width="126.37" height="48" alt="Dribbble" style="width: auto; height: 58px;">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRggFAABXRUJQVlA4WAoAAAAQAAAAgAAALwAAQUxQSNACAAABkFRre95GLwQxqCAYgiAYghjUDGwGNgOFgctAEAzhgyAIz0I/djPNbhYRMQH6r+W3YetHW6n3W9/GFT+Eo+1uROr5M/jOdCM3fj6Dciv5J/ITp5mlgWxmxzMu55y/nnDLaXad0Q15a2BhaG7MT2QgDxiQnvEAD7idrq0j0rzFyYDdDShCCRr3f8HFaBpqboD5AYFp1M3Z/oCV4e2eggHrU3OBv6BU0cm/4NCT7gDMP7PxS/O2baGzbdvmei7EGHwnACTV/tCgC1val6A6GrBKcmGHss9v8wK2DsBXa1oLdY4jsTHq1kLTVifJv4Ds10Lb4ghmlt6s0E9O0lRd/oY3Bm2SpGjcvPwAkN9s+HKSKwCWwog3hsskST7f4HIPlNzn9/KxnRW7pKUCyjl3EkDZ5jC/AMxJUmqkGOZXxd4pMca5cfdXzEuSvwCCpK0FmK88gHnVUwE2SR7AJtVTAXAtU/1e5tV0F3BIUsgdyiTpqLzaM1AkHdWsdqiWf2dRdwaskvySG2RJGfhRvwBfUgZM/QKke1l9+6XQ8yOS/KsiSBeQBi4gtPJABvKbHDdcFXvTDemoFsmAPFCASToBGyjAz5uk1tSSAbm3Az+Va03V1sJ3IlAkbQBz5xsgvsECFN9IgEk6ANZWAIiS1jI1vqulY74RCpAkuarExlwq/wauABYlvwMkSb4ApEnyK4BJWoF9kl+pfQfSHGIGKF6SDuq8xCVTb5IWgOUXtNAs1OYlaakGi5cWxpMGBhfVa2PwkqRQcZ1pfkpHo1kmNbchmyS5c8j8A2VRvXPzdJXOCvCPKVone3Wjdcrm1IzWO5w626uTvSS5E0qM1rmi2u7VMB05533gzDkvDbl45us8gobnV75yWpwG5yPnnBanZhXllyMd0UmashnYJCksKaUlaDQcOV+L/tjWoC8A5vVBby3Uhz7Y3IifTC/gch9NYQv6byJWUDggEgIAABAOAJ0BKoEAMAA+kTqXSCWjIiEqtV8YsBIJZAYoA7UD6AEoon6oN2/ze8Oo20MXb587F6OfO36oD0APLf9lX/M+blq0ngAL6woKo9lqiCeeVLtiUPa9ADN2yLS1SWt16hILpnSnnsDQAQNs0nQp/z8bNs1MKLJ0jUgA/vn+Tv9ZHrtdJdKxF0P405f/n92eIwS9DF9EkVeWI5T24Be9jH7gfiyvtU459iSmyYBmuC80xb+0O0jTJx/Dq+4Fzj+0X+68z/981SIt//z3HXvd+zaNc9x/5D/Zj//NzlA+v8MfJkWqMSwwlELcFczY8/jr9FG9+7JvgoX2GTimU93tVF6P6bc4HgBskcclmf9VkkZrDyd3H9lqZlc8VE7qP63wxhwTF5ED9bsqsmsKZvJ5yxydM6U4EV1Y1ybfX5ju5sPHvrwJFQ8Ernc2sWHfoFt+HsB8Sn81xgaqYpLfn/kySfetbf5WLoNV588EtG5uoatdPzYOtOPOdj96JPbHIPfNhqMTty/I/zdkFc6HuCTIPVOGeNn9fwsg25skqIMUeC9iQeE7EpriVWvXTq6/hpqR8WOYxbIytLzt+Ysfe5oS/p7wmDjeYeqA5Fy6SyFAqzb8/wOX5vPu6+H4QvEPmQlG9+Nsq/WxOr7IfH7q280u8+vTfJvfT2mZrtQ1xw+RXXOcoNkeoYhlSVIEOeF6gu8WgAAA" width="128.63" height="58" alt="HubSpot" style="width: auto; height: 58px;">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRlIDAABXRUJQVlA4WAoAAAAQAAAAkgAALwAAQUxQSPYCAAABoFRrcxBRKgmRUBKQEAk4mJKAg46DxkHaAeOgJCChJETCt4DQgfd6NbOIiAmQ//YmnbLZUmrdPAJa1V+VllKr79EY+vpRQbfF7ltdi9mcVUVEC4T+IgXWPKnKUN2h6m8KlfEWhP0keI1IqjmbrcCmf4FcTJ9GzDmbWSm1br5H8GVLf9wMRHrajRE7kHtWa50uWa11fsIHIP8ZEbtvtZaymOWsqnIslz5A6JUPUMbNZpZOykEfF5pkuH3Fnp4SQD6RdfdZHrfKjQOof8Cze2XAlGezZRCvH2Lvuvm+p8MC0NZR/DMkLdXd35ZOZrMGrGaWRM1s7qSluvvb0pmaWRbJ7839nb/LnNdDyhvIcUzT79Tpvw7BxSwZiBN1+q+TDLi8OXf9RtJywiLHz7BPAJG+mRpXQ8dNjauRem/6+1diZ226p2gD/AsNgM1scQAXWWttwFZrnS5oAGxmyw7gHcBL2Q7YKCLdIwbwvlaBluVYAExEJIAsx14FWpZjAbBOqIiINuDfEZ8G8L5JCsByJQEscu6AD1KARc4d8I7J6QrEiJIPLDfJByBfmA/amQHSmPmgnRkgncm5DZP10PSmtANNewXYpauHaUwBdunqYTqJ+9IOsKd7RAOIdMl7csjjvCeH/BTRBvC+SSaAbbuy99JNe0+fJcuBuEkWukXEgNbLhzTGgNbLh/Qc2Q7cJesVBcidCoSMmQBypwIhD0rxCPEL4sCeThSg9uyaOLCnkwmgjkmDJD8jxYUMEHOS9GpAaC9M9UoGiDlJejUgdIysX9UTWR8h2npSuNwmOa6c5wtSuNwmGZTiyuIA20EcaLdJviBLXIhJTlMMkNIuxCSjRKOXt1pLWdKJWJnTgOLudkWKu9uJqPmhuclF2zzCJ5ncvZ6ILn5obnI6uXvtzO5eRUSm1hm+XLo9aZJHJk1y9wysI5JqzmZLPOlvukDknGezpbxr3XyP4Hr6QVK4ty3yk9dLLcK91rUUszlPqvKr87KY5aya5H9CAVZQOCA2AAAAUAQAnQEqkwAwAD6RSKFMpaQjIiEoALASCWkAAAi1ErVq1atWrVq1atWmgAD++M7sQ8AAAAAA" width="145.55" height="58" alt="Notion" style="width: auto; height: 58px;">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRlwEAABXRUJQVlA4WAoAAAAQAAAAfAAALwAAQUxQSAEDAAABoFVrb91Q+iGIwRGEQDCEMBgzGDOIGaQMXAYZBoJgCIZgCP+DFJ9e5j7zEBETgP+9T4cNctqpN7nWmoHUerfs0tmHFV2QwwY5e0s3W13XSMrVu53prtRadyC13q8cqXGxSUCPg2EXHAzHHsnJxUuDJ9dzcEzGQwMlSUNjOBSADi7bSubtmXk71cngcn9d4+ovKwdvDcBFb+0KmBbGHecdH67RW7sCllfsAA76bsNNvRtc/AGlTwC24LHA8XiMgLPVHhgAoS8AdLrmNIVXcAFQ+grASNLuyFHrCDLSJNngu2sLQwCNNgDmBoBtkDT4pzMX7/RDATTXASA5prshgAYVADRJYD9TAaA7A4DqDKEmeY0ONxUApqsO0z3uMgD0BQCy5XKOn8nucs2VJQCy5XKOn5BBXwBgo89Bd3a3OVtI5+DiSnLmqqtLeg4uLpz0FT4FKbjcuPuxJifXP+Pk+t1B3xHmpafji4zesmr/mJPe8qbX0kY/9LMyfQYA+5REXwHguaIjUMQpyIG58Rpzho+63IC/Vjp9wa0EZcVeQ9+c0P/2Ad1ZMFx3B+PZ7UwAYO63gD6/wdwRTHnfcNP9ylAB5frYgeqmAsiBvmY4HqIn4+t9l+OhcjDugvQTNEAGSfZNj+kqXlOD9e1tOVjfX4Lk7jteJONu5kpyJrwNtlAKyVngZiv7tqW9WoS8YvIq6DMyBSq7AsBcuBbKAh4zsARUDgUgLWFRc3HQZzQLwkjcdQNIynkT+IRQVFURqqoiVFWVAJJy3gV+E6yKCtZ1rzUn3IuqCkJVVfyOSrkGSU7LK19YLX2DHJP386vkyZE/T2ve06Zpv74NKOTI+mGLStqXQQfJK39caiZI5OPbgDJIzivLx0g6JzkEhdTvgz4ZWk3yvq3YJDmrAEbD76I+ne+tJHmRbPm0ybApACX19wHQ5wjCaddZ857iPZfabPB+PhS+seL3U7LdvdeKINT5xO+rFnuXFcW9Fvz+yv6wF0177II/xG2vzfqYbo5+tbIr/rEFAFZQOCA0AQAAsAkAnQEqfQAwAD6RRp1LJaOioaQVWeiwEgliAJUDSnkiRfawH9V9gH5A0QH6e/sl74HoA82bqAOez9h/9zPSRA62RERERDlQNF+OF+W/s2zRTN2EtkAA/vtAAAKmmoeycaSRV+aW6ugtn4O0VveYlQ1nKFXOKT65x//Hj//jKP//F2//+LQE1Ne5A5z/X90Y9T0v9nLURF+eK/9PODDAUzX2UY94+RucFbRvqi6bGQWDdHN0PbOjf0SnwVFknbnGECiScbmtT/+jvn/dyJH1M3YmQhYJAGyeG57Xykg1nKFXQ/tlj0CnTf/KKwx+v/4wzL59fTpbeDXyBitjYuDbnATUc/xZ4CK3Lc/AFP9tZl4vjQfPpf/+Umxt/+qsrnEOhArw3un1EE0ZialYFX850ygAAAA=" width="124.11" height="58" alt="Amazon" style="width: auto; height: 58px;">
+
+              <img class="marq-p" src="data:image/webp;base64,UklGRqAEAABXRUJQVlA4WAoAAAAQAAAAfgAALwAAQUxQSNIDAAABoFRbe97meiCIQV8IgiAIZvAJghnEDGIGKgOXgSAIwgtBEM5AP23u+A4iYgL0P6Dp8ZY/F17uxbaseithK5ZW85ZV95r+Ay/G18cqgIcNc4C6Yx3g3LDOeHzMmKcPZaZ5ozBNG87YNxx6h/axAn48UD5U4W5wrQy4OuRVAr+BsMjgFjp8fcohK0H/jEHVtZWh6NkqkLVVIUkPHB8KgElA/MgBp244VwWSKqSVQxg0D+CSviF/KEGT5HD8QThLnl2QVCGtKgQ1iIsATRHaIsHP7PhclVQh/0EDyuSBL3WwVacrQNcywY8O+FlkuCQ9kD6UofyZMU4qyMC1DOBKUFcH3LrhXFxwSmrw9aFjI/0udMAnDspQVgZVN5yrDJcaxMUNWQrQ9eE0c4i/U3Rq3HjgWMXBwVYXXAau5ffkgPqpCFUSIOnwdmztOgToWieoEZr2MpTfFDg/ZeBShCapAuefZSh7XiD/wiGursEAm4SzlLf9Kp2lvIGgDLekh7HVy2bv8tpwsI0IHbC9DlXrEy4VqBrfTF97VllmPXBI+p4APQ4JiCuokt60LMkYi2S95eFkzNI/LyYpQzEgD4Vl3jFnXQ0Ikh7w2gHu4QK+dpIUAMrKpBtoJuXBJTlwShGqQ5OkDJQUHX52HFoKig/0NxRJavAj3at7owJFkg1kxeHSjCa9hiyJ8Z8CUxscbkkZfCODB0kKTA9JATilBFzD94YDhyTVob4Zo6Q08C4AXZLq0GPuwylJCTBJF9SNClnTOrgkJSDO8vCsEkAa4rD8kqRrmLchdjYvjRmapOBwT4JJHTQ/h/dwg2uWhroqwzHo6JO20jVz8EGHb4TJNXug26S4iY3QARsc7j2AKMkYz4kS+BkCkCbK0O94Qp/IHmh37nBOMnRZBU6NGX7k8DXTDT1IyoBJios8ZEkFOtRZhiKpwjUrcEoGpIkcDukGnyTg6cCl0RyKvuGaBQfekhyKJAUgS7EPt5SAE7AhOGRJB/QwGGCSKpRJBkwy4D2oMz01RgcPSsC/ITyMr6MCNsihxVdn7JYcihzcpFDANTZoJlmDKkkJOCWZQ5GkG3hJSj70KEnh1cFN0g2UM787dGd+aXox94e5mxLAUzqQJhHwp3ToNugbqNe7g9sQGuBPZd5rKbUDbhpvlj3GPrk0D33iFnzSo6ST5al5Zt6jpqEx96ipOfN+O5t30DzXod8mRYd+am0O/Q6SfQM1arQK9Bq1tgr027S+OtCLaX050K8g5acP7QraDSlFzaNpP8SgaYhB62CmXwYz/TKlGLQfU9QymOn/vgFWUDggqAAAANAFAJ0BKn8AMAA+kUKbSyWjoiGhbICwEgllANS8MEuYBO0oCz9477nhVvlBh8osMgyeXPSL+9AA/viHQP7a73snq8f8wzZ+zQ/4/KfTozQMQad0Z0Wfjn1fR0+UmAjaGFWjYFbRWjstMrlBUAKPiueJ/E1+olXdg56IeYYtW2ieoj/Kdiyh1ZK3Btf86mcuSxZQe/rmyj1s2lYtlamWz3Z9usymnsyAAA==" width="126.37" height="48" alt="Dribbble" style="width: auto; height: 58px;">
+
+              <img class="marq-p" src="data:image/webp;base64,UklGRggFAABXRUJQVlA4WAoAAAAQAAAAgAAALwAAQUxQSNACAAABkFRre95GLwQxqCAYgiAYghjUDGwGNgOFgctAEAzhgyAIz0I/djPNbhYRMQH6r+W3YetHW6n3W9/GFT+Eo+1uROr5M/jOdCM3fj6Dciv5J/ITp5mlgWxmxzMu55y/nnDLaXad0Q15a2BhaG7MT2QgDxiQnvEAD7idrq0j0rzFyYDdDShCCRr3f8HFaBpqboD5AYFp1M3Z/oCV4e2eggHrU3OBv6BU0cm/4NCT7gDMP7PxS/O2baGzbdvmei7EGHwnACTV/tCgC1val6A6GrBKcmGHss9v8wK2DsBXa1oLdY4jsTHq1kLTVifJv4Ds10Lb4ghmlt6s0E9O0lRd/oY3Bm2SpGjcvPwAkN9s+HKSKwCWwog3hsskST7f4HIPlNzn9/KxnRW7pKUCyjl3EkDZ5jC/AMxJUmqkGOZXxd4pMca5cfdXzEuSvwCCpK0FmK88gHnVUwE2SR7AJtVTAXAtU/1e5tV0F3BIUsgdyiTpqLzaM1AkHdWsdqiWf2dRdwaskvySG2RJGfhRvwBfUgZM/QKke1l9+6XQ8yOS/KsiSBeQBi4gtPJABvKbHDdcFXvTDemoFsmAPFCASToBGyjAz5uk1tSSAbm3Az+Va03V1sJ3IlAkbQBz5xsgvsECFN9IgEk6ANZWAIiS1jI1vqulY74RCpAkuarExlwq/wauABYlvwMkSb4ApEnyK4BJWoF9kl+pfQfSHGIGKF6SDuq8xCVTb5IWgOUXtNAs1OYlaakGi5cWxpMGBhfVa2PwkqRQcZ1pfkpHo1kmNbchmyS5c8j8A2VRvXPzdJXOCvCPKVone3Wjdcrm1IzWO5w626uTvSS5E0qM1rmi2u7VMB05533gzDkvDbl45us8gobnV75yWpwG5yPnnBanZhXllyMd0UmashnYJCksKaUlaDQcOV+L/tjWoC8A5vVBby3Uhz7Y3IifTC/gch9NYQv6byJWUDggEgIAABAOAJ0BKoEAMAA+kTqXSCWjIiEqtV8YsBIJZAYoA7UD6AEoon6oN2/ze8Oo20MXb587F6OfO36oD0APLf9lX/M+blq0ngAL6woKo9lqiCeeVLtiUPa9ADN2yLS1SWt16hILpnSnnsDQAQNs0nQp/z8bNs1MKLJ0jUgA/vn+Tv9ZHrtdJdKxF0P405f/n92eIwS9DF9EkVeWI5T24Be9jH7gfiyvtU459iSmyYBmuC80xb+0O0jTJx/Dq+4Fzj+0X+68z/981SIt//z3HXvd+zaNc9x/5D/Zj//NzlA+v8MfJkWqMSwwlELcFczY8/jr9FG9+7JvgoX2GTimU93tVF6P6bc4HgBskcclmf9VkkZrDyd3H9lqZlc8VE7qP63wxhwTF5ED9bsqsmsKZvJ5yxydM6U4EV1Y1ybfX5ju5sPHvrwJFQ8Ernc2sWHfoFt+HsB8Sn81xgaqYpLfn/kySfetbf5WLoNV588EtG5uoatdPzYOtOPOdj96JPbHIPfNhqMTty/I/zdkFc6HuCTIPVOGeNn9fwsg25skqIMUeC9iQeE7EpriVWvXTq6/hpqR8WOYxbIytLzt+Ysfe5oS/p7wmDjeYeqA5Fy6SyFAqzb8/wOX5vPu6+H4QvEPmQlG9+Nsq/WxOr7IfH7q280u8+vTfJvfT2mZrtQ1xw+RXXOcoNkeoYhlSVIEOeF6gu8WgAAA" width="128.63" height="58" alt="HubSpot" style="width: auto; height: 58px;">
+
+              <img class="marq-p" src="data:image/webp;base64,UklGRpQEAABXRUJQVlA4WAoAAAAQAAAAbgAALwAAQUxQSP0BAAABkBYBb5A9kVAHq4RKQAIOVgdfHYCDFwfFAXNQCUiIhEjgjjd5Erj93O4iAoIbSYqkqIXji6KeeQP9hxDbFQkZxZLawbfJedRseGTEZ8/GR4bRSW3cGmw12hWMSZEHVOkZknvI6Jv2IUDnkygtQIMXlbUEGV9+PBeugB/PVprBFZ0ck/NbjcIx5KYHbBbDEjHSPA1OdMdUYZymAkQfk3BvdbWtafoZMloQ0lvbUcqy1bZruw+50c3niSpuD6VVC5WbWRutSSs10VNmGconb4Zdaxxa25ty8/FmS8RoLIuoWQoZZVZGVsjqDMVhNVRK643ja2TMO16CyRRvjhtpqmtjqWo2nCccDFX0TjiGLkGPGO26Fez0KSkSyMqUHFRB915mVPPiUL/8odMUy387Nb+AjYLC/L5UcPEdfVFWxQoZvctinpkeUFTt/hIWcOBojDJG/7fx4JPxIqnj3STwI6tD1ypqkbeI0fYOzpr7JZTImhX7D/zuXtM7OGsOSe8fL0xvUcyzkRMzvvqAK1gmMm/iGpW3yGJ+o6KYC7rgc2+1dcGFX43R4Ri9xXTF4sjeDYbX5jVkZCFFSEOTrmCMSDZSgXK74pd1hodtJGsO3iXZZuQdprKCI8U3wjctFTF5zKYI9Xx0l1SP20q4N3h+xY1YxuSoHXIRfAxh+hczCABWUDggcAIAAPANAJ0BKm8AMAA+kUKZSiWjoiGmK8CwEglsANH1QVf+ZP3nzT64/WN5OKh1641f6T7APyl/u/cA/SfpZ+YD9ff2H96L8APcB6AH9K/0HWAegB+2/pgfu58Df9x/7PpN9QAGjsupcRJ4J+0KgC9rpmj5KaZ7IzXNAAD+9kc///sD5aJ1NxHdXYNyOapGHIgcHB9+cqu3OSKbOqb34+QG/5F1mnYMOcNxKmnOwghtqow1MXPKdQfHwkLBJsL5vlpCTUIdN58yqJfL5OXoGYHXpJNCfZw9oqrzhCBTzM33cca8Knig12N9xLUDim8LA8KSHQTNqi9P6cRmpXR2Auu40aRNxu23n8o/AroH6EMjSjJWxmuG+vZd1pHxSP92ukwEgWVk73Ki9/TqR3F2KmhIoizF6PQWVygf1Dtp2dnotLt6pi4i4iKuSS12K9KHSU6zCNgyULowQ5xPyzsDJOkbS0vT5HD63ZBYPwZI7euTydsu4DnwBj8/k/MExi1mF53k2qObmT7/xPkuSz6YquX0N/A0lIk5kFZzQcN8xcS6kHesGQyZx9OecvGOAqrf8Q1/jdoU9GnLvh2tOxj9ZDpGji3DqVlluoBct/8LtySCu0L/bsa3GOPP28km1wOmYIJezzeF5T6yn///MUSw+KqDpzP3JPcq64fjbxsC8ooBKTnJIuq9Q8QUHAxj8rCinvrjC640M1zD9raCrXd0f2aSGxPNXPgpx8Sd4aHAhoCrOnKExkJpYLSSo4Jy8XoHjIIiSpNzkTfYhaNGzG2TANAMBibAePEsVb1TxLX/QDbvYvIQtbZP8vMCW7mtYBh4/mAAAA==" width="110.57" height="58" alt="Zoom" style="width: auto; height: 58px;" class="">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRlwEAABXRUJQVlA4WAoAAAAQAAAAfAAALwAAQUxQSAEDAAABoFVrb91Q+iGIwRGEQDCEMBgzGDOIGaQMXAYZBoJgCIZgCP+DFJ9e5j7zEBETgP+9T4cNctqpN7nWmoHUerfs0tmHFV2QwwY5e0s3W13XSMrVu53prtRadyC13q8cqXGxSUCPg2EXHAzHHsnJxUuDJ9dzcEzGQwMlSUNjOBSADi7bSubtmXk71cngcn9d4+ovKwdvDcBFb+0KmBbGHecdH67RW7sCllfsAA76bsNNvRtc/AGlTwC24LHA8XiMgLPVHhgAoS8AdLrmNIVXcAFQ+grASNLuyFHrCDLSJNngu2sLQwCNNgDmBoBtkDT4pzMX7/RDATTXASA5prshgAYVADRJYD9TAaA7A4DqDKEmeY0ONxUApqsO0z3uMgD0BQCy5XKOn8nucs2VJQCy5XKOn5BBXwBgo89Bd3a3OVtI5+DiSnLmqqtLeg4uLpz0FT4FKbjcuPuxJifXP+Pk+t1B3xHmpafji4zesmr/mJPe8qbX0kY/9LMyfQYA+5REXwHguaIjUMQpyIG58Rpzho+63IC/Vjp9wa0EZcVeQ9+c0P/2Ad1ZMFx3B+PZ7UwAYO63gD6/wdwRTHnfcNP9ylAB5frYgeqmAsiBvmY4HqIn4+t9l+OhcjDugvQTNEAGSfZNj+kqXlOD9e1tOVjfX4Lk7jteJONu5kpyJrwNtlAKyVngZiv7tqW9WoS8YvIq6DMyBSq7AsBcuBbKAh4zsARUDgUgLWFRc3HQZzQLwkjcdQNIynkT+IRQVFURqqoiVFWVAJJy3gV+E6yKCtZ1rzUn3IuqCkJVVfyOSrkGSU7LK19YLX2DHJP386vkyZE/T2ve06Zpv74NKOTI+mGLStqXQQfJK39caiZI5OPbgDJIzivLx0g6JzkEhdTvgz4ZWk3yvq3YJDmrAEbD76I+ne+tJHmRbPm0ybApACX19wHQ5wjCaddZ857iPZfabPB+PhS+seL3U7LdvdeKINT5xO+rFnuXFcW9Fvz+yv6wF0177II/xG2vzfqYbo5+tbIr/rEFAFZQOCA0AQAAsAkAnQEqfQAwAD6RRp1LJaOioaQVWeiwEgliAJUDSnkiRfawH9V9gH5A0QH6e/sl74HoA82bqAOez9h/9zPSRA62RERERDlQNF+OF+W/s2zRTN2EtkAA/vtAAAKmmoeycaSRV+aW6ugtn4O0VveYlQ1nKFXOKT65x//Hj//jKP//F2//+LQE1Ne5A5z/X90Y9T0v9nLURF+eK/9PODDAUzX2UY94+RucFbRvqi6bGQWDdHN0PbOjf0SnwVFknbnGECiScbmtT/+jvn/dyJH1M3YmQhYJAGyeG57Xykg1nKFXQ/tlj0CnTf/KKwx+v/4wzL59fTpbeDXyBitjYuDbnATUc/xZ4CK3Lc/AFP9tZl4vjQfPpf/+Umxt/+qsrnEOhArw3un1EE0ZialYFX850ygAAAA=" width="124.11" height="58" alt="Amazon" style="width: auto; height: 58px;">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRqAEAABXRUJQVlA4WAoAAAAQAAAAfgAALwAAQUxQSNIDAAABoFRbe97meiCIQV8IgiAIZvAJghnEDGIGKgOXgSAIwgtBEM5AP23u+A4iYgL0P6Dp8ZY/F17uxbaseithK5ZW85ZV95r+Ay/G18cqgIcNc4C6Yx3g3LDOeHzMmKcPZaZ5ozBNG87YNxx6h/axAn48UD5U4W5wrQy4OuRVAr+BsMjgFjp8fcohK0H/jEHVtZWh6NkqkLVVIUkPHB8KgElA/MgBp244VwWSKqSVQxg0D+CSviF/KEGT5HD8QThLnl2QVCGtKgQ1iIsATRHaIsHP7PhclVQh/0EDyuSBL3WwVacrQNcywY8O+FlkuCQ9kD6UofyZMU4qyMC1DOBKUFcH3LrhXFxwSmrw9aFjI/0udMAnDspQVgZVN5yrDJcaxMUNWQrQ9eE0c4i/U3Rq3HjgWMXBwVYXXAau5ffkgPqpCFUSIOnwdmztOgToWieoEZr2MpTfFDg/ZeBShCapAuefZSh7XiD/wiGursEAm4SzlLf9Kp2lvIGgDLekh7HVy2bv8tpwsI0IHbC9DlXrEy4VqBrfTF97VllmPXBI+p4APQ4JiCuokt60LMkYi2S95eFkzNI/LyYpQzEgD4Vl3jFnXQ0Ikh7w2gHu4QK+dpIUAMrKpBtoJuXBJTlwShGqQ5OkDJQUHX52HFoKig/0NxRJavAj3at7owJFkg1kxeHSjCa9hiyJ8Z8CUxscbkkZfCODB0kKTA9JATilBFzD94YDhyTVob4Zo6Q08C4AXZLq0GPuwylJCTBJF9SNClnTOrgkJSDO8vCsEkAa4rD8kqRrmLchdjYvjRmapOBwT4JJHTQ/h/dwg2uWhroqwzHo6JO20jVz8EGHb4TJNXug26S4iY3QARsc7j2AKMkYz4kS+BkCkCbK0O94Qp/IHmh37nBOMnRZBU6NGX7k8DXTDT1IyoBJios8ZEkFOtRZhiKpwjUrcEoGpIkcDukGnyTg6cCl0RyKvuGaBQfekhyKJAUgS7EPt5SAE7AhOGRJB/QwGGCSKpRJBkwy4D2oMz01RgcPSsC/ITyMr6MCNsihxVdn7JYcihzcpFDANTZoJlmDKkkJOCWZQ5GkG3hJSj70KEnh1cFN0g2UM787dGd+aXox94e5mxLAUzqQJhHwp3ToNugbqNe7g9sQGuBPZd5rKbUDbhpvlj3GPrk0D33iFnzSo6ST5al5Zt6jpqEx96ipOfN+O5t30DzXod8mRYd+am0O/Q6SfQM1arQK9Bq1tgr027S+OtCLaX050K8g5acP7QraDSlFzaNpP8SgaYhB62CmXwYz/TKlGLQfU9QymOn/vgFWUDggqAAAANAFAJ0BKn8AMAA+kUKbSyWjoiGhbICwEgllANS8MEuYBO0oCz9477nhVvlBh8osMgyeXPSL+9AA/viHQP7a73snq8f8wzZ+zQ/4/KfTozQMQad0Z0Wfjn1fR0+UmAjaGFWjYFbRWjstMrlBUAKPiueJ/E1+olXdg56IeYYtW2ieoj/Kdiyh1ZK3Btf86mcuSxZQe/rmyj1s2lYtlamWz3Z9usymnsyAAA==" width="126.37" height="48" alt="Dribbble" style="width: auto; height: 58px;">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRggFAABXRUJQVlA4WAoAAAAQAAAAgAAALwAAQUxQSNACAAABkFRre95GLwQxqCAYgiAYghjUDGwGNgOFgctAEAzhgyAIz0I/djPNbhYRMQH6r+W3YetHW6n3W9/GFT+Eo+1uROr5M/jOdCM3fj6Dciv5J/ITp5mlgWxmxzMu55y/nnDLaXad0Q15a2BhaG7MT2QgDxiQnvEAD7idrq0j0rzFyYDdDShCCRr3f8HFaBpqboD5AYFp1M3Z/oCV4e2eggHrU3OBv6BU0cm/4NCT7gDMP7PxS/O2baGzbdvmei7EGHwnACTV/tCgC1val6A6GrBKcmGHss9v8wK2DsBXa1oLdY4jsTHq1kLTVifJv4Ds10Lb4ghmlt6s0E9O0lRd/oY3Bm2SpGjcvPwAkN9s+HKSKwCWwog3hsskST7f4HIPlNzn9/KxnRW7pKUCyjl3EkDZ5jC/AMxJUmqkGOZXxd4pMca5cfdXzEuSvwCCpK0FmK88gHnVUwE2SR7AJtVTAXAtU/1e5tV0F3BIUsgdyiTpqLzaM1AkHdWsdqiWf2dRdwaskvySG2RJGfhRvwBfUgZM/QKke1l9+6XQ8yOS/KsiSBeQBi4gtPJABvKbHDdcFXvTDemoFsmAPFCASToBGyjAz5uk1tSSAbm3Az+Va03V1sJ3IlAkbQBz5xsgvsECFN9IgEk6ANZWAIiS1jI1vqulY74RCpAkuarExlwq/wauABYlvwMkSb4ApEnyK4BJWoF9kl+pfQfSHGIGKF6SDuq8xCVTb5IWgOUXtNAs1OYlaakGi5cWxpMGBhfVa2PwkqRQcZ1pfkpHo1kmNbchmyS5c8j8A2VRvXPzdJXOCvCPKVone3Wjdcrm1IzWO5w626uTvSS5E0qM1rmi2u7VMB05533gzDkvDbl45us8gobnV75yWpwG5yPnnBanZhXllyMd0UmashnYJCksKaUlaDQcOV+L/tjWoC8A5vVBby3Uhz7Y3IifTC/gch9NYQv6byJWUDggEgIAABAOAJ0BKoEAMAA+kTqXSCWjIiEqtV8YsBIJZAYoA7UD6AEoon6oN2/ze8Oo20MXb587F6OfO36oD0APLf9lX/M+blq0ngAL6woKo9lqiCeeVLtiUPa9ADN2yLS1SWt16hILpnSnnsDQAQNs0nQp/z8bNs1MKLJ0jUgA/vn+Tv9ZHrtdJdKxF0P405f/n92eIwS9DF9EkVeWI5T24Be9jH7gfiyvtU459iSmyYBmuC80xb+0O0jTJx/Dq+4Fzj+0X+68z/981SIt//z3HXvd+zaNc9x/5D/Zj//NzlA+v8MfJkWqMSwwlELcFczY8/jr9FG9+7JvgoX2GTimU93tVF6P6bc4HgBskcclmf9VkkZrDyd3H9lqZlc8VE7qP63wxhwTF5ED9bsqsmsKZvJ5yxydM6U4EV1Y1ybfX5ju5sPHvrwJFQ8Ernc2sWHfoFt+HsB8Sn81xgaqYpLfn/kySfetbf5WLoNV588EtG5uoatdPzYOtOPOdj96JPbHIPfNhqMTty/I/zdkFc6HuCTIPVOGeNn9fwsg25skqIMUeC9iQeE7EpriVWvXTq6/hpqR8WOYxbIytLzt+Ysfe5oS/p7wmDjeYeqA5Fy6SyFAqzb8/wOX5vPu6+H4QvEPmQlG9+Nsq/WxOr7IfH7q280u8+vTfJvfT2mZrtQ1xw+RXXOcoNkeoYhlSVIEOeF6gu8WgAAA" width="128.63" height="58" alt="HubSpot" style="width: auto; height: 58px;">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRlIDAABXRUJQVlA4WAoAAAAQAAAAkgAALwAAQUxQSPYCAAABoFRrcxBRKgmRUBKQEAk4mJKAg46DxkHaAeOgJCChJETCt4DQgfd6NbOIiAmQ//YmnbLZUmrdPAJa1V+VllKr79EY+vpRQbfF7ltdi9mcVUVEC4T+IgXWPKnKUN2h6m8KlfEWhP0keI1IqjmbrcCmf4FcTJ9GzDmbWSm1br5H8GVLf9wMRHrajRE7kHtWa50uWa11fsIHIP8ZEbtvtZaymOWsqnIslz5A6JUPUMbNZpZOykEfF5pkuH3Fnp4SQD6RdfdZHrfKjQOof8Cze2XAlGezZRCvH2Lvuvm+p8MC0NZR/DMkLdXd35ZOZrMGrGaWRM1s7qSluvvb0pmaWRbJ7839nb/LnNdDyhvIcUzT79Tpvw7BxSwZiBN1+q+TDLi8OXf9RtJywiLHz7BPAJG+mRpXQ8dNjauRem/6+1diZ226p2gD/AsNgM1scQAXWWttwFZrnS5oAGxmyw7gHcBL2Q7YKCLdIwbwvlaBluVYAExEJIAsx14FWpZjAbBOqIiINuDfEZ8G8L5JCsByJQEscu6AD1KARc4d8I7J6QrEiJIPLDfJByBfmA/amQHSmPmgnRkgncm5DZP10PSmtANNewXYpauHaUwBdunqYTqJ+9IOsKd7RAOIdMl7csjjvCeH/BTRBvC+SSaAbbuy99JNe0+fJcuBuEkWukXEgNbLhzTGgNbLh/Qc2Q7cJesVBcidCoSMmQBypwIhD0rxCPEL4sCeThSg9uyaOLCnkwmgjkmDJD8jxYUMEHOS9GpAaC9M9UoGiDlJejUgdIysX9UTWR8h2npSuNwmOa6c5wtSuNwmGZTiyuIA20EcaLdJviBLXIhJTlMMkNIuxCSjRKOXt1pLWdKJWJnTgOLudkWKu9uJqPmhuclF2zzCJ5ncvZ6ILn5obnI6uXvtzO5eRUSm1hm+XLo9aZJHJk1y9wysI5JqzmZLPOlvukDknGezpbxr3XyP4Hr6QVK4ty3yk9dLLcK91rUUszlPqvKr87KY5aya5H9CAVZQOCA2AAAAUAQAnQEqkwAwAD6RSKFMpaQjIiEoALASCWkAAAi1ErVq1atWrVq1atWmgAD++M7sQ8AAAAAA" width="145.55" height="58" alt="Notion" style="width: auto; height: 58px;">
+            
+            </p>
+          </marquee>
+          <marquee behavior="" direction="left">
+            <p class="d-flex gap-3 ">
+            
+              <img class="marq-p" src="data:image/webp;base64,UklGRlwEAABXRUJQVlA4WAoAAAAQAAAAfAAALwAAQUxQSAEDAAABoFVrb91Q+iGIwRGEQDCEMBgzGDOIGaQMXAYZBoJgCIZgCP+DFJ9e5j7zEBETgP+9T4cNctqpN7nWmoHUerfs0tmHFV2QwwY5e0s3W13XSMrVu53prtRadyC13q8cqXGxSUCPg2EXHAzHHsnJxUuDJ9dzcEzGQwMlSUNjOBSADi7bSubtmXk71cngcn9d4+ovKwdvDcBFb+0KmBbGHecdH67RW7sCllfsAA76bsNNvRtc/AGlTwC24LHA8XiMgLPVHhgAoS8AdLrmNIVXcAFQ+grASNLuyFHrCDLSJNngu2sLQwCNNgDmBoBtkDT4pzMX7/RDATTXASA5prshgAYVADRJYD9TAaA7A4DqDKEmeY0ONxUApqsO0z3uMgD0BQCy5XKOn8nucs2VJQCy5XKOn5BBXwBgo89Bd3a3OVtI5+DiSnLmqqtLeg4uLpz0FT4FKbjcuPuxJifXP+Pk+t1B3xHmpafji4zesmr/mJPe8qbX0kY/9LMyfQYA+5REXwHguaIjUMQpyIG58Rpzho+63IC/Vjp9wa0EZcVeQ9+c0P/2Ad1ZMFx3B+PZ7UwAYO63gD6/wdwRTHnfcNP9ylAB5frYgeqmAsiBvmY4HqIn4+t9l+OhcjDugvQTNEAGSfZNj+kqXlOD9e1tOVjfX4Lk7jteJONu5kpyJrwNtlAKyVngZiv7tqW9WoS8YvIq6DMyBSq7AsBcuBbKAh4zsARUDgUgLWFRc3HQZzQLwkjcdQNIynkT+IRQVFURqqoiVFWVAJJy3gV+E6yKCtZ1rzUn3IuqCkJVVfyOSrkGSU7LK19YLX2DHJP386vkyZE/T2ve06Zpv74NKOTI+mGLStqXQQfJK39caiZI5OPbgDJIzivLx0g6JzkEhdTvgz4ZWk3yvq3YJDmrAEbD76I+ne+tJHmRbPm0ybApACX19wHQ5wjCaddZ857iPZfabPB+PhS+seL3U7LdvdeKINT5xO+rFnuXFcW9Fvz+yv6wF0177II/xG2vzfqYbo5+tbIr/rEFAFZQOCA0AQAAsAkAnQEqfQAwAD6RRp1LJaOioaQVWeiwEgliAJUDSnkiRfawH9V9gH5A0QH6e/sl74HoA82bqAOez9h/9zPSRA62RERERDlQNF+OF+W/s2zRTN2EtkAA/vtAAAKmmoeycaSRV+aW6ugtn4O0VveYlQ1nKFXOKT65x//Hj//jKP//F2//+LQE1Ne5A5z/X90Y9T0v9nLURF+eK/9PODDAUzX2UY94+RucFbRvqi6bGQWDdHN0PbOjf0SnwVFknbnGECiScbmtT/+jvn/dyJH1M3YmQhYJAGyeG57Xykg1nKFXQ/tlj0CnTf/KKwx+v/4wzL59fTpbeDXyBitjYuDbnATUc/xZ4CK3Lc/AFP9tZl4vjQfPpf/+Umxt/+qsrnEOhArw3un1EE0ZialYFX850ygAAAA=" width="124.11" height="58" alt="Amazon" style="width: auto; height: 58px;">
+
+              <img class="marq-p" src="data:image/webp;base64,UklGRqAEAABXRUJQVlA4WAoAAAAQAAAAfgAALwAAQUxQSNIDAAABoFRbe97meiCIQV8IgiAIZvAJghnEDGIGKgOXgSAIwgtBEM5AP23u+A4iYgL0P6Dp8ZY/F17uxbaseithK5ZW85ZV95r+Ay/G18cqgIcNc4C6Yx3g3LDOeHzMmKcPZaZ5ozBNG87YNxx6h/axAn48UD5U4W5wrQy4OuRVAr+BsMjgFjp8fcohK0H/jEHVtZWh6NkqkLVVIUkPHB8KgElA/MgBp244VwWSKqSVQxg0D+CSviF/KEGT5HD8QThLnl2QVCGtKgQ1iIsATRHaIsHP7PhclVQh/0EDyuSBL3WwVacrQNcywY8O+FlkuCQ9kD6UofyZMU4qyMC1DOBKUFcH3LrhXFxwSmrw9aFjI/0udMAnDspQVgZVN5yrDJcaxMUNWQrQ9eE0c4i/U3Rq3HjgWMXBwVYXXAau5ffkgPqpCFUSIOnwdmztOgToWieoEZr2MpTfFDg/ZeBShCapAuefZSh7XiD/wiGursEAm4SzlLf9Kp2lvIGgDLekh7HVy2bv8tpwsI0IHbC9DlXrEy4VqBrfTF97VllmPXBI+p4APQ4JiCuokt60LMkYi2S95eFkzNI/LyYpQzEgD4Vl3jFnXQ0Ikh7w2gHu4QK+dpIUAMrKpBtoJuXBJTlwShGqQ5OkDJQUHX52HFoKig/0NxRJavAj3at7owJFkg1kxeHSjCa9hiyJ8Z8CUxscbkkZfCODB0kKTA9JATilBFzD94YDhyTVob4Zo6Q08C4AXZLq0GPuwylJCTBJF9SNClnTOrgkJSDO8vCsEkAa4rD8kqRrmLchdjYvjRmapOBwT4JJHTQ/h/dwg2uWhroqwzHo6JO20jVz8EGHb4TJNXug26S4iY3QARsc7j2AKMkYz4kS+BkCkCbK0O94Qp/IHmh37nBOMnRZBU6NGX7k8DXTDT1IyoBJios8ZEkFOtRZhiKpwjUrcEoGpIkcDukGnyTg6cCl0RyKvuGaBQfekhyKJAUgS7EPt5SAE7AhOGRJB/QwGGCSKpRJBkwy4D2oMz01RgcPSsC/ITyMr6MCNsihxVdn7JYcihzcpFDANTZoJlmDKkkJOCWZQ5GkG3hJSj70KEnh1cFN0g2UM787dGd+aXox94e5mxLAUzqQJhHwp3ToNugbqNe7g9sQGuBPZd5rKbUDbhpvlj3GPrk0D33iFnzSo6ST5al5Zt6jpqEx96ipOfN+O5t30DzXod8mRYd+am0O/Q6SfQM1arQK9Bq1tgr027S+OtCLaX050K8g5acP7QraDSlFzaNpP8SgaYhB62CmXwYz/TKlGLQfU9QymOn/vgFWUDggqAAAANAFAJ0BKn8AMAA+kUKbSyWjoiGhbICwEgllANS8MEuYBO0oCz9477nhVvlBh8osMgyeXPSL+9AA/viHQP7a73snq8f8wzZ+zQ/4/KfTozQMQad0Z0Wfjn1fR0+UmAjaGFWjYFbRWjstMrlBUAKPiueJ/E1+olXdg56IeYYtW2ieoj/Kdiyh1ZK3Btf86mcuSxZQe/rmyj1s2lYtlamWz3Z9usymnsyAAA==" width="126.37" height="48" alt="Dribbble" style="width: auto; height: 58px;">
+
+              <img class="marq-p" src="data:image/webp;base64,UklGRggFAABXRUJQVlA4WAoAAAAQAAAAgAAALwAAQUxQSNACAAABkFRre95GLwQxqCAYgiAYghjUDGwGNgOFgctAEAzhgyAIz0I/djPNbhYRMQH6r+W3YetHW6n3W9/GFT+Eo+1uROr5M/jOdCM3fj6Dciv5J/ITp5mlgWxmxzMu55y/nnDLaXad0Q15a2BhaG7MT2QgDxiQnvEAD7idrq0j0rzFyYDdDShCCRr3f8HFaBpqboD5AYFp1M3Z/oCV4e2eggHrU3OBv6BU0cm/4NCT7gDMP7PxS/O2baGzbdvmei7EGHwnACTV/tCgC1val6A6GrBKcmGHss9v8wK2DsBXa1oLdY4jsTHq1kLTVifJv4Ds10Lb4ghmlt6s0E9O0lRd/oY3Bm2SpGjcvPwAkN9s+HKSKwCWwog3hsskST7f4HIPlNzn9/KxnRW7pKUCyjl3EkDZ5jC/AMxJUmqkGOZXxd4pMca5cfdXzEuSvwCCpK0FmK88gHnVUwE2SR7AJtVTAXAtU/1e5tV0F3BIUsgdyiTpqLzaM1AkHdWsdqiWf2dRdwaskvySG2RJGfhRvwBfUgZM/QKke1l9+6XQ8yOS/KsiSBeQBi4gtPJABvKbHDdcFXvTDemoFsmAPFCASToBGyjAz5uk1tSSAbm3Az+Va03V1sJ3IlAkbQBz5xsgvsECFN9IgEk6ANZWAIiS1jI1vqulY74RCpAkuarExlwq/wauABYlvwMkSb4ApEnyK4BJWoF9kl+pfQfSHGIGKF6SDuq8xCVTb5IWgOUXtNAs1OYlaakGi5cWxpMGBhfVa2PwkqRQcZ1pfkpHo1kmNbchmyS5c8j8A2VRvXPzdJXOCvCPKVone3Wjdcrm1IzWO5w626uTvSS5E0qM1rmi2u7VMB05533gzDkvDbl45us8gobnV75yWpwG5yPnnBanZhXllyMd0UmashnYJCksKaUlaDQcOV+L/tjWoC8A5vVBby3Uhz7Y3IifTC/gch9NYQv6byJWUDggEgIAABAOAJ0BKoEAMAA+kTqXSCWjIiEqtV8YsBIJZAYoA7UD6AEoon6oN2/ze8Oo20MXb587F6OfO36oD0APLf9lX/M+blq0ngAL6woKo9lqiCeeVLtiUPa9ADN2yLS1SWt16hILpnSnnsDQAQNs0nQp/z8bNs1MKLJ0jUgA/vn+Tv9ZHrtdJdKxF0P405f/n92eIwS9DF9EkVeWI5T24Be9jH7gfiyvtU459iSmyYBmuC80xb+0O0jTJx/Dq+4Fzj+0X+68z/981SIt//z3HXvd+zaNc9x/5D/Zj//NzlA+v8MfJkWqMSwwlELcFczY8/jr9FG9+7JvgoX2GTimU93tVF6P6bc4HgBskcclmf9VkkZrDyd3H9lqZlc8VE7qP63wxhwTF5ED9bsqsmsKZvJ5yxydM6U4EV1Y1ybfX5ju5sPHvrwJFQ8Ernc2sWHfoFt+HsB8Sn81xgaqYpLfn/kySfetbf5WLoNV588EtG5uoatdPzYOtOPOdj96JPbHIPfNhqMTty/I/zdkFc6HuCTIPVOGeNn9fwsg25skqIMUeC9iQeE7EpriVWvXTq6/hpqR8WOYxbIytLzt+Ysfe5oS/p7wmDjeYeqA5Fy6SyFAqzb8/wOX5vPu6+H4QvEPmQlG9+Nsq/WxOr7IfH7q280u8+vTfJvfT2mZrtQ1xw+RXXOcoNkeoYhlSVIEOeF6gu8WgAAA" width="128.63" height="58" alt="HubSpot" style="width: auto; height: 58px;">
+
+              <img class="marq-p" src="data:image/webp;base64,UklGRpQEAABXRUJQVlA4WAoAAAAQAAAAbgAALwAAQUxQSP0BAAABkBYBb5A9kVAHq4RKQAIOVgdfHYCDFwfFAXNQCUiIhEjgjjd5Erj93O4iAoIbSYqkqIXji6KeeQP9hxDbFQkZxZLawbfJedRseGTEZ8/GR4bRSW3cGmw12hWMSZEHVOkZknvI6Jv2IUDnkygtQIMXlbUEGV9+PBeugB/PVprBFZ0ck/NbjcIx5KYHbBbDEjHSPA1OdMdUYZymAkQfk3BvdbWtafoZMloQ0lvbUcqy1bZruw+50c3niSpuD6VVC5WbWRutSSs10VNmGconb4Zdaxxa25ty8/FmS8RoLIuoWQoZZVZGVsjqDMVhNVRK643ja2TMO16CyRRvjhtpqmtjqWo2nCccDFX0TjiGLkGPGO26Fez0KSkSyMqUHFRB915mVPPiUL/8odMUy387Nb+AjYLC/L5UcPEdfVFWxQoZvctinpkeUFTt/hIWcOBojDJG/7fx4JPxIqnj3STwI6tD1ypqkbeI0fYOzpr7JZTImhX7D/zuXtM7OGsOSe8fL0xvUcyzkRMzvvqAK1gmMm/iGpW3yGJ+o6KYC7rgc2+1dcGFX43R4Ri9xXTF4sjeDYbX5jVkZCFFSEOTrmCMSDZSgXK74pd1hodtJGsO3iXZZuQdprKCI8U3wjctFTF5zKYI9Xx0l1SP20q4N3h+xY1YxuSoHXIRfAxh+hczCABWUDggcAIAAPANAJ0BKm8AMAA+kUKZSiWjoiGmK8CwEglsANH1QVf+ZP3nzT64/WN5OKh1641f6T7APyl/u/cA/SfpZ+YD9ff2H96L8APcB6AH9K/0HWAegB+2/pgfu58Df9x/7PpN9QAGjsupcRJ4J+0KgC9rpmj5KaZ7IzXNAAD+9kc///sD5aJ1NxHdXYNyOapGHIgcHB9+cqu3OSKbOqb34+QG/5F1mnYMOcNxKmnOwghtqow1MXPKdQfHwkLBJsL5vlpCTUIdN58yqJfL5OXoGYHXpJNCfZw9oqrzhCBTzM33cca8Knig12N9xLUDim8LA8KSHQTNqi9P6cRmpXR2Auu40aRNxu23n8o/AroH6EMjSjJWxmuG+vZd1pHxSP92ukwEgWVk73Ki9/TqR3F2KmhIoizF6PQWVygf1Dtp2dnotLt6pi4i4iKuSS12K9KHSU6zCNgyULowQ5xPyzsDJOkbS0vT5HD63ZBYPwZI7euTydsu4DnwBj8/k/MExi1mF53k2qObmT7/xPkuSz6YquX0N/A0lIk5kFZzQcN8xcS6kHesGQyZx9OecvGOAqrf8Q1/jdoU9GnLvh2tOxj9ZDpGji3DqVlluoBct/8LtySCu0L/bsa3GOPP28km1wOmYIJezzeF5T6yn///MUSw+KqDpzP3JPcq64fjbxsC8ooBKTnJIuq9Q8QUHAxj8rCinvrjC640M1zD9raCrXd0f2aSGxPNXPgpx8Sd4aHAhoCrOnKExkJpYLSSo4Jy8XoHjIIiSpNzkTfYhaNGzG2TANAMBibAePEsVb1TxLX/QDbvYvIQtbZP8vMCW7mtYBh4/mAAAA==" width="110.57" height="58" alt="Zoom" style="width: auto; height: 58px;" class="">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRlwEAABXRUJQVlA4WAoAAAAQAAAAfAAALwAAQUxQSAEDAAABoFVrb91Q+iGIwRGEQDCEMBgzGDOIGaQMXAYZBoJgCIZgCP+DFJ9e5j7zEBETgP+9T4cNctqpN7nWmoHUerfs0tmHFV2QwwY5e0s3W13XSMrVu53prtRadyC13q8cqXGxSUCPg2EXHAzHHsnJxUuDJ9dzcEzGQwMlSUNjOBSADi7bSubtmXk71cngcn9d4+ovKwdvDcBFb+0KmBbGHecdH67RW7sCllfsAA76bsNNvRtc/AGlTwC24LHA8XiMgLPVHhgAoS8AdLrmNIVXcAFQ+grASNLuyFHrCDLSJNngu2sLQwCNNgDmBoBtkDT4pzMX7/RDATTXASA5prshgAYVADRJYD9TAaA7A4DqDKEmeY0ONxUApqsO0z3uMgD0BQCy5XKOn8nucs2VJQCy5XKOn5BBXwBgo89Bd3a3OVtI5+DiSnLmqqtLeg4uLpz0FT4FKbjcuPuxJifXP+Pk+t1B3xHmpafji4zesmr/mJPe8qbX0kY/9LMyfQYA+5REXwHguaIjUMQpyIG58Rpzho+63IC/Vjp9wa0EZcVeQ9+c0P/2Ad1ZMFx3B+PZ7UwAYO63gD6/wdwRTHnfcNP9ylAB5frYgeqmAsiBvmY4HqIn4+t9l+OhcjDugvQTNEAGSfZNj+kqXlOD9e1tOVjfX4Lk7jteJONu5kpyJrwNtlAKyVngZiv7tqW9WoS8YvIq6DMyBSq7AsBcuBbKAh4zsARUDgUgLWFRc3HQZzQLwkjcdQNIynkT+IRQVFURqqoiVFWVAJJy3gV+E6yKCtZ1rzUn3IuqCkJVVfyOSrkGSU7LK19YLX2DHJP386vkyZE/T2ve06Zpv74NKOTI+mGLStqXQQfJK39caiZI5OPbgDJIzivLx0g6JzkEhdTvgz4ZWk3yvq3YJDmrAEbD76I+ne+tJHmRbPm0ybApACX19wHQ5wjCaddZ857iPZfabPB+PhS+seL3U7LdvdeKINT5xO+rFnuXFcW9Fvz+yv6wF0177II/xG2vzfqYbo5+tbIr/rEFAFZQOCA0AQAAsAkAnQEqfQAwAD6RRp1LJaOioaQVWeiwEgliAJUDSnkiRfawH9V9gH5A0QH6e/sl74HoA82bqAOez9h/9zPSRA62RERERDlQNF+OF+W/s2zRTN2EtkAA/vtAAAKmmoeycaSRV+aW6ugtn4O0VveYlQ1nKFXOKT65x//Hj//jKP//F2//+LQE1Ne5A5z/X90Y9T0v9nLURF+eK/9PODDAUzX2UY94+RucFbRvqi6bGQWDdHN0PbOjf0SnwVFknbnGECiScbmtT/+jvn/dyJH1M3YmQhYJAGyeG57Xykg1nKFXQ/tlj0CnTf/KKwx+v/4wzL59fTpbeDXyBitjYuDbnATUc/xZ4CK3Lc/AFP9tZl4vjQfPpf/+Umxt/+qsrnEOhArw3un1EE0ZialYFX850ygAAAA=" width="124.11" height="58" alt="Amazon" style="width: auto; height: 58px;">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRqAEAABXRUJQVlA4WAoAAAAQAAAAfgAALwAAQUxQSNIDAAABoFRbe97meiCIQV8IgiAIZvAJghnEDGIGKgOXgSAIwgtBEM5AP23u+A4iYgL0P6Dp8ZY/F17uxbaseithK5ZW85ZV95r+Ay/G18cqgIcNc4C6Yx3g3LDOeHzMmKcPZaZ5ozBNG87YNxx6h/axAn48UD5U4W5wrQy4OuRVAr+BsMjgFjp8fcohK0H/jEHVtZWh6NkqkLVVIUkPHB8KgElA/MgBp244VwWSKqSVQxg0D+CSviF/KEGT5HD8QThLnl2QVCGtKgQ1iIsATRHaIsHP7PhclVQh/0EDyuSBL3WwVacrQNcywY8O+FlkuCQ9kD6UofyZMU4qyMC1DOBKUFcH3LrhXFxwSmrw9aFjI/0udMAnDspQVgZVN5yrDJcaxMUNWQrQ9eE0c4i/U3Rq3HjgWMXBwVYXXAau5ffkgPqpCFUSIOnwdmztOgToWieoEZr2MpTfFDg/ZeBShCapAuefZSh7XiD/wiGursEAm4SzlLf9Kp2lvIGgDLekh7HVy2bv8tpwsI0IHbC9DlXrEy4VqBrfTF97VllmPXBI+p4APQ4JiCuokt60LMkYi2S95eFkzNI/LyYpQzEgD4Vl3jFnXQ0Ikh7w2gHu4QK+dpIUAMrKpBtoJuXBJTlwShGqQ5OkDJQUHX52HFoKig/0NxRJavAj3at7owJFkg1kxeHSjCa9hiyJ8Z8CUxscbkkZfCODB0kKTA9JATilBFzD94YDhyTVob4Zo6Q08C4AXZLq0GPuwylJCTBJF9SNClnTOrgkJSDO8vCsEkAa4rD8kqRrmLchdjYvjRmapOBwT4JJHTQ/h/dwg2uWhroqwzHo6JO20jVz8EGHb4TJNXug26S4iY3QARsc7j2AKMkYz4kS+BkCkCbK0O94Qp/IHmh37nBOMnRZBU6NGX7k8DXTDT1IyoBJios8ZEkFOtRZhiKpwjUrcEoGpIkcDukGnyTg6cCl0RyKvuGaBQfekhyKJAUgS7EPt5SAE7AhOGRJB/QwGGCSKpRJBkwy4D2oMz01RgcPSsC/ITyMr6MCNsihxVdn7JYcihzcpFDANTZoJlmDKkkJOCWZQ5GkG3hJSj70KEnh1cFN0g2UM787dGd+aXox94e5mxLAUzqQJhHwp3ToNugbqNe7g9sQGuBPZd5rKbUDbhpvlj3GPrk0D33iFnzSo6ST5al5Zt6jpqEx96ipOfN+O5t30DzXod8mRYd+am0O/Q6SfQM1arQK9Bq1tgr027S+OtCLaX050K8g5acP7QraDSlFzaNpP8SgaYhB62CmXwYz/TKlGLQfU9QymOn/vgFWUDggqAAAANAFAJ0BKn8AMAA+kUKbSyWjoiGhbICwEgllANS8MEuYBO0oCz9477nhVvlBh8osMgyeXPSL+9AA/viHQP7a73snq8f8wzZ+zQ/4/KfTozQMQad0Z0Wfjn1fR0+UmAjaGFWjYFbRWjstMrlBUAKPiueJ/E1+olXdg56IeYYtW2ieoj/Kdiyh1ZK3Btf86mcuSxZQe/rmyj1s2lYtlamWz3Z9usymnsyAAA==" width="126.37" height="48" alt="Dribbble" style="width: auto; height: 58px;">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRggFAABXRUJQVlA4WAoAAAAQAAAAgAAALwAAQUxQSNACAAABkFRre95GLwQxqCAYgiAYghjUDGwGNgOFgctAEAzhgyAIz0I/djPNbhYRMQH6r+W3YetHW6n3W9/GFT+Eo+1uROr5M/jOdCM3fj6Dciv5J/ITp5mlgWxmxzMu55y/nnDLaXad0Q15a2BhaG7MT2QgDxiQnvEAD7idrq0j0rzFyYDdDShCCRr3f8HFaBpqboD5AYFp1M3Z/oCV4e2eggHrU3OBv6BU0cm/4NCT7gDMP7PxS/O2baGzbdvmei7EGHwnACTV/tCgC1val6A6GrBKcmGHss9v8wK2DsBXa1oLdY4jsTHq1kLTVifJv4Ds10Lb4ghmlt6s0E9O0lRd/oY3Bm2SpGjcvPwAkN9s+HKSKwCWwog3hsskST7f4HIPlNzn9/KxnRW7pKUCyjl3EkDZ5jC/AMxJUmqkGOZXxd4pMca5cfdXzEuSvwCCpK0FmK88gHnVUwE2SR7AJtVTAXAtU/1e5tV0F3BIUsgdyiTpqLzaM1AkHdWsdqiWf2dRdwaskvySG2RJGfhRvwBfUgZM/QKke1l9+6XQ8yOS/KsiSBeQBi4gtPJABvKbHDdcFXvTDemoFsmAPFCASToBGyjAz5uk1tSSAbm3Az+Va03V1sJ3IlAkbQBz5xsgvsECFN9IgEk6ANZWAIiS1jI1vqulY74RCpAkuarExlwq/wauABYlvwMkSb4ApEnyK4BJWoF9kl+pfQfSHGIGKF6SDuq8xCVTb5IWgOUXtNAs1OYlaakGi5cWxpMGBhfVa2PwkqRQcZ1pfkpHo1kmNbchmyS5c8j8A2VRvXPzdJXOCvCPKVone3Wjdcrm1IzWO5w626uTvSS5E0qM1rmi2u7VMB05533gzDkvDbl45us8gobnV75yWpwG5yPnnBanZhXllyMd0UmashnYJCksKaUlaDQcOV+L/tjWoC8A5vVBby3Uhz7Y3IifTC/gch9NYQv6byJWUDggEgIAABAOAJ0BKoEAMAA+kTqXSCWjIiEqtV8YsBIJZAYoA7UD6AEoon6oN2/ze8Oo20MXb587F6OfO36oD0APLf9lX/M+blq0ngAL6woKo9lqiCeeVLtiUPa9ADN2yLS1SWt16hILpnSnnsDQAQNs0nQp/z8bNs1MKLJ0jUgA/vn+Tv9ZHrtdJdKxF0P405f/n92eIwS9DF9EkVeWI5T24Be9jH7gfiyvtU459iSmyYBmuC80xb+0O0jTJx/Dq+4Fzj+0X+68z/981SIt//z3HXvd+zaNc9x/5D/Zj//NzlA+v8MfJkWqMSwwlELcFczY8/jr9FG9+7JvgoX2GTimU93tVF6P6bc4HgBskcclmf9VkkZrDyd3H9lqZlc8VE7qP63wxhwTF5ED9bsqsmsKZvJ5yxydM6U4EV1Y1ybfX5ju5sPHvrwJFQ8Ernc2sWHfoFt+HsB8Sn81xgaqYpLfn/kySfetbf5WLoNV588EtG5uoatdPzYOtOPOdj96JPbHIPfNhqMTty/I/zdkFc6HuCTIPVOGeNn9fwsg25skqIMUeC9iQeE7EpriVWvXTq6/hpqR8WOYxbIytLzt+Ysfe5oS/p7wmDjeYeqA5Fy6SyFAqzb8/wOX5vPu6+H4QvEPmQlG9+Nsq/WxOr7IfH7q280u8+vTfJvfT2mZrtQ1xw+RXXOcoNkeoYhlSVIEOeF6gu8WgAAA" width="128.63" height="58" alt="HubSpot" style="width: auto; height: 58px;">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRlIDAABXRUJQVlA4WAoAAAAQAAAAkgAALwAAQUxQSPYCAAABoFRrcxBRKgmRUBKQEAk4mJKAg46DxkHaAeOgJCChJETCt4DQgfd6NbOIiAmQ//YmnbLZUmrdPAJa1V+VllKr79EY+vpRQbfF7ltdi9mcVUVEC4T+IgXWPKnKUN2h6m8KlfEWhP0keI1IqjmbrcCmf4FcTJ9GzDmbWSm1br5H8GVLf9wMRHrajRE7kHtWa50uWa11fsIHIP8ZEbtvtZaymOWsqnIslz5A6JUPUMbNZpZOykEfF5pkuH3Fnp4SQD6RdfdZHrfKjQOof8Cze2XAlGezZRCvH2Lvuvm+p8MC0NZR/DMkLdXd35ZOZrMGrGaWRM1s7qSluvvb0pmaWRbJ7839nb/LnNdDyhvIcUzT79Tpvw7BxSwZiBN1+q+TDLi8OXf9RtJywiLHz7BPAJG+mRpXQ8dNjauRem/6+1diZ226p2gD/AsNgM1scQAXWWttwFZrnS5oAGxmyw7gHcBL2Q7YKCLdIwbwvlaBluVYAExEJIAsx14FWpZjAbBOqIiINuDfEZ8G8L5JCsByJQEscu6AD1KARc4d8I7J6QrEiJIPLDfJByBfmA/amQHSmPmgnRkgncm5DZP10PSmtANNewXYpauHaUwBdunqYTqJ+9IOsKd7RAOIdMl7csjjvCeH/BTRBvC+SSaAbbuy99JNe0+fJcuBuEkWukXEgNbLhzTGgNbLh/Qc2Q7cJesVBcidCoSMmQBypwIhD0rxCPEL4sCeThSg9uyaOLCnkwmgjkmDJD8jxYUMEHOS9GpAaC9M9UoGiDlJejUgdIysX9UTWR8h2npSuNwmOa6c5wtSuNwmGZTiyuIA20EcaLdJviBLXIhJTlMMkNIuxCSjRKOXt1pLWdKJWJnTgOLudkWKu9uJqPmhuclF2zzCJ5ncvZ6ILn5obnI6uXvtzO5eRUSm1hm+XLo9aZJHJk1y9wysI5JqzmZLPOlvukDknGezpbxr3XyP4Hr6QVK4ty3yk9dLLcK91rUUszlPqvKr87KY5aya5H9CAVZQOCA2AAAAUAQAnQEqkwAwAD6RSKFMpaQjIiEoALASCWkAAAi1ErVq1atWrVq1atWmgAD++M7sQ8AAAAAA" width="145.55" height="58" alt="Notion" style="width: auto; height: 58px;">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRlwEAABXRUJQVlA4WAoAAAAQAAAAfAAALwAAQUxQSAEDAAABoFVrb91Q+iGIwRGEQDCEMBgzGDOIGaQMXAYZBoJgCIZgCP+DFJ9e5j7zEBETgP+9T4cNctqpN7nWmoHUerfs0tmHFV2QwwY5e0s3W13XSMrVu53prtRadyC13q8cqXGxSUCPg2EXHAzHHsnJxUuDJ9dzcEzGQwMlSUNjOBSADi7bSubtmXk71cngcn9d4+ovKwdvDcBFb+0KmBbGHecdH67RW7sCllfsAA76bsNNvRtc/AGlTwC24LHA8XiMgLPVHhgAoS8AdLrmNIVXcAFQ+grASNLuyFHrCDLSJNngu2sLQwCNNgDmBoBtkDT4pzMX7/RDATTXASA5prshgAYVADRJYD9TAaA7A4DqDKEmeY0ONxUApqsO0z3uMgD0BQCy5XKOn8nucs2VJQCy5XKOn5BBXwBgo89Bd3a3OVtI5+DiSnLmqqtLeg4uLpz0FT4FKbjcuPuxJifXP+Pk+t1B3xHmpafji4zesmr/mJPe8qbX0kY/9LMyfQYA+5REXwHguaIjUMQpyIG58Rpzho+63IC/Vjp9wa0EZcVeQ9+c0P/2Ad1ZMFx3B+PZ7UwAYO63gD6/wdwRTHnfcNP9ylAB5frYgeqmAsiBvmY4HqIn4+t9l+OhcjDugvQTNEAGSfZNj+kqXlOD9e1tOVjfX4Lk7jteJONu5kpyJrwNtlAKyVngZiv7tqW9WoS8YvIq6DMyBSq7AsBcuBbKAh4zsARUDgUgLWFRc3HQZzQLwkjcdQNIynkT+IRQVFURqqoiVFWVAJJy3gV+E6yKCtZ1rzUn3IuqCkJVVfyOSrkGSU7LK19YLX2DHJP386vkyZE/T2ve06Zpv74NKOTI+mGLStqXQQfJK39caiZI5OPbgDJIzivLx0g6JzkEhdTvgz4ZWk3yvq3YJDmrAEbD76I+ne+tJHmRbPm0ybApACX19wHQ5wjCaddZ857iPZfabPB+PhS+seL3U7LdvdeKINT5xO+rFnuXFcW9Fvz+yv6wF0177II/xG2vzfqYbo5+tbIr/rEFAFZQOCA0AQAAsAkAnQEqfQAwAD6RRp1LJaOioaQVWeiwEgliAJUDSnkiRfawH9V9gH5A0QH6e/sl74HoA82bqAOez9h/9zPSRA62RERERDlQNF+OF+W/s2zRTN2EtkAA/vtAAAKmmoeycaSRV+aW6ugtn4O0VveYlQ1nKFXOKT65x//Hj//jKP//F2//+LQE1Ne5A5z/X90Y9T0v9nLURF+eK/9PODDAUzX2UY94+RucFbRvqi6bGQWDdHN0PbOjf0SnwVFknbnGECiScbmtT/+jvn/dyJH1M3YmQhYJAGyeG57Xykg1nKFXQ/tlj0CnTf/KKwx+v/4wzL59fTpbeDXyBitjYuDbnATUc/xZ4CK3Lc/AFP9tZl4vjQfPpf/+Umxt/+qsrnEOhArw3un1EE0ZialYFX850ygAAAA=" width="124.11" height="58" alt="Amazon" style="width: auto; height: 58px;">
+
+              <img class="marq-p" src="data:image/webp;base64,UklGRqAEAABXRUJQVlA4WAoAAAAQAAAAfgAALwAAQUxQSNIDAAABoFRbe97meiCIQV8IgiAIZvAJghnEDGIGKgOXgSAIwgtBEM5AP23u+A4iYgL0P6Dp8ZY/F17uxbaseithK5ZW85ZV95r+Ay/G18cqgIcNc4C6Yx3g3LDOeHzMmKcPZaZ5ozBNG87YNxx6h/axAn48UD5U4W5wrQy4OuRVAr+BsMjgFjp8fcohK0H/jEHVtZWh6NkqkLVVIUkPHB8KgElA/MgBp244VwWSKqSVQxg0D+CSviF/KEGT5HD8QThLnl2QVCGtKgQ1iIsATRHaIsHP7PhclVQh/0EDyuSBL3WwVacrQNcywY8O+FlkuCQ9kD6UofyZMU4qyMC1DOBKUFcH3LrhXFxwSmrw9aFjI/0udMAnDspQVgZVN5yrDJcaxMUNWQrQ9eE0c4i/U3Rq3HjgWMXBwVYXXAau5ffkgPqpCFUSIOnwdmztOgToWieoEZr2MpTfFDg/ZeBShCapAuefZSh7XiD/wiGursEAm4SzlLf9Kp2lvIGgDLekh7HVy2bv8tpwsI0IHbC9DlXrEy4VqBrfTF97VllmPXBI+p4APQ4JiCuokt60LMkYi2S95eFkzNI/LyYpQzEgD4Vl3jFnXQ0Ikh7w2gHu4QK+dpIUAMrKpBtoJuXBJTlwShGqQ5OkDJQUHX52HFoKig/0NxRJavAj3at7owJFkg1kxeHSjCa9hiyJ8Z8CUxscbkkZfCODB0kKTA9JATilBFzD94YDhyTVob4Zo6Q08C4AXZLq0GPuwylJCTBJF9SNClnTOrgkJSDO8vCsEkAa4rD8kqRrmLchdjYvjRmapOBwT4JJHTQ/h/dwg2uWhroqwzHo6JO20jVz8EGHb4TJNXug26S4iY3QARsc7j2AKMkYz4kS+BkCkCbK0O94Qp/IHmh37nBOMnRZBU6NGX7k8DXTDT1IyoBJios8ZEkFOtRZhiKpwjUrcEoGpIkcDukGnyTg6cCl0RyKvuGaBQfekhyKJAUgS7EPt5SAE7AhOGRJB/QwGGCSKpRJBkwy4D2oMz01RgcPSsC/ITyMr6MCNsihxVdn7JYcihzcpFDANTZoJlmDKkkJOCWZQ5GkG3hJSj70KEnh1cFN0g2UM787dGd+aXox94e5mxLAUzqQJhHwp3ToNugbqNe7g9sQGuBPZd5rKbUDbhpvlj3GPrk0D33iFnzSo6ST5al5Zt6jpqEx96ipOfN+O5t30DzXod8mRYd+am0O/Q6SfQM1arQK9Bq1tgr027S+OtCLaX050K8g5acP7QraDSlFzaNpP8SgaYhB62CmXwYz/TKlGLQfU9QymOn/vgFWUDggqAAAANAFAJ0BKn8AMAA+kUKbSyWjoiGhbICwEgllANS8MEuYBO0oCz9477nhVvlBh8osMgyeXPSL+9AA/viHQP7a73snq8f8wzZ+zQ/4/KfTozQMQad0Z0Wfjn1fR0+UmAjaGFWjYFbRWjstMrlBUAKPiueJ/E1+olXdg56IeYYtW2ieoj/Kdiyh1ZK3Btf86mcuSxZQe/rmyj1s2lYtlamWz3Z9usymnsyAAA==" width="126.37" height="48" alt="Dribbble" style="width: auto; height: 58px;">
+
+              <img class="marq-p" src="data:image/webp;base64,UklGRggFAABXRUJQVlA4WAoAAAAQAAAAgAAALwAAQUxQSNACAAABkFRre95GLwQxqCAYgiAYghjUDGwGNgOFgctAEAzhgyAIz0I/djPNbhYRMQH6r+W3YetHW6n3W9/GFT+Eo+1uROr5M/jOdCM3fj6Dciv5J/ITp5mlgWxmxzMu55y/nnDLaXad0Q15a2BhaG7MT2QgDxiQnvEAD7idrq0j0rzFyYDdDShCCRr3f8HFaBpqboD5AYFp1M3Z/oCV4e2eggHrU3OBv6BU0cm/4NCT7gDMP7PxS/O2baGzbdvmei7EGHwnACTV/tCgC1val6A6GrBKcmGHss9v8wK2DsBXa1oLdY4jsTHq1kLTVifJv4Ds10Lb4ghmlt6s0E9O0lRd/oY3Bm2SpGjcvPwAkN9s+HKSKwCWwog3hsskST7f4HIPlNzn9/KxnRW7pKUCyjl3EkDZ5jC/AMxJUmqkGOZXxd4pMca5cfdXzEuSvwCCpK0FmK88gHnVUwE2SR7AJtVTAXAtU/1e5tV0F3BIUsgdyiTpqLzaM1AkHdWsdqiWf2dRdwaskvySG2RJGfhRvwBfUgZM/QKke1l9+6XQ8yOS/KsiSBeQBi4gtPJABvKbHDdcFXvTDemoFsmAPFCASToBGyjAz5uk1tSSAbm3Az+Va03V1sJ3IlAkbQBz5xsgvsECFN9IgEk6ANZWAIiS1jI1vqulY74RCpAkuarExlwq/wauABYlvwMkSb4ApEnyK4BJWoF9kl+pfQfSHGIGKF6SDuq8xCVTb5IWgOUXtNAs1OYlaakGi5cWxpMGBhfVa2PwkqRQcZ1pfkpHo1kmNbchmyS5c8j8A2VRvXPzdJXOCvCPKVone3Wjdcrm1IzWO5w626uTvSS5E0qM1rmi2u7VMB05533gzDkvDbl45us8gobnV75yWpwG5yPnnBanZhXllyMd0UmashnYJCksKaUlaDQcOV+L/tjWoC8A5vVBby3Uhz7Y3IifTC/gch9NYQv6byJWUDggEgIAABAOAJ0BKoEAMAA+kTqXSCWjIiEqtV8YsBIJZAYoA7UD6AEoon6oN2/ze8Oo20MXb587F6OfO36oD0APLf9lX/M+blq0ngAL6woKo9lqiCeeVLtiUPa9ADN2yLS1SWt16hILpnSnnsDQAQNs0nQp/z8bNs1MKLJ0jUgA/vn+Tv9ZHrtdJdKxF0P405f/n92eIwS9DF9EkVeWI5T24Be9jH7gfiyvtU459iSmyYBmuC80xb+0O0jTJx/Dq+4Fzj+0X+68z/981SIt//z3HXvd+zaNc9x/5D/Zj//NzlA+v8MfJkWqMSwwlELcFczY8/jr9FG9+7JvgoX2GTimU93tVF6P6bc4HgBskcclmf9VkkZrDyd3H9lqZlc8VE7qP63wxhwTF5ED9bsqsmsKZvJ5yxydM6U4EV1Y1ybfX5ju5sPHvrwJFQ8Ernc2sWHfoFt+HsB8Sn81xgaqYpLfn/kySfetbf5WLoNV588EtG5uoatdPzYOtOPOdj96JPbHIPfNhqMTty/I/zdkFc6HuCTIPVOGeNn9fwsg25skqIMUeC9iQeE7EpriVWvXTq6/hpqR8WOYxbIytLzt+Ysfe5oS/p7wmDjeYeqA5Fy6SyFAqzb8/wOX5vPu6+H4QvEPmQlG9+Nsq/WxOr7IfH7q280u8+vTfJvfT2mZrtQ1xw+RXXOcoNkeoYhlSVIEOeF6gu8WgAAA" width="128.63" height="58" alt="HubSpot" style="width: auto; height: 58px;">
+
+              <img class="marq-p" src="data:image/webp;base64,UklGRpQEAABXRUJQVlA4WAoAAAAQAAAAbgAALwAAQUxQSP0BAAABkBYBb5A9kVAHq4RKQAIOVgdfHYCDFwfFAXNQCUiIhEjgjjd5Erj93O4iAoIbSYqkqIXji6KeeQP9hxDbFQkZxZLawbfJedRseGTEZ8/GR4bRSW3cGmw12hWMSZEHVOkZknvI6Jv2IUDnkygtQIMXlbUEGV9+PBeugB/PVprBFZ0ck/NbjcIx5KYHbBbDEjHSPA1OdMdUYZymAkQfk3BvdbWtafoZMloQ0lvbUcqy1bZruw+50c3niSpuD6VVC5WbWRutSSs10VNmGconb4Zdaxxa25ty8/FmS8RoLIuoWQoZZVZGVsjqDMVhNVRK643ja2TMO16CyRRvjhtpqmtjqWo2nCccDFX0TjiGLkGPGO26Fez0KSkSyMqUHFRB915mVPPiUL/8odMUy387Nb+AjYLC/L5UcPEdfVFWxQoZvctinpkeUFTt/hIWcOBojDJG/7fx4JPxIqnj3STwI6tD1ypqkbeI0fYOzpr7JZTImhX7D/zuXtM7OGsOSe8fL0xvUcyzkRMzvvqAK1gmMm/iGpW3yGJ+o6KYC7rgc2+1dcGFX43R4Ri9xXTF4sjeDYbX5jVkZCFFSEOTrmCMSDZSgXK74pd1hodtJGsO3iXZZuQdprKCI8U3wjctFTF5zKYI9Xx0l1SP20q4N3h+xY1YxuSoHXIRfAxh+hczCABWUDggcAIAAPANAJ0BKm8AMAA+kUKZSiWjoiGmK8CwEglsANH1QVf+ZP3nzT64/WN5OKh1641f6T7APyl/u/cA/SfpZ+YD9ff2H96L8APcB6AH9K/0HWAegB+2/pgfu58Df9x/7PpN9QAGjsupcRJ4J+0KgC9rpmj5KaZ7IzXNAAD+9kc///sD5aJ1NxHdXYNyOapGHIgcHB9+cqu3OSKbOqb34+QG/5F1mnYMOcNxKmnOwghtqow1MXPKdQfHwkLBJsL5vlpCTUIdN58yqJfL5OXoGYHXpJNCfZw9oqrzhCBTzM33cca8Knig12N9xLUDim8LA8KSHQTNqi9P6cRmpXR2Auu40aRNxu23n8o/AroH6EMjSjJWxmuG+vZd1pHxSP92ukwEgWVk73Ki9/TqR3F2KmhIoizF6PQWVygf1Dtp2dnotLt6pi4i4iKuSS12K9KHSU6zCNgyULowQ5xPyzsDJOkbS0vT5HD63ZBYPwZI7euTydsu4DnwBj8/k/MExi1mF53k2qObmT7/xPkuSz6YquX0N/A0lIk5kFZzQcN8xcS6kHesGQyZx9OecvGOAqrf8Q1/jdoU9GnLvh2tOxj9ZDpGji3DqVlluoBct/8LtySCu0L/bsa3GOPP28km1wOmYIJezzeF5T6yn///MUSw+KqDpzP3JPcq64fjbxsC8ooBKTnJIuq9Q8QUHAxj8rCinvrjC640M1zD9raCrXd0f2aSGxPNXPgpx8Sd4aHAhoCrOnKExkJpYLSSo4Jy8XoHjIIiSpNzkTfYhaNGzG2TANAMBibAePEsVb1TxLX/QDbvYvIQtbZP8vMCW7mtYBh4/mAAAA==" width="110.57" height="58" alt="Zoom" style="width: auto; height: 58px;" class="">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRlwEAABXRUJQVlA4WAoAAAAQAAAAfAAALwAAQUxQSAEDAAABoFVrb91Q+iGIwRGEQDCEMBgzGDOIGaQMXAYZBoJgCIZgCP+DFJ9e5j7zEBETgP+9T4cNctqpN7nWmoHUerfs0tmHFV2QwwY5e0s3W13XSMrVu53prtRadyC13q8cqXGxSUCPg2EXHAzHHsnJxUuDJ9dzcEzGQwMlSUNjOBSADi7bSubtmXk71cngcn9d4+ovKwdvDcBFb+0KmBbGHecdH67RW7sCllfsAA76bsNNvRtc/AGlTwC24LHA8XiMgLPVHhgAoS8AdLrmNIVXcAFQ+grASNLuyFHrCDLSJNngu2sLQwCNNgDmBoBtkDT4pzMX7/RDATTXASA5prshgAYVADRJYD9TAaA7A4DqDKEmeY0ONxUApqsO0z3uMgD0BQCy5XKOn8nucs2VJQCy5XKOn5BBXwBgo89Bd3a3OVtI5+DiSnLmqqtLeg4uLpz0FT4FKbjcuPuxJifXP+Pk+t1B3xHmpafji4zesmr/mJPe8qbX0kY/9LMyfQYA+5REXwHguaIjUMQpyIG58Rpzho+63IC/Vjp9wa0EZcVeQ9+c0P/2Ad1ZMFx3B+PZ7UwAYO63gD6/wdwRTHnfcNP9ylAB5frYgeqmAsiBvmY4HqIn4+t9l+OhcjDugvQTNEAGSfZNj+kqXlOD9e1tOVjfX4Lk7jteJONu5kpyJrwNtlAKyVngZiv7tqW9WoS8YvIq6DMyBSq7AsBcuBbKAh4zsARUDgUgLWFRc3HQZzQLwkjcdQNIynkT+IRQVFURqqoiVFWVAJJy3gV+E6yKCtZ1rzUn3IuqCkJVVfyOSrkGSU7LK19YLX2DHJP386vkyZE/T2ve06Zpv74NKOTI+mGLStqXQQfJK39caiZI5OPbgDJIzivLx0g6JzkEhdTvgz4ZWk3yvq3YJDmrAEbD76I+ne+tJHmRbPm0ybApACX19wHQ5wjCaddZ857iPZfabPB+PhS+seL3U7LdvdeKINT5xO+rFnuXFcW9Fvz+yv6wF0177II/xG2vzfqYbo5+tbIr/rEFAFZQOCA0AQAAsAkAnQEqfQAwAD6RRp1LJaOioaQVWeiwEgliAJUDSnkiRfawH9V9gH5A0QH6e/sl74HoA82bqAOez9h/9zPSRA62RERERDlQNF+OF+W/s2zRTN2EtkAA/vtAAAKmmoeycaSRV+aW6ugtn4O0VveYlQ1nKFXOKT65x//Hj//jKP//F2//+LQE1Ne5A5z/X90Y9T0v9nLURF+eK/9PODDAUzX2UY94+RucFbRvqi6bGQWDdHN0PbOjf0SnwVFknbnGECiScbmtT/+jvn/dyJH1M3YmQhYJAGyeG57Xykg1nKFXQ/tlj0CnTf/KKwx+v/4wzL59fTpbeDXyBitjYuDbnATUc/xZ4CK3Lc/AFP9tZl4vjQfPpf/+Umxt/+qsrnEOhArw3un1EE0ZialYFX850ygAAAA=" width="124.11" height="58" alt="Amazon" style="width: auto; height: 58px;">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRqAEAABXRUJQVlA4WAoAAAAQAAAAfgAALwAAQUxQSNIDAAABoFRbe97meiCIQV8IgiAIZvAJghnEDGIGKgOXgSAIwgtBEM5AP23u+A4iYgL0P6Dp8ZY/F17uxbaseithK5ZW85ZV95r+Ay/G18cqgIcNc4C6Yx3g3LDOeHzMmKcPZaZ5ozBNG87YNxx6h/axAn48UD5U4W5wrQy4OuRVAr+BsMjgFjp8fcohK0H/jEHVtZWh6NkqkLVVIUkPHB8KgElA/MgBp244VwWSKqSVQxg0D+CSviF/KEGT5HD8QThLnl2QVCGtKgQ1iIsATRHaIsHP7PhclVQh/0EDyuSBL3WwVacrQNcywY8O+FlkuCQ9kD6UofyZMU4qyMC1DOBKUFcH3LrhXFxwSmrw9aFjI/0udMAnDspQVgZVN5yrDJcaxMUNWQrQ9eE0c4i/U3Rq3HjgWMXBwVYXXAau5ffkgPqpCFUSIOnwdmztOgToWieoEZr2MpTfFDg/ZeBShCapAuefZSh7XiD/wiGursEAm4SzlLf9Kp2lvIGgDLekh7HVy2bv8tpwsI0IHbC9DlXrEy4VqBrfTF97VllmPXBI+p4APQ4JiCuokt60LMkYi2S95eFkzNI/LyYpQzEgD4Vl3jFnXQ0Ikh7w2gHu4QK+dpIUAMrKpBtoJuXBJTlwShGqQ5OkDJQUHX52HFoKig/0NxRJavAj3at7owJFkg1kxeHSjCa9hiyJ8Z8CUxscbkkZfCODB0kKTA9JATilBFzD94YDhyTVob4Zo6Q08C4AXZLq0GPuwylJCTBJF9SNClnTOrgkJSDO8vCsEkAa4rD8kqRrmLchdjYvjRmapOBwT4JJHTQ/h/dwg2uWhroqwzHo6JO20jVz8EGHb4TJNXug26S4iY3QARsc7j2AKMkYz4kS+BkCkCbK0O94Qp/IHmh37nBOMnRZBU6NGX7k8DXTDT1IyoBJios8ZEkFOtRZhiKpwjUrcEoGpIkcDukGnyTg6cCl0RyKvuGaBQfekhyKJAUgS7EPt5SAE7AhOGRJB/QwGGCSKpRJBkwy4D2oMz01RgcPSsC/ITyMr6MCNsihxVdn7JYcihzcpFDANTZoJlmDKkkJOCWZQ5GkG3hJSj70KEnh1cFN0g2UM787dGd+aXox94e5mxLAUzqQJhHwp3ToNugbqNe7g9sQGuBPZd5rKbUDbhpvlj3GPrk0D33iFnzSo6ST5al5Zt6jpqEx96ipOfN+O5t30DzXod8mRYd+am0O/Q6SfQM1arQK9Bq1tgr027S+OtCLaX050K8g5acP7QraDSlFzaNpP8SgaYhB62CmXwYz/TKlGLQfU9QymOn/vgFWUDggqAAAANAFAJ0BKn8AMAA+kUKbSyWjoiGhbICwEgllANS8MEuYBO0oCz9477nhVvlBh8osMgyeXPSL+9AA/viHQP7a73snq8f8wzZ+zQ/4/KfTozQMQad0Z0Wfjn1fR0+UmAjaGFWjYFbRWjstMrlBUAKPiueJ/E1+olXdg56IeYYtW2ieoj/Kdiyh1ZK3Btf86mcuSxZQe/rmyj1s2lYtlamWz3Z9usymnsyAAA==" width="126.37" height="48" alt="Dribbble" style="width: auto; height: 58px;">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRggFAABXRUJQVlA4WAoAAAAQAAAAgAAALwAAQUxQSNACAAABkFRre95GLwQxqCAYgiAYghjUDGwGNgOFgctAEAzhgyAIz0I/djPNbhYRMQH6r+W3YetHW6n3W9/GFT+Eo+1uROr5M/jOdCM3fj6Dciv5J/ITp5mlgWxmxzMu55y/nnDLaXad0Q15a2BhaG7MT2QgDxiQnvEAD7idrq0j0rzFyYDdDShCCRr3f8HFaBpqboD5AYFp1M3Z/oCV4e2eggHrU3OBv6BU0cm/4NCT7gDMP7PxS/O2baGzbdvmei7EGHwnACTV/tCgC1val6A6GrBKcmGHss9v8wK2DsBXa1oLdY4jsTHq1kLTVifJv4Ds10Lb4ghmlt6s0E9O0lRd/oY3Bm2SpGjcvPwAkN9s+HKSKwCWwog3hsskST7f4HIPlNzn9/KxnRW7pKUCyjl3EkDZ5jC/AMxJUmqkGOZXxd4pMca5cfdXzEuSvwCCpK0FmK88gHnVUwE2SR7AJtVTAXAtU/1e5tV0F3BIUsgdyiTpqLzaM1AkHdWsdqiWf2dRdwaskvySG2RJGfhRvwBfUgZM/QKke1l9+6XQ8yOS/KsiSBeQBi4gtPJABvKbHDdcFXvTDemoFsmAPFCASToBGyjAz5uk1tSSAbm3Az+Va03V1sJ3IlAkbQBz5xsgvsECFN9IgEk6ANZWAIiS1jI1vqulY74RCpAkuarExlwq/wauABYlvwMkSb4ApEnyK4BJWoF9kl+pfQfSHGIGKF6SDuq8xCVTb5IWgOUXtNAs1OYlaakGi5cWxpMGBhfVa2PwkqRQcZ1pfkpHo1kmNbchmyS5c8j8A2VRvXPzdJXOCvCPKVone3Wjdcrm1IzWO5w626uTvSS5E0qM1rmi2u7VMB05533gzDkvDbl45us8gobnV75yWpwG5yPnnBanZhXllyMd0UmashnYJCksKaUlaDQcOV+L/tjWoC8A5vVBby3Uhz7Y3IifTC/gch9NYQv6byJWUDggEgIAABAOAJ0BKoEAMAA+kTqXSCWjIiEqtV8YsBIJZAYoA7UD6AEoon6oN2/ze8Oo20MXb587F6OfO36oD0APLf9lX/M+blq0ngAL6woKo9lqiCeeVLtiUPa9ADN2yLS1SWt16hILpnSnnsDQAQNs0nQp/z8bNs1MKLJ0jUgA/vn+Tv9ZHrtdJdKxF0P405f/n92eIwS9DF9EkVeWI5T24Be9jH7gfiyvtU459iSmyYBmuC80xb+0O0jTJx/Dq+4Fzj+0X+68z/981SIt//z3HXvd+zaNc9x/5D/Zj//NzlA+v8MfJkWqMSwwlELcFczY8/jr9FG9+7JvgoX2GTimU93tVF6P6bc4HgBskcclmf9VkkZrDyd3H9lqZlc8VE7qP63wxhwTF5ED9bsqsmsKZvJ5yxydM6U4EV1Y1ybfX5ju5sPHvrwJFQ8Ernc2sWHfoFt+HsB8Sn81xgaqYpLfn/kySfetbf5WLoNV588EtG5uoatdPzYOtOPOdj96JPbHIPfNhqMTty/I/zdkFc6HuCTIPVOGeNn9fwsg25skqIMUeC9iQeE7EpriVWvXTq6/hpqR8WOYxbIytLzt+Ysfe5oS/p7wmDjeYeqA5Fy6SyFAqzb8/wOX5vPu6+H4QvEPmQlG9+Nsq/WxOr7IfH7q280u8+vTfJvfT2mZrtQ1xw+RXXOcoNkeoYhlSVIEOeF6gu8WgAAA" width="128.63" height="58" alt="HubSpot" style="width: auto; height: 58px;">
+              
+              <img class="marq-p" src="data:image/webp;base64,UklGRlIDAABXRUJQVlA4WAoAAAAQAAAAkgAALwAAQUxQSPYCAAABoFRrcxBRKgmRUBKQEAk4mJKAg46DxkHaAeOgJCChJETCt4DQgfd6NbOIiAmQ//YmnbLZUmrdPAJa1V+VllKr79EY+vpRQbfF7ltdi9mcVUVEC4T+IgXWPKnKUN2h6m8KlfEWhP0keI1IqjmbrcCmf4FcTJ9GzDmbWSm1br5H8GVLf9wMRHrajRE7kHtWa50uWa11fsIHIP8ZEbtvtZaymOWsqnIslz5A6JUPUMbNZpZOykEfF5pkuH3Fnp4SQD6RdfdZHrfKjQOof8Cze2XAlGezZRCvH2Lvuvm+p8MC0NZR/DMkLdXd35ZOZrMGrGaWRM1s7qSluvvb0pmaWRbJ7839nb/LnNdDyhvIcUzT79Tpvw7BxSwZiBN1+q+TDLi8OXf9RtJywiLHz7BPAJG+mRpXQ8dNjauRem/6+1diZ226p2gD/AsNgM1scQAXWWttwFZrnS5oAGxmyw7gHcBL2Q7YKCLdIwbwvlaBluVYAExEJIAsx14FWpZjAbBOqIiINuDfEZ8G8L5JCsByJQEscu6AD1KARc4d8I7J6QrEiJIPLDfJByBfmA/amQHSmPmgnRkgncm5DZP10PSmtANNewXYpauHaUwBdunqYTqJ+9IOsKd7RAOIdMl7csjjvCeH/BTRBvC+SSaAbbuy99JNe0+fJcuBuEkWukXEgNbLhzTGgNbLh/Qc2Q7cJesVBcidCoSMmQBypwIhD0rxCPEL4sCeThSg9uyaOLCnkwmgjkmDJD8jxYUMEHOS9GpAaC9M9UoGiDlJejUgdIysX9UTWR8h2npSuNwmOa6c5wtSuNwmGZTiyuIA20EcaLdJviBLXIhJTlMMkNIuxCSjRKOXt1pLWdKJWJnTgOLudkWKu9uJqPmhuclF2zzCJ5ncvZ6ILn5obnI6uXvtzO5eRUSm1hm+XLo9aZJHJk1y9wysI5JqzmZLPOlvukDknGezpbxr3XyP4Hr6QVK4ty3yk9dLLcK91rUUszlPqvKr87KY5aya5H9CAVZQOCA2AAAAUAQAnQEqkwAwAD6RSKFMpaQjIiEoALASCWkAAAi1ErVq1atWrVq1atWmgAD++M7sQ8AAAAAA" width="145.55" height="58" alt="Notion" style="width: auto; height: 58px;">
+            
+            </p>
+          </marquee>
+        </div>
+
+        <!-- service section -->
+        <div class="service" id="services">
+          <div class="d-xxl-flex d-grid align-items-center"  style="color: black;">
+            <h1 class="display-5 text-center text-xxl-start lead fw-bold px-2 rounded-2"  style="background-color: #B9FE6A;">Services</h1>
+            <p class="lead ms-xxl-3 ms-2 col-xxl-8">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
+          </div>
+
+
+          <!--service card section-->
+          <div class="service ">
+            <div class="row mt-4 align-items-md-stretch hero my-md-5">
+              <div class="col-md-6  hero-sub my-4">
+                <div class="h-100 d-grid  p-xxl-4 p-sm-2 p-3  ser-card" style="background-color: #F2F2F2;">
+                  <b class="lead fs-2 text-start ps-4 mb-1"><a style="background-color: #B9FE6A;" class="text-dark px-2 rounded-4">Search engine</a></b>
+                  <b class="lead fs-2 text-start ps-4"><a style="background-color: #B9FE6A;" class="text-dark  px-2 rounded-4">optimization</a></b>
+                  <p><img src="./assets/service-img-1.png" width="165" height="129" class="float-end" alt=""></p>
+                  <div class="d-flex align-items-center px-sm-3"><a href="" style="background-color: black;" class="p-1 rounded-circle mx-3"> <img src="./assets/green-diagnol-arrow.png" width="30" height="30" alt=""></a> <p class=" fs-3 d-none d-sm-block">Learn More</p></div>
+                </div>
+              </div>
+              <div class="col-md-6  hero-sub my-4" >
+                <div class="h-100 d-grid  p-xxl-4 p-sm-2 p-3 ser-card " style="background-color: #B9FE6A;">
+                  <b class="lead fs-2 text-start ps-4  mb-1"><a style="background-color: #ffffff;" class="text-dark  px-2 rounded-4">Pay-per-click</a></b>
+                  <b class="lead fs-2 text-start ps-4 "><a style="background-color: #ffffff;" class="text-dark  px-2 rounded-4">advertising</a></b>
+                  <p><img src="./assets/service-img-2.png" width="165" height="129" class="float-end" alt=""></p>
+                  <div class="d-flex align-items-center px-sm-3"><a href="" style="background-color: black;" class="p-1 rounded-circle mx-3"> <img src="./assets/green-diagnol-arrow.png" width="30" height="30" alt=""></a> <p class=" fs-3 d-none d-sm-block">Learn More</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4 align-items-md-stretch hero my-md-5">
+              <div class="col-md-6  hero-sub my-4 ">
+                <div class="h-100 d-grid  p-xxl-4 p-sm-2 p-3  ser-card"  style="background-color: #191A24;">
+                  <b class="lead fs-2 text-start ps-4  mb-1"><a   style="background-color: #ffffff;" class="text-dark  px-2 rounded-4">Social media</a></b>
+                  <b class="lead fs-2 text-start ps-4 "><a   style="background-color: #ffffff;" class="text-dark  px-2 rounded-4">marketing</a></b>
+                  <p><img src="./assets/service-img-3.png" width="165" height="129" class="float-end" alt=""></p>
+                  <div class="d-flex align-items-center px-sm-3"><a href="" style="background-color: white;" class="p-1 rounded-circle mx-3"> <img src="./assets/black-diagnol-arrow.png" width="30" height="30" alt=""></a> <p class=" fs-3 d-none d-sm-block text-light">Learn More</p></div>
+                </div>
+              </div>
+              <div class="col-md-6  hero-sub my-4" >
+                <div class="h-100 d-grid  p-xxl-4 p-sm-2 p-3  ser-card" style="background-color: #F2F2F2;">
+                  <b class="lead fs-2 text-start ps-4  mb-1"><a   style="background-color: #ffffff;" class="text-dark  px-2 rounded-4">Email</a></b>
+                  <b class="lead fs-2 text-start ps-4 "><a   style="background-color: #ffffff;" class="text-dark  px-2 rounded-4">marketing</a></b>
+                  <p><img src="./assets/service-img-4.png" width="165" height="129" class="float-end" alt=""></p>
+                  <div class="d-flex align-items-center px-sm-3"><a href="" style="background-color: black;" class="p-1 rounded-circle mx-3"> <img src="./assets/green-diagnol-arrow.png" width="30" height="30" alt=""></a> <p class=" fs-3 d-none d-sm-block">Learn More</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4 align-items-md-stretch hero my-md-5">
+              <div class="col-md-6  hero-sub my-4" >
+                <div class="h-100 d-grid  p-xxl-4 p-sm-2 p-1  ser-card" style="background-color: #B9FE6A;">
+                  <b class="lead fs-2 text-start ps-4  mb-1"><a   style="background-color: #ffffff;" class="text-dark  px-2 rounded-4">Content</a></b>
+                  <b class="lead fs-2 text-start ps-4 "><a   style="background-color: #ffffff;" class="text-dark  px-2 rounded-4">Creation</a></b>
+                  <p><img src="./assets/service-img-5.png" width="165" height="129" class="float-end" alt=""></p>
+                  <div class="d-flex align-items-center px-sm-3"><a href="" style="background-color: black;" class="p-1 rounded-circle mx-3"> <img src="./assets/green-diagnol-arrow.png" width="30" height="30" alt=""></a> <p class=" fs-3 d-none d-sm-block">Learn More</p></div>
+                </div>
+              </div>
+              <div class="col-md-6  hero-sub my-4 ">
+                <div class="h-100 d-grid  p-xxl-4 p-sm-2 p-1  ser-card"  style="background-color: #191A24;">
+                  <b class="lead fs-2 text-start ps-4  mb-1"><a   style="background-color: #ffffff;" class="text-dark  px-2 rounded-4">Analytics and</a></b>
+                  <b class="lead fs-2 text-start ps-4 "><a   style="background-color: #ffffff;" class="text-dark  px-2 rounded-4">Tracking</a></b>
+                  <p><img src="./assets/service-img-6.png" width="165" height="129" class="float-end" alt=""></p>
+                  <div class="d-flex align-items-center px-sm-3"><a href="" style="background-color: white;" class="p-1 rounded-circle mx-3"> <img src="./assets/black-diagnol-arrow.png" width="30" height="30" alt=""></a> <p class=" fs-3 d-none d-sm-block text-light">Learn More</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- banner-section -->
+        <div class="banner my-5" style="color: black; margin-top: 15% !important;">
+          <div class="row align-items-md-stretch  hero bg-body-secondary" style=" border-radius: 50px;">
+            <div class="col-md-7 hero-sub ">
+              <div class="h-100 p-xxl-5 p-3 d-grid rounded-3">
+                
+                <h2 class="display-6">Let's make things happen</h2>
+                <p class="lead">Contact us today learn more about how our digital markting services can help your business grow and succeed online.</p>
+                <button class="rounded-2 hero-btn-2 lead">Example button</button>
+              </div>
+            </div>
+            <div class="col-md-5 hero-sub" style="min-height: 300px;">
+              <div class="h-100 p-md-5 p-sm-0">
+                <img src="./assets/banner-img.png" style="margin-top: -21%;margin-bottom: -10%;" class="banner-img d-block mx-auto img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- studies-section -->
+        <div class="studiex my-5" id="cases" style="margin-top: 15% !important;">
+          <div class="d-xxl-flex d-grid align-items-center" style="color: black;">
+            <h1 class="display-5 text-center text-xxl-start lead fw-bold px-2 rounded-2"  style="background-color: #B9FE6A;">Case Studies</h1>
+            <p class="lead ms-xxl-3 ms-2 col-xxl-8">Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies
+
+            </p>
+          </div>
+          <div class="row  my-5 align-items-md-stretch hero" style="color: #ffffff; border-radius: 50px !important; background-color: #191A24;" >
+            <div class="col-md-12  hero-sub ">
+              <div class="h-100 justify-content-around studies  p-xxl-5 p-3 d-flex ">
+                
+                <div class="col-md-3"><p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
+                  
+                  <span class="d-flex justify-content-xxl-start justify-content-center align-items-center fw-bold" style="color: #B9FE6A;">Learn More <img src="./assets/green-diagnol-arrow.png"  width="30" height="30" alt=""></span>
+                </div>
+                <img src="./assets/vertical-line.png" height="180" width="30" class="d-xxl-block  d-xl-block d-lg-block d-none" alt="">
+                <img src="./assets/horizontal-line.png" height="30" width="180" class="hor-img" alt="">
+                <div class="col-md-3"><p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.</p>
+                  
+                  <span class="d-flex justify-content-xxl-start justify-content-center align-items-center fw-bold" style="color: #B9FE6A;">Learn More <img src="./assets/green-diagnol-arrow.png"  width="30" height="30" alt=""></span>
+                </div>
+                <img src="./assets/vertical-line.png" height="180" width="30" class="d-xxl-block d-xl-block d-lg-block d-none" alt="">
+                <img src="./assets/horizontal-line.png" height="30" width="180" class="hor-img" alt="">
+                <div class="col-md-3"><p>For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.</p>
+                  
+                  <span class="d-flex justify-content-xxl-start justify-content-center align-items-center fw-bold" style="color: #B9FE6A;">Learn More <img src="./assets/green-diagnol-arrow.png"  width="30" height="30" alt=""></span>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQs Section -->
+        <div class="FAQs" id="FAQs" style="color: black; margin-top: 15% !important;">
+          <div class="d-xxl-flex d-grid align-items-center">
+          <h1 class="display-5 text-center text-xxl-start lead fw-bold px-2 rounded-2"  style="background-color: #B9FE6A;">Our Working Process</h1>
+          <p class="lead ms-xxl-3 ms-2 col-xxl-8">Step-by-Step Guide to Achieving Your Business Goals</p>
+          </div>
+          <!-- question-1 -->
+          <div class="  my-5 mb-4 faqs px-4" style="border-radius: 50px !important;">
+            <div class="container-fluid py-5 Q-A">
+              <div class="que d-flex justify-content-between align-items-center">
+                
+                <h1 class="display-6 d-flex"><span  class="display-1 fw-bold lead">01</span> &nbsp; &nbsp;Consultation</h1>
+                <p class=" border rounded-circle border-2 border-dark">
+                  <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                  <path fill="black" d="M18 12.998h-5v5a1 1 0 0 1-2 0v-5H6a1 1 0 0 1 0-2h5v-5a1 1 0 0 1 2 0v5h5a1 1 0 0 1 0 2" />
+                  </svg>
+                  <svg  class="minus" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                    <path fill="white" d="M18 12.998H6a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2" />
+                  </svg>
+                </p>
+              </div>
+              <div class="ans px-4">
+                <hr>
+                <p class="px-2">During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+              </div>
+               
+            </div>
+          </div>
+          <!-- question-2 -->
+          <div class=" block my-5 mb-4 faqs px-4" style="border-radius: 50px !important;">
+            <div class="container-fluid py-5 Q-A">
+              <div class="que d-flex justify-content-between align-items-center">
+                
+                <h1 class="display-6 "><span  class="display-1 fw-bold lead">02</span> &nbsp; &nbsp;Research and Strategy Development</h1>
+                <p class=" border rounded-circle border-2 border-dark">
+                  <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                  <path fill="black" d="M18 12.998h-5v5a1 1 0 0 1-2 0v-5H6a1 1 0 0 1 0-2h5v-5a1 1 0 0 1 2 0v5h5a1 1 0 0 1 0 2" />
+                  </svg>
+                  <svg  class="minus" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                    <path fill="white" d="M18 12.998H6a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2" />
+                  </svg>
+                </p>
+              </div>
+              <div class="ans px-4">
+                <hr>
+                <p class="px-2">After the consultation, we will conduct research to identify the best digital marketing strategies for your business. This will include keyword research, competitor analysis, and market research to develop a comprehensive strategy that will help you achieve your goals.</p>
+              </div>
+               
+            </div>
+          </div>
+          <!-- question-3 -->
+          <div class=" block my-5 mb-4 faqs px-4" style="border-radius: 50px !important;">
+            <div class="container-fluid py-5 Q-A">
+              <div class="que d-flex justify-content-between align-items-center">
+                
+                <h1 class="display-6 "><span  class="display-1 fw-bold lead">03</span> &nbsp; &nbsp;
+                  Implementation</h1>
+                <p class=" border rounded-circle border-2 border-dark">
+                  <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                  <path fill="black" d="M18 12.998h-5v5a1 1 0 0 1-2 0v-5H6a1 1 0 0 1 0-2h5v-5a1 1 0 0 1 2 0v5h5a1 1 0 0 1 0 2" />
+                  </svg>
+                  <svg  class="minus" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                    <path fill="white" d="M18 12.998H6a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2" />
+                  </svg>
+                </p>
+              </div>
+              <div class="ans px-4">
+                <hr>
+                <p class="px-2">Once the strategy has been developed and approved, we will begin implementing the digital marketing services outlined in the plan. This may include SEO optimization, PPC advertising, social media marketing, email marketing, and content creation.</p>
+              </div>
+               
+            </div>
+          </div>
+          <!-- question-4 -->
+          <div class=" block my-5 mb-4 faqs px-4" style="border-radius: 50px !important;">
+            <div class="container-fluid py-5 Q-A">
+              <div class="que d-flex justify-content-between align-items-center">
+                
+                <h1 class="display-6 "><span  class="display-1 fw-bold lead">04</span> &nbsp; &nbsp;Monitoring and Optimization</h1>
+                <p class=" border rounded-circle border-2 border-dark">
+                  <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                  <path fill="black" d="M18 12.998h-5v5a1 1 0 0 1-2 0v-5H6a1 1 0 0 1 0-2h5v-5a1 1 0 0 1 2 0v5h5a1 1 0 0 1 0 2" />
+                  </svg>
+                  <svg  class="minus" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                    <path fill="white" d="M18 12.998H6a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2" />
+                  </svg>
+                </p>
+              </div>
+              <div class="ans px-4">
+                <hr>
+                <p class="px-2">Throughout the campaign, we will monitor the performance of the digital marketing efforts and make adjustments as needed to optimize results. This may include adjusting keywords, ad copy, or targeting to improve performance and achieve the best possible results.</p>
+              </div>
+               
+            </div>
+          </div>
+          <!-- question-5 -->
+          <div class=" block my-5 mb-4 faqs px-4" style="border-radius: 50px !important;">
+            <div class="container-fluid py-5 Q-A">
+              <div class="que d-flex justify-content-between align-items-center">
+                
+                <h1 class="display-6 "><span  class="display-1 fw-bold lead">05</span> &nbsp; &nbsp;Reporting and Communication</h1>
+                <p class=" border rounded-circle border-2 border-dark">
+                  <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                  <path fill="black" d="M18 12.998h-5v5a1 1 0 0 1-2 0v-5H6a1 1 0 0 1 0-2h5v-5a1 1 0 0 1 2 0v5h5a1 1 0 0 1 0 2" />
+                  </svg>
+                  <svg  class="minus" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                    <path fill="white" d="M18 12.998H6a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2" />
+                  </svg>
+                </p>
+              </div>
+              <div class="ans px-4">
+                <hr>
+                <p class="px-2">We will provide regular reports on the performance of the digital marketing campaign, including key metrics such as website traffic, leads, and conversions. We will also be available to answer any questions and provide updates on the progress of the campaign.</p>
+              </div>
+               
+            </div>
+          </div>
+          <!-- question-6 -->
+          <div class=" block my-5 mb-4 faqs px-4" style="border-radius: 50px !important;">
+            <div class="container-fluid py-5 Q-A">
+              <div class="que d-flex justify-content-between align-items-center">
+                
+                <h1 class="display-6 "><span  class="display-1 fw-bold lead">06</span> &nbsp; &nbsp;Consultation</h1>
+                <p class=" border rounded-circle border-2 border-dark">
+                  <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                  <path fill="black" d="M18 12.998h-5v5a1 1 0 0 1-2 0v-5H6a1 1 0 0 1 0-2h5v-5a1 1 0 0 1 2 0v5h5a1 1 0 0 1 0 2" />
+                  </svg>
+                  <svg  class="minus" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                    <path fill="white" d="M18 12.998H6a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2" />
+                  </svg>
+                </p>
+              </div>
+              <div class="ans px-4">
+                <hr>
+                <p class="px-2">Our goal is to help your business grow and succeed online. We will continually work to improve the performance of the digital marketing campaign and identify new opportunities for growth. This may include testing new strategies, expanding into new markets, or refining existing efforts to achieve better results.</p>
+              </div>
+               
+            </div>
+          </div>
+          
+        </div>
+        
+
+
+
+        <!-- card section -->
+        <div class="card-sec"  style="color: #000000; margin-top: 15% !important;">
+
+          <div class="d-xxl-flex d-grid align-items-center">
+            <h1 class="display-5 text-center text-xxl-start lead fw-bold px-2 rounded-2"  style="background-color: #B9FE6A;">Team</h1>
+            <p class="lead ms-xxl-3 ms-2 col-xxl-8">Meet the skilled and experienced team behind our successful digital marketing strategies</p>
+          </div>
+          <!-- cards first row -->
+          <div class="row cards-row" style="margin-top: 5% !important;">
+
+            <div class="col-sm-4 mb-4 inner-card">
+              <div class="card">
+                <div class="card-body block">
+                  <div class="card-1div  d-flex justify-content-between align-items-end">
+                    <img src="./assets/card-img-1.png" alt="">&nbsp;&nbsp;&nbsp;
+                    <h1 class="lead fw-bold">John Smith <span class="lead"><br>CEO and Founder</span></h1>
+                    <img src="./assets/card-icon.png" class="card-icon align-self-start" alt="">
+                  </div>
+                  <div class="card-2div">
+                    <hr>
+                    <p>7+ years of experience in project management and team leadership. Strong organizational and communication skills.</p>
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 mb-4 inner-card">
+              <div class="card">
+                <div class="card-body block">
+                  <div class="card-1div  d-flex justify-content-between align-items-end">
+                    <img src="./assets/card-img-2.png" alt="">&nbsp;&nbsp;&nbsp;
+                    <h1 class="lead fw-bold">Jane Doe <span class="lead"><br>Operations Director</span></h1>
+                    <img src="./assets/card-icon.png" class="card-icon align-self-start" alt="">
+                  </div>
+                  <div class="card-2div">
+                    <hr>
+                    <p>7+ years of experience in project management and team leadership. Strong organizational and communication skills.</p>
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 mb-4 inner-card">
+              <div class="card">
+                <div class="card-body block">
+                  <div class="card-1div  d-flex justify-content-between align-items-end">
+                    <img src="./assets/card-img-3.png" alt="">&nbsp;&nbsp;&nbsp;
+                    <h1 class="lead fw-bold">Michael Brown<span class="lead"><br>Senior Specialist</span></h1>
+                    <img src="./assets/card-icon.png" class="card-icon align-self-start" alt="">
+                  </div>
+                  <div class="card-2div">
+                    <hr>
+                    <p>7+ years of experience in project management and team leadership. Strong organizational and communication skills.</p>
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- cards second row -->
+          <div class="row cards-row" style="margin-top: 5% !important;">
+
+            <div class="col-sm-4 mb-4 inner-card">
+              <div class="card">
+                <div class="card-body block">
+                  <div class="card-1div  d-flex justify-content-between align-items-end">
+                    <img src="./assets/card-img-4.png" alt="">&nbsp;&nbsp;&nbsp;
+                    <h1 class="lead fw-bold">Emily Johnson<span class="lead"><br>PPC Manager</span></h1>
+                    <img src="./assets/card-icon.png" class="card-icon align-self-start" alt="">
+                  </div>
+                  <div class="card-2div">
+                    <hr>
+                    <p>7+ years of experience in project management and team leadership. Strong organizational and communication skills.</p>
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 mb-4 inner-card">
+              <div class="card">
+                <div class="card-body block">
+                  <div class="card-1div  d-flex justify-content-between align-items-end">
+                    <img src="./assets/card-img-5.png" alt="">&nbsp;&nbsp;&nbsp;
+                    <h1 class="lead fw-bold">Brian Williams <span class="lead"><br>Media Specialist</span></h1>
+                    <img src="./assets/card-icon.png" class="card-icon align-self-start" alt="">
+                  </div>
+                  <div class="card-2div">
+                    <hr>
+                    <p>7+ years of experience in project management and team leadership. Strong organizational and communication skills.</p>
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 mb-4 inner-card">
+              <div class="card">
+                <div class="card-body block">
+                  <div class="card-1div  d-flex justify-content-between align-items-end">
+                    <img src="./assets/card-img-6.png" alt="">&nbsp;&nbsp;&nbsp;
+                    <h1 class="lead fw-bold">Sarah Kim<span class="lead"><br>Content Creator</span></h1>
+                    <img src="./assets/card-icon.png" class="card-icon align-self-start" alt="">
+                  </div>
+                  <div class="card-2div">
+                    <hr>
+                    <p>7+ years of experience in project management and team leadership. Strong organizational and communication skills.</p>
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center justify-content-sm-end align-items-center mt-5" >
+            <button class="rounded-3 btn-outline-dark bg-light hero-btn-2 lead"  type="button">See all team</button>
+          </div>
+
+        </div>
+
+        <!-- swiper div -->
+        <div class="slider " id="blog" style="color: #000000; margin-top: 15% !important;">
+          <div class="d-xxl-flex d-grid align-items-center mb-5">
+            <h1 class="display-5 text-center text-xxl-start lead fw-bold px-2 rounded-2"  style="background-color: #B9FE6A;">Testimonials</h1>
+            <p class="lead ms-xxl-3 ms-2 col-xxl-8">Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services.</p>
+          </div>
+
+          <!-- Swiper -->
+          <div class="swiper rounded-2 mySwiper " style="margin-top: 10% !important;"><br><br><br>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide ">
+
+                <div class="slider-main ">
+                  <p class="p-5 slider-para ">
+                    <svg class="first-logo"  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000" viewBox="0 0 36 36" class="_navbar__brand__icon_eexa8_41"><path d="M17.999 5.535l17.6-5.186L30.465 18 35.6 35.601l-17.601-5.136L.358 35.602l5.185-17.6L.358.358l17.65 5.186z" style="fill: inherit;"></path></svg> <br><br>
+                    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+                  </p>
+                  <p class="mt-3 display-6" style="color: #B9FE6A !important;">John Smith<span class="lead text-light"><br> Marketing Director at XYZ Corp</span></p>
+                </div>
+
+              </div>
+              <div class="swiper-slide ">
+
+                <div class="slider-main ">
+                  <p class="p-5 slider-para ">
+                    <svg class="first-logo"  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000" viewBox="0 0 36 36" class="_navbar__brand__icon_eexa8_41"><path d="M17.999 5.535l17.6-5.186L30.465 18 35.6 35.601l-17.601-5.136L.358 35.602l5.185-17.6L.358.358l17.65 5.186z" style="fill: inherit;"></path></svg> <br><br>
+                    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+                  </p>
+                  <p class="mt-3 display-6" style="color: #B9FE6A !important;">Jane Doe<span class="lead text-light"><br> Operations Director at XYZ Corp</span></p>
+                </div>
+
+              </div>
+              <div class="swiper-slide ">
+
+                <div class="slider-main ">
+                  <p class="p-5 slider-para ">
+                    <svg class="first-logo"  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000" viewBox="0 0 36 36" class="_navbar__brand__icon_eexa8_41"><path d="M17.999 5.535l17.6-5.186L30.465 18 35.6 35.601l-17.601-5.136L.358 35.602l5.185-17.6L.358.358l17.65 5.186z" style="fill: inherit;"></path></svg> <br><br>
+                    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+                  </p>
+                  <p class="mt-3 display-6" style="color: #B9FE6A !important;">Sarah Kim<span class="lead text-light"><br> Content Creator at XYZ Corp</span></p>
+                </div>
+
+              </div>
+              <div class="swiper-slide ">
+
+                <div class="slider-main ">
+                  <p class="p-5 slider-para">
+                    <svg class="first-logo"  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000" viewBox="0 0 36 36" class="_navbar__brand__icon_eexa8_41"><path d="M17.999 5.535l17.6-5.186L30.465 18 35.6 35.601l-17.601-5.136L.358 35.602l5.185-17.6L.358.358l17.65 5.186z" style="fill: inherit;"></path></svg> <br><br>
+                    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+                  </p>
+                  <p class="mt-3 display-6" style="color: #B9FE6A !important;">Brian Williams<span class="lead text-light"><br> Media Specialist at XYZ Corp</span></p>
+                </div>
+
+              </div>
+              <div class="swiper-slide ">
+
+                <div class="slider-main ">
+                  <p class="p-5 slider-para">
+                    <svg class="first-logo"  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000" viewBox="0 0 36 36" class="_navbar__brand__icon_eexa8_41"><path d="M17.999 5.535l17.6-5.186L30.465 18 35.6 35.601l-17.601-5.136L.358 35.602l5.185-17.6L.358.358l17.65 5.186z" style="fill: inherit;"></path></svg> <br><br>
+                    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+                  </p>
+                  <p class="mt-3 display-6" style="color: #B9FE6A !important;">Emily Johnson<span class="lead text-light"><br>PPC Manager at XYZ Corp</span></p>
+                </div>
+
+              </div>
+            </div>
+            <br><br><br><br>
+            <div class="swiper-button-next swiper-btn1"></div>
+            <div class="swiper-button-prev swiper-btn2"></div>
+          </div>
+
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              loop:true,
+              centredSlides:true,
+              keyboard:{
+                enabled:true
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+        </div>
+
+
+        <!-- contact -->
+        <div class="contact block" id="contact" style="color: #000000; margin-top: 15% !important;">
+          <div class="d-xxl-flex d-grid align-items-center mb-5">
+            <h1 class="display-5 text-center text-xxl-start lead fw-bold px-2 rounded-2"  style="background-color: #B9FE6A;">Contact Us</h1>
+            <p class="lead ms-xxl-3 ms-2 col-xxl-8">Connect with Us: Let's Discuss Your Digital Marketing Needs.</p>
+          </div>
+
+          
+            <div class="row align-items-center  border mt-5  rounded-3 bg-body-tertiary g-lg-5 py-5">
+              <div class="col-lg-4 text-center text-lg-start justify-content-end">
+                <img src="./assets/contact-img-1.png" class="contact-img-1 d-block mx-lg-auto img-fluid" alt="">
+                <img src="./assets/contact-img-2.png" class="contact-img-2 d-block mx-lg-auto img-fluid" alt="">
+              </div>
+              <div class="col-md-10 mx-auto col-lg-6">
+                <form class="p-4 p-md-5">
+                  <div class="d-flex gap-3">
+                    <div class="form-check">
+                      <input class="form-check-input" style="background-color: #B9FE6A; border: 1px solid #B9FE6A; color: #B9FE6A;" checked type="checkbox">
+                      <label class="form-check-label  lead" for="flexRadioDefault2">
+                        Say Hi
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" style="background-color: #B9FE6A; border: 1px solid #B9FE6A; color: #B9FE6A;" type="checkbox">
+                      <label class="form-check-label  lead" for="flexRadioDefault2">
+                        Get a Quote
+                      </label>
+                    </div>
+                  </div>
+                  <label for="exampleFormControlTextarea1" class="form-label">Name *</label>
+                  <div class="form-floating mb-3">
+                    
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Enter your name...</label>
+                  </div><label for="exampleFormControlTextarea1" class="form-label">Email *</label>
+                  <div class="form-floating mb-3">
+                    
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Enter email...</label>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button class="w-100 btn btn-lg hero-btn-2 mt-4" type="submit">Send messages</button>
+
+                </form>
+              </div>
+              
+            </div>
+
+
+        </div>
+        
+        <!-- footer -->
+        <div class="footer p-5 block" >
+          <div class="footer-first-div d-flex justify-content-between align-items-center">
+            <a href="./index.html#marquee"><img src="./assets/logo-2.png" class="d-block" alt=""></a>
+            <ul type="none" class="footer-ul d-flex justify-content-between align-items-center gap-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active " href="./index.html#about">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="./index.html#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="./index.html#cases">Use Cases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="./index.html#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="./index.html#blog">Blog</a>
+              </li>
+            </ul>
+            <div class="d-flex gap-3">
+              <!-- linkedin -->
+              <p class="p-2 footer-links bg-light rounded-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16">
+                  <path fill="black" d="M3.44 4.89c.8 0 1.44-.65 1.44-1.44s-.65-1.44-1.44-1.44S2 2.66 2 3.45s.65 1.44 1.44 1.44m2.81 1.09V14h2.48v-3.96c0-1.05.2-2.06 1.49-2.06s1.29 1.2 1.29 2.12V14H14V9.6c0-2.16-.46-3.82-2.98-3.82c-1.21 0-2.02.66-2.35 1.29h-.03v-1.1H6.26Zm-4.05 0h2.49V14H2.2z" />
+                </svg>
+              </p>
+              <!-- facebook -->
+              <p class="p-2 footer-links bg-light rounded-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                  <path fill="black" d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396z" />
+                </svg>
+              </p>
+              <!-- twitter -->
+              <p class="p-2 footer-links bg-light rounded-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                  <path fill="black" d="M18.89 7.012q1.212-.743 1.605-2.034a8.7 8.7 0 0 1-2.351.861c-.703-.756-1.593-1.14-2.66-1.14c-1.043 0-1.924.366-2.643 1.078a3.56 3.56 0 0 0-1.076 2.605c0 .309.039.585.117.819C8.806 9.096 6.26 7.82 4.254 5.364c-.34.601-.51 1.213-.51 1.846q0 1.953 1.645 3.089c-.625-.053-1.176-.211-1.645-.47c0 .929.273 1.705.82 2.388a3.62 3.62 0 0 0 2.115 1.291q-.47.119-.979.118q-.468.001-.664-.083c.23.757.664 1.371 1.291 1.841a3.65 3.65 0 0 0 2.152.743c-1.332 1.045-2.855 1.562-4.578 1.562c-.422 0-.721-.006-.902-.038C4.696 18.753 6.585 19.3 8.675 19.3q3.207 0 5.674-1.626c1.645-1.078 2.859-2.408 3.639-3.974a10.8 10.8 0 0 0 1.172-4.892V8.34A7.8 7.8 0 0 0 21 6.419a8 8 0 0 1-2.11.593" />
+                </svg>
+              </p>
+            </div>
+          </div>
+          <div class="footer-second-div mt-5" style="color: white;">
+            <div class="row ">
+              <div class="col-md-6">
+                <b class="lead px-3 fw-bold text-dark" style="background-color: #B9FE6A;">Contact Us:</b><br><br>
+                <p class="lead">Email: info@positivus.com</p>
+                <p class="lead">Phone: 555-567-8901</p>
+                <p class="lead">
+                  Address: 1234 Main St
+                  Moonstone City, Stardust State 12345</p>
+              </div>
+              <div class="d-flex p-3 justify-content-center align-items-center gap-3 col-md-6 bg-dark-subtle rounded-5">
+                <button class="rounded-5 btn-outline-dark bg-light btn-lg w-100 h-25" type="button" style="background-color: white !important; color:black; border: 1px solid #ffffff;">Email</button>
+                <button class="rounded-5 btn-outline-dark bg-light hero-btn-2 btn-lg w-100 h-25" type="button">Subcribe</button>
+              </div>
+            </div>
+          </div><br><br>
+          <hr class="border border-light border-2 opacity-100">
+          <div class="footer-third-div">
+            <p class="lead text-center text-light">© 2024 Positivus. Designed by <b><i> &nbsp;&nbsp; TUBA JAN &nbsp;&nbsp; </i></b> All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+      <script src="./app.js"></script>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      ></script>
+      <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+    </body>
+  </html>

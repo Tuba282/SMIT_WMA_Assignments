@@ -1,0 +1,221 @@
+* {
+  font-family: "Space Grotesk", sans-serif !important;
+}
+.block{
+  animation: appear 2s linear;
+  animation-timeline:view();
+  animation-range: 0% cover 40%;
+}
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: .5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+  
+}
+
+.first-logo {
+  transition: transform 2s ease;
+}
+.first-logo:hover {
+  transform: rotate(360deg);
+}
+.hero-btn-1:hover {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid black !important;
+}
+
+.ser-card {
+  border: 1px solid black;
+  border-radius: 50px;
+  box-shadow: 0px 10px 1px black;
+}
+.hero-btn-2 {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid black !important;
+}
+.hero-btn-2:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
+.marq-p {
+  filter: grayscale(100%) !important;
+  transition: 0.5s ease;
+  animation: move;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  to {
+    filter: grayscale(0%) !important;
+  }
+}
+.marq-p:hover {
+  filter: grayscale(0%) !important;
+}
+.hor-img {
+  display: none;
+}
+
+.Q-A .minus {
+  background-color: black;
+  border-radius: 50%;
+}
+.Q-A .minus,
+.Q-A .ans {
+  display: none;
+}
+.Q-A .que:hover + .ans,
+.Q-A .que:hover .minus {
+  display: block;
+}
+.Q-A .que:hover .plus {
+  display: none;
+}
+.faqs {
+  background-color: #f2f2f2 !important;
+  border: 1px solid black !important;
+  border-radius: 50px !important;
+  box-shadow: 0px 10px 1px black !important;
+}
+
+.card {
+  background-color: #f2f2f2 !important;
+  border: 1px solid black !important;
+  border-radius: 50px !important;
+  box-shadow: 0px 10px 1px black !important;
+}
+.card-icon {
+  /* margin-top: -106px !important; */
+}
+.swiper {
+  position: relative;
+  background-color: black;
+  padding: 2em !important;
+}
+.swiper-btn2 {
+  position: absolute;
+  top: 95%;
+  left: 38%;
+}
+.swiper-btn1 {
+  position: absolute;
+  top: 95%;
+  left: 58%;
+}
+.swiper-btn2:after,
+.swiper-btn1:after {
+  background-color: white !important;
+  font-size: 30px !important;
+  font-weight: 900;
+  padding: 10px;
+  color: #b9fe6a;
+}
+.slider-para {
+  /* width: 500px !important; */
+  background-color: #ffffff !important;
+  color: rgb(0, 0, 0);
+  border-radius: 50px 50px 50px 0px;
+}
+.swiper {
+  width: 100% !important;
+  min-height: 400px !important;
+}
+.contact-img-1 {
+  margin-left: 25% !important;
+}
+.contact-img-2 {
+  display: none !important;
+}
+.footer {
+  margin-top: 15% !important;
+  background: #000;
+  border-radius: 50px 50px 0px 0px;
+  color: white;
+}
+.footer-links:hover {
+  background-color: #b9fe6a !important;
+}
+@media (max-width: 991px) {
+  .hero {
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+  .hero-sub {
+    width: 90% !important;
+    height: 50% !important;
+    text-align: center !important;
+  }
+  .banner-img {
+    margin: 0% !important;
+  }
+  .cards-row {
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+  .inner-card {
+    width: 90% !important;
+  }
+  .contact-img-2 {
+    display: block !important;
+    margin: 0 auto;
+    margin-bottom: -40% !important;
+  }
+  .contact-img-1 {
+    display: none !important;
+  }
+  .footer-ul {
+    display: none !important;
+  }
+  .footer-second-div .row {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
+@media (max-width: 767px) and (min-width: 300px) {
+  .studies {
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+  .hor-img {
+    display: block;
+  }
+  .slider {
+    display: none !important;
+  }
+  .footer-first-div {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+}
+@media (max-width: 500px) and (min-width: 300px) {
+  .plus,
+  .minus {
+    display: none !important;
+  }
+  .card-icon {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .inner-card h1,
+  .que h1 {
+    font-size: 15px !important;
+  }
+  .inner-card h1 span,
+  .que h1 span,
+  .ans p {
+    font-size: 15px !important;
+  }
+  .footer-second-div .row {
+    display: none !important;
+  }
+}
