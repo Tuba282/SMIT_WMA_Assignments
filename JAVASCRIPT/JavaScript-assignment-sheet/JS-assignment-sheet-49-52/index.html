@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Assignments 49-52</title>
+    <link
+      rel="shotcut icon"
+      href="https://static.vecteezy.com/system/resources/thumbnails/012/697/298/small/3d-javascript-logo-design-free-png.png"
+    />
+    <!-- custome style sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <br /><br />
+    <h1>JavaScript <br />Assignments<br />Chapter 49-52</h1>
+    <br /><br />
+    <!-- Q-1 -->
+    <!-- <h4>
+      1. Create a signup form and display form data in your web page on
+      submission. <br /><br />
+    </h4>
+    <div class="signup-container">
+      <form class="signUp" id="signUp" onsubmit="signUp(event)">
+        <h1 class="heading">Sign Up</h1>
+        <div class="flex-box">
+          <input
+            type="text"
+            class="inputName"
+            id="get_firstName"
+            placeholder=" First Name ..."
+          />
+          <input
+            type="text"
+            class="inputName"
+            id="get_lastName"
+            placeholder=" Last Name ..."
+          />
+        </div>
+        <input
+          type="email"
+          class="inputField"
+          id="get_email"
+          placeholder=" Email ..."
+        />
+        <input
+          type="password"
+          class="inputField"
+          id="get_pswd"
+          placeholder=" Password ..."
+        />
+        <input
+          type="password"
+          class="inputField"
+          placeholder=" Confirm Password ..."
+        />
+        <div class="checkbox">
+          <input type="checkbox" />
+          <p class="checkbox">I agree to the terms and conditions</p>
+        </div>
+        <center>
+          <button class="signUp-btn" id="signUp-btn" type="submit">
+            Sign Up
+          </button>
+        </center>
+        <div class="checkbox">
+          <p class="checkbox">
+            Already have an acount?<a
+              href="JavaScript:void(0)"
+              style="color: white"
+              >Login here</a
+            >
+          </p>
+        </div>
+        <p style="color: white; text-align: center; font-size: 12px">
+          Copyright &copy; All rights Reserved | 2024
+        </p>
+      </form>
+
+      <div class="submission" id="submission">
+        <h1 class="heading">Congratulations</h1>
+        <p class="submit-text">You have successfully signed up</p>
+        <span class="submit-text" id="put_firstName">First Name</span>
+        <span class="submit-text" id="put_lastName">Last Name</span><br /><br />
+        <p class="submit-text" id="put_email">Email</p>
+        <p class="submit-text" id="put_pswd">Password</p>
+
+        <p class="submit-text">Welcome to our website</p>
+
+        <p style="color: white; text-align: center; font-size: 12px">
+          Copyright &copy; All rights Reserved | 2024
+        </p>
+      </div>
+    </div> -->
+    <!-- --------------------------------------------------- -->
+    <!-- --------------------------------------------------- -->
+    <!-- --------------------------------------------------- -->
+    <!-- --------------------------------------------------- -->
+
+    <!-- Q-2 -->
+
+    <!-- <h4>
+      2. Suppose in your webpage there is content area in which you have entered
+      your item details, but user can only see some details on first look. When
+      user clicks on “Read more” button, full detail of that particular item
+      will be displayed. <br /><br />
+    </h4>
+    <div class="card">
+      <img
+        src="https://lumiere-a.akamaihd.net/v1/images/olaf-hugging-snowgies_eefd1aa9.gif"
+      />
+      <div class="content">
+        <h1 class="title">Beautiful Day</h1>
+        <p class="description">
+          Enjoy the serenity and beauty of nature with this wonderful image that
+          brings calm and peace to your mind.
+        </p>
+        <p id="text" class="hide"></p>
+        <button id="more" onclick="toogle()" class="btn">Read more</button>
+      </div>
+    </div> -->
+
+    <!-- --------------------------------------------------- -->
+    <!-- --------------------------------------------------- -->
+    <!-- --------------------------------------------------- -->
+    <!-- --------------------------------------------------- -->
+
+    <!-- Q-3 -->
+
+    <h4>
+      3. In previous assignment you have created a tabular data using
+      javascript. Let's modify that. Create a form which takes student's details
+      and show each student detail in table. Each row of table must contain a
+      delete button and an edit button. On click on delete button entire row
+      should be deleted. On click on edit button, a hidden form will appear with
+      the values of that row. <br /><br />
+    </h4>
+    <div style="text-align: center">
+      <table id="myTable">
+        <tr>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>Class</th>
+          <th>Action</th>
+        </tr>
+        <tr class="tr">
+          <td>1</td>
+          <td>John</td>
+          <td>5th</td>
+          <td>
+            <button type="button" class="Edit" onclick="editRow(this)">Edit</button>
+            <button type="button" class="Del" onclick="deleteRow(this)">Delete</button>
+          </td>
+        </tr>
+        <tr class="tr">
+          <td>2</td>
+          <td>Doe</td>
+          <td>8th</td>
+          <td>
+            <button type="button" class="Edit" onclick="editRow(this)">Edit</button>
+            <button type="button" class="Del" onclick="deleteRow(this)">Delete</button>
+          </td>
+        </tr>
+        <tr class="tr">
+          <td>3</td>
+          <td>Sarah</td>
+          <td>5th</td>
+          <td>
+            <button type="button" class="Edit" onclick="editRow(this)">Edit</button>
+            <button type="button" class="Del" onclick="deleteRow(this)">Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <div id="editForm" style="display: none;">
+      <h3 style="font-size: 40px; margin: 10px 0px;">Edit Student</h3>
+      <form id="studentForm">
+        <label for="studentName">Name:</label>
+        <input class="formInput" type="text" id="studentName"><br><br>
+        <label for="studentClass">Class:</label>
+        <input class="formInput" type="text" id="studentClass"><br><br>
+        <button type="button" onclick="saveRow()">Save</button>
+      </form>
+    </div>
+  
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <script src="app.js"></script>
+  </body>
+</html>

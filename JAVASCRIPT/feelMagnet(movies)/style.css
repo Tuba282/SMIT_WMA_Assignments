@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif !important;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --Cream: #f4ebd0;
+  --Tan: #b68d40;
+  --Gold: #d6ad60;
+  --Charcoal: #122620;
+}
+
+.mainContainer {
+  /* max-width: 1920px;
+  margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--Charcoal);
+}
+a {
+  text-decoration: none;
+}
+#navbar {
+  width: 90%;
+  height: 60px;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  border-radius: 10px;
+  background-color: var(--red);
+}
+.button {
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+.button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--yellow) 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.button:active {
+  box-shadow: var(--yellow) 0 3px 7px inset;
+  transform: translateY(2px);
+}
+#navbar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+  color: var(--Cream);
+}
+#navbar .logo img {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+}
+#navbar .logo .webName {
+  width: 120px;
+  height: 15px;
+  align-self: center;
+}
+#navbar .navlinks {
+  font-size: 15px;
+  font-family: "K2D", serif;
+}
+#navbar .navlinks a {
+  color: var(--Cream) !important;
+}
+#navbar .search {
+  position: relative;
+}
+#navbar .search .searchIcon{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+#navbar .search input {
+  width: 180px;
+  border: 1px solid #d6ad6045;
+  outline: none;
+  border-radius: 5px;
+  background: transparent;
+  padding: 5px 10px 5px 40px;
+  font-size: 15px;
+  color: var(--Cream);
+  font-family: "K2D", serif;
+}
+#navbar .search input::placeholder {
+  color: var(--Cream);
+}
+/* heroSection */
+.heroSection{
+  height: 640px;
+  background: plum;
+}

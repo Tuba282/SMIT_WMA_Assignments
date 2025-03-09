@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin-Login</title>
+    <!-- favicon icon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/web-icon.png"
+      type="image/x-icon"
+    />
+    <!-- cdn link of iconify -->
+    <script src="https://code.iconify.design/1/1.0.0/iconify.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- loader -->
+    <div id="loader" style="display: none">
+      <img src="./assets/loader.gif" alt="" />
+    </div>
+    <div id="login-page">
+      <div class="loginDiv">
+        <div class="colored">
+          <h1 class="LoginTitle">
+            <img src="./assets/login-icon.png" width="50" height="50" />ADMIN.
+          </h1>
+          <p class="loginText">The Best ProDucts for your choose</p>
+          <ul id="loginLi" type="none"></ul>
+        </div>
+        <div class="form">
+          <form id="loginForm">
+            <h1 style="color: var(--blue)">Login</h1>
+            <label for="userName">Name:</label>
+            <input
+              type="text"
+              id="userName"
+              placeholder="Enter name"
+              required
+            />
+            <div id="nameError" class="error"></div>
+            <label for="userEmail">Email:</label>
+            <input
+              type="email"
+              id="userEmail"
+              placeholder="Enter email"
+              required
+            />
+            <div id="emailError" class="error"></div>
+            <label for="userPassword">Password:</label>
+            <input
+              type="password"
+              id="userPassword"
+              placeholder="Enter password"
+              required
+            />
+            <div id="passwordError" class="error"></div>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="Confirm Password"
+              required
+            />
+
+            <div id="confirmPasswordError" class="error"></div>
+            <div class="flexBox">
+              <!-- for gender -->
+              <input type="radio" name="gender" value="male" id="male" aria-checked="true" />
+              <label for="male">Male</label>
+              <input type="radio" name="gender" value="female" id="female" />
+              <label for="female">Female</label>
+            </div>
+            <button type="submit">Create Account</button>
+          </form>
+          <!--  -->
+          <div class="formClearBox" style="display: none">
+            <div class="overlay">
+              <p data-aos="zoom-in">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="192"
+                  height="192"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="var(--blue)"
+                    fill-rule="evenodd"
+                    d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Form submitted successfully!
+              </p>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </div>
+    <!-- <a href="./dashboard.html"></a> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- custom script file -->
+    <script src="index.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>

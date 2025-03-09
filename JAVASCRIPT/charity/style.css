@@ -1,0 +1,1305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, arial !important;
+}
+:root {
+  --orange: #fa6f1c;
+  --white: whitesmoke;
+}
+.main-container {
+  max-width: 1920px !important;
+  margin: 0 auto !important;
+}
+.topheader {
+  height: 40px !important;
+  background-color: #f1f1f190 !important;
+}
+.top-sub-header {
+  padding: 0em 5em !important;
+}
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+.top-num p {
+  font-size: 15px !important;
+}
+.topheader .top-icons p {
+  padding: 8px 12px !important;
+}
+.topheader .top-icons p:hover {
+  background-color: #dcd8d8c4 !important;
+}
+/* navbar- css */
+.navbar {
+  margin-top: 2% !important;
+}
+.navbar li,
+.nav-btn {
+  font-size: 14px !important;
+  word-spacing: 0.5em !important;
+  font-weight: 550 !important;
+}
+.navbar li a:hover {
+  color: var(--orange) !important;
+}
+.nav-li {
+  position: relative !important;
+}
+.nav-li .dropdown {
+  width: 180px !important;
+  opacity: 0 !important;
+  padding: 10px !important;
+  position: absolute !important;
+  background-color: black !important;
+  color: var(--white) !important;
+  z-index: 1000 !important;
+  top: 3.7em !important;
+  transition: all ease 0.5s;
+}
+.nav-li:hover .dropdown {
+  opacity: 1 !important;
+}
+.nav-li .dropdown p {
+  font-size: 12px !important;
+  font-weight: lighter !important;
+}
+.nav-li .dropdown p:hover {
+  border-right: 3px solid var(--orange);
+}
+.nav-btn,
+.short-btn {
+  border: 2px solid var(--orange) !important;
+  color: var(--orange);
+}
+.nav-btn:hover,
+.short-btn:hover {
+  color: var(--white);
+  background-color: var(--orange);
+}
+.found {
+  font-size: 13px !important;
+  font-weight: lighter !important;
+}
+/* body css */
+.slider {
+  min-height: 625px !important;
+}
+.slide-1 {
+  background: url("https://themes.wplook.com/html/charity/assets/images/temp/slider-intro-image2.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+.slide-1-sub {
+  position: relative !important;
+}
+.slide-1-sub .box1 {
+  background-color: var(--orange) !important;
+  color: var(--white) !important;
+  position: absolute;
+  left: 0%;
+  top: 13em;
+  width: 32%;
+  min-height: 250px !important;
+}
+.slide-1-sub .box1 h1 {
+  font-size: 25px !important;
+}
+.slide-1-sub .box1 p,
+.slide-1-sub .box1 button {
+  font-size: 13px !important;
+  font-weight: lighter !important;
+}
+.slide-2 {
+  background: url("https://themes.wplook.com/html/charity/assets/images/temp/slider-intro-image.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+.slide-2-sub .box2 {
+  background-color: var(--orange) !important;
+  color: var(--white) !important;
+  position: absolute;
+  left: 0%;
+  top: 31em;
+  width: 100%;
+  min-height: 150px !important;
+}
+.slide-2-sub .box2 .h1 {
+  font-weight: bold !important;
+  font-size: 20px !important;
+}
+.price {
+  width: 338px !important;
+  /* height: 100% !important; */
+  background-color: #fc8f30 !important;
+}
+.price span {
+  font-size: 10px !important;
+  text-align: center !important;
+  font-weight: lighter !important;
+}
+.price-p1,
+.price-p2 {
+  color: #a24109 !important;
+  font-weight: 500 !important;
+}
+.price-p1 {
+  border-right: 1px solid #ecb07c !important;
+}
+.urgent {
+  padding-top: 10px;
+  cursor: pointer;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-top: 1px solid #ecb07c !important;
+  position: relative;
+  color: #a24109 !important;
+  font-weight: 500 !important;
+}
+.urgent span {
+  font-size: 8px !important;
+  background: var(--white) !important;
+  color: black !important;
+  padding: 6px 10px !important;
+  position: absolute;
+  top: -14em !important;
+  left: 15em !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+  font-weight: 900 !important;
+  color: var(--white);
+}
+/* featured section css */
+/* .fetrd-img::before,.fetrd-img::after {
+  content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 1px;
+    margin: 0 6px;
+    background: #fa6f1c;
+} */
+
+.card-img {
+  /* width: 269px !important; */
+  height: 175px !important;
+}
+.card-img a {
+  border: 3px solid white;
+  background-color: transparent;
+  color: var(--white) !important;
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+.card-img a:hover {
+  background-color: var(--orange);
+  border: 3px solid white;
+}
+.card-img:hover a {
+  opacity: 1;
+}
+.card-img-1 {
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/featured-2.jpg)
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card-img-1:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.316), rgba(0, 0, 0, 0.307)),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/featured-2.jpg)
+      no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-img-2 {
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/featured-3.jpg)
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card-img-2:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.316), rgba(0, 0, 0, 0.307)),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/featured-3.jpg)
+      no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-img-3 {
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/featured-4.jpg)
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card-img-3:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.316), rgba(0, 0, 0, 0.307)),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/featured-4.jpg)
+      no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-img-4 {
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/featured-1.jpg)
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card-img-4:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.316), rgba(0, 0, 0, 0.307)),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/featured-1.jpg)
+      no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card-title {
+  font-size: 18px !important;
+}
+.card-text {
+  font-size: 13px !important;
+}
+.snd-card-title {
+  letter-spacing: 0.05em !important;
+}
+.baby-parent {
+  position: relative;
+}
+.baby-child {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  position: relative;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px !important;
+  height: 30px !important;
+}
+.carousel-control-prev {
+  left: -11em;
+  /* font-size: 1.5em; */
+  /* color: black !important; */
+  top: -21em;
+}
+.carousel-control-next {
+  right: -71em;
+  top: -23em;
+}
+/* Event section CSS */
+
+.event-news {
+  width: 570px !important;
+  height: 216px !important;
+}
+.evnt-img,
+.evnt-text {
+  width: 50% !important;
+  height: 100% !important;
+}
+.evnt-img {
+  width: 270px !important;
+  height: 178px !important;
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/news-image.jpg)
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.evnt-img p {
+  width: 100%;
+  padding: 5px 0px !important;
+  background-color: var(--orange);
+  position: absolute;
+  top: 9.6em !important;
+}
+.org-food:hover {
+  cursor: pointer;
+  color: var(--orange) !important;
+}
+.snd-car-prev-icon,
+.snd-car-next-icon {
+  background-color: transparent !important;
+  border: 1px solid black !important;
+}
+.snd-car-next {
+  position: absolute !important;
+  top: -18em !important;
+  left: 24em !important;
+}
+.snd-car-prev {
+  position: absolute !important;
+  top: -18em !important;
+  left: 26em !important;
+}
+/* staff section css */
+.line {
+  width: 30%;
+  height: 1px;
+  margin: 0 auto;
+  background-color: var(--orange);
+}
+.mem-img,
+.mem-text {
+  width: 50%;
+  border: 1px solid #e6e1e170;
+}
+.mem-text:hover {
+  background-color: #fa6f1c;
+  color: white !important;
+}
+.mem-text:hover p small {
+  color: white !important;
+}
+.mem-text:hover .line {
+  background-color: white;
+}
+.mem-text span {
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: white;
+}
+.mem-img img {
+  width: 100% !important;
+  height: 100%;
+}
+.third-car-prev-icon,
+.third-car-next-icon {
+  background-color: transparent !important;
+  border: 1px solid black !important;
+}
+.third-car-prev {
+  top: -36em !important;
+  left: 65em !important;
+}
+.third-car-next {
+  top: -38.5em !important;
+  left: 68em !important;
+}
+/* about section css */
+.short-btn {
+  width: 200px;
+  height: 40px;
+}
+/* footer css */
+.footer {
+  background: url(https://themes.wplook.com/html/charity/assets/images/footer-bg.png)
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footer-link {
+  cursor: pointer;
+  text-transform: uppercase !important;
+}
+.footer-link:hover {
+  color: white !important;
+}
+.Go {
+  margin-left: -10px;
+}
+/* Staff css */
+.staff-content {
+  width: 100% !important;
+  height: 220px !important;
+  position: relative;
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/main-image-3.jpg)
+    no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.staff-div {
+  position: absolute;
+  left: 11em;
+  top: 3em;
+  padding: 2em;
+  letter-spacing: 0.2em;
+}
+.staff-div p {
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--white);
+}
+/* Event css */
+.event-content {
+  width: 100% !important;
+  height: 220px !important;
+  position: relative;
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/main-image-1.jpg)
+    no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.event-div {
+  position: absolute;
+  left: 11em;
+  top: 3em;
+  padding: 2em;
+  letter-spacing: 0.2em;
+}
+.event-div p {
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--white);
+}
+.Event-card {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.event-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 20px !important;
+  align-items: center !important;
+  justify-content: space-evenly !important;
+}
+.eve-card {
+  width: 380px !important;
+  min-height: 500px !important;
+}
+.more {
+  width: 87px;
+  height: 35px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: var(--orange);
+  background-color: white;
+  border: 2px solid var(--orange);
+}
+.more:hover {
+  background-color: var(--orange);
+  color: white;
+}
+.about {
+  width: 100% !important;
+  min-height: 700px !important;
+  display: flex !important;
+  padding: 0em 3em !important;
+  justify-content: center !important;
+  gap: 0em 3em !important;
+}
+.long-side {
+  width: 70% !important;
+  height: 100% !important;
+  padding: 2em !important;
+}
+.short-side {
+  width: 30% !important;
+  height: 100% !important;
+  padding: 1em !important;
+}
+.about-carousel img {
+  width: 100% !important;
+  height: 300px !important;
+}
+.about-carousel-prev-btn,
+.about-carousel-next-btn {
+  background-color: rgba(0, 0, 0, 0.378) !important;
+  border: 2px solid black !important;
+  color: var(--white) !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+.about-carousel-prev-btn:hover,
+.about-carousel-next-btn:hover {
+  background-color: var(--orange) !important;
+}
+.about-carousel-prev-btn {
+  position: absolute;
+  top: 10em !important;
+  left: 13em;
+}
+.about-carousel-next-btn {
+  position: absolute;
+  top: 12em !important;
+  left: -28em;
+}
+.about-card-div {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.about-card-div .about-card {
+  padding: 2em !important;
+  display: grid !important;
+  gap: 20px 0px !important;
+}
+.ques-p {
+  border-left: 2px solid var(--orange) !important;
+}
+/* facebook */
+.share-icons .facebook {
+  width: 40px !important;
+  height: 35px !important;
+  padding: 5px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 2px solid #3a559f !important;
+  background-color: #3a559f !important;
+}
+.share-icons .facebook:hover {
+  background-color: white !important;
+}
+.share-icons .facebook svg path:hover {
+  fill: #3a559f !important;
+}
+/* twitter */
+.share-icons .twitter {
+  width: 40px !important;
+  height: 35px !important;
+  padding: 5px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 2px solid #1abdf3 !important;
+  background-color: #1abdf3 !important;
+}
+.share-icons .twitter:hover {
+  background-color: white !important;
+}
+.share-icons .twitter svg path:hover {
+  fill: #1abdf3 !important;
+}
+/* google */
+.share-icons .google {
+  width: 40px !important;
+  height: 35px !important;
+  padding: 5px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 2px solid #fa501c !important;
+  background-color: #fa501c !important;
+}
+.share-icons .google:hover {
+  background-color: white !important;
+}
+.share-icons .google svg path:hover {
+  fill: #fa501c !important;
+}
+/* linkedin */
+.share-icons .linkedin {
+  width: 40px !important;
+  height: 35px !important;
+  padding: 5px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 2px solid #3a7d9f !important;
+  background-color: #3a7d9f !important;
+}
+.share-icons .linkedin:hover {
+  background-color: white !important;
+}
+.share-icons .linkedin svg path:hover {
+  fill: #3a7d9f !important;
+}
+.orange:hover {
+  cursor: pointer !important;
+  color: var(--orange) !important;
+}
+.reply {
+  padding: 2px 0px !important;
+  width: 60px !important;
+  text-align: center;
+  background-color: #fa6f1c !important;
+  color: white !important;
+}
+.about-contact {
+  width: 100% !important;
+}
+.about-contact input {
+  width: 50% !important;
+  height: 40px !important;
+  border: none !important;
+  padding: 10px 0em !important;
+  border-bottom: 2px solid grey !important;
+}
+textarea {
+  width: 100% !important;
+  border: none !important;
+  padding: 10px 0em !important;
+  border-bottom: 2px solid grey !important;
+}
+.submit-btn {
+  width: 100px;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 0.02em !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: var(--orange);
+}
+.pop {
+  width: 100% !important;
+  height: 65px !important;
+}
+.pop-img {
+  width: 20% !important;
+  padding: 5px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.img1 {
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/popular-post-1.jpg)
+    no-repeat;
+  position: relative;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.img1:hover {
+  background: linear-gradient(#fa6d1cc4, #fa6d1cc4),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/popular-post-1.jpg);
+}
+
+.img2 {
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/popular-post-2.jpg)
+    no-repeat;
+  position: relative;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.img2:hover {
+  background: linear-gradient(#fa6d1cc4, #fa6d1cc4),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/popular-post-2.jpg);
+}
+.img3 {
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/popular-post-3.jpg)
+    no-repeat;
+  position: relative;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.img3:hover {
+  background: linear-gradient(#fa6d1cc4, #fa6d1cc4),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/popular-post-3.jpg);
+}
+
+.pop-img img {
+  opacity: 0 !important;
+  transition: all ease 0.3s;
+}
+.pop-img:hover img {
+  cursor: pointer !important;
+  opacity: 1 !important;
+}
+.pop-text {
+  width: 70% !important;
+  padding: 5px !important;
+}
+/* up-comming events section css */
+.up-img {
+  max-width: 100% !important;
+  height: 270px !important;
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/event-image-3.jpg)
+    no-repeat;
+  position: relative;
+  background-position: center !important;
+  background-size: cover !important;
+  object-fit: cover;
+}
+.up-img .aug {
+  color: white !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  position: absolute;
+  top: 10.5em !important;
+  left: 14.5em !important;
+  background-color: var(--orange);
+}
+.up-img .aug span {
+  display: block !important;
+  text-align: center !important;
+  height: 30px !important;
+  background-color: black !important;
+}
+.pages span {
+  margin: 0px 5px !important;
+  width: 10px !important;
+  height: 10px !important;
+  opacity: 1 !important;
+  border-radius: 0 !important;
+  background-color: #cccccc !important;
+}
+.pages span:hover {
+  cursor: pointer !important;
+  background-color: var(--orange) !important;
+}
+.hover-btns {
+  width: 100%;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0px 5px !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+.hover-btns p {
+  height: 25px !important;
+  padding: 15px 10px !important;
+  font-size: 14px !important;
+  border: 1px solid black !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-transform: uppercase !important;
+}
+.hover-btns p:hover {
+  background-color: var(--orange) !important;
+  color: white !important;
+  cursor: pointer !important;
+  border: 1px solid var(--orange) !important;
+}
+.gal-img {
+  width: 100% !important;
+  max-height: 270px !important;
+  gap: 10px !important;
+  flex-wrap: wrap !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+/* gallery image -1 */
+.gal-img .img-1 {
+  width: 75px !important;
+  height: 70px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/gallery-widget-1.jpg)
+    no-repeat;
+  position: relative;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.gal-img .img-1 svg {
+  transition: all ease 0.3s !important;
+  opacity: 0 !important;
+}
+.gal-img .img-1:hover {
+  background: linear-gradient(#fa6d1cc4, #fa6d1cc4),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/gallery-widget-1.jpg);
+}
+.gal-img .img-1:hover svg {
+  opacity: 1 !important;
+}
+/* gallery image -2 */
+.gal-img .img-2 {
+  width: 75px !important;
+  height: 70px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/gallery-widget-2.jpg)
+    no-repeat;
+  position: relative;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.gal-img .img-2 svg {
+  transition: all ease 0.3s !important;
+  opacity: 0 !important;
+}
+.gal-img .img-2:hover {
+  background: linear-gradient(#fa6d1cc4, #fa6d1cc4),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/gallery-widget-2.jpg);
+}
+.gal-img .img-2:hover svg {
+  opacity: 1 !important;
+}
+/* gallery image -3 */
+.gal-img .img-3 {
+  width: 75px !important;
+  height: 70px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/gallery-widget-3.jpg)
+    no-repeat;
+  position: relative;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.gal-img .img-3 svg {
+  transition: all ease 0.3s !important;
+  opacity: 0 !important;
+}
+.gal-img .img-3:hover {
+  background: linear-gradient(#fa6d1cc4, #fa6d1cc4),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/gallery-widget-3.jpg);
+}
+.gal-img .img-3:hover svg {
+  opacity: 1 !important;
+}
+/* gallery image -4 */
+.gal-img .img-4 {
+  width: 75px !important;
+  height: 70px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/gallery-widget-2.jpg)
+    no-repeat;
+  position: relative;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.gal-img .img-4 svg {
+  transition: all ease 0.3s !important;
+  opacity: 0 !important;
+}
+.gal-img .img-4:hover {
+  background: linear-gradient(#fa6d1cc4, #fa6d1cc4),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/gallery-widget-2.jpg);
+}
+.gal-img .img-4:hover svg {
+  opacity: 1 !important;
+}
+
+/* gallery image -5 */
+.gal-img .img-5 {
+  width: 75px !important;
+  height: 70px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/gallery-widget-3.jpg)
+    no-repeat;
+  position: relative;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.gal-img .img-5 svg {
+  transition: all ease 0.3s !important;
+  opacity: 0 !important;
+}
+.gal-img .img-5:hover {
+  background: linear-gradient(#fa6d1cc4, #fa6d1cc4),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/gallery-widget-3.jpg);
+}
+.gal-img .img-5:hover svg {
+  opacity: 1 !important;
+}
+
+/* gallery image -6 */
+.gal-img .img-6 {
+  width: 75px !important;
+  height: 70px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/gallery-widget-4.jpg)
+    no-repeat;
+  position: relative;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.gal-img .img-6 svg {
+  transition: all ease 0.3s !important;
+  opacity: 0 !important;
+}
+.gal-img .img-6:hover {
+  background: linear-gradient(#fa6d1cc4, #fa6d1cc4),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/gallery-widget-4.jpg);
+}
+.gal-img .img-6:hover svg {
+  opacity: 1 !important;
+}
+.contact-card-div {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+.contact-card-div .contact-card {
+  width: 40% !important;
+}
+/* causes section css */
+.causes-content {
+  width: 100% !important;
+  height: 220px !important;
+  position: relative;
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/main-image-2.jpg)
+    no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.percent-p {
+  position: relative;
+}
+.percent-tag {
+  position: absolute;
+  font-size: 14px !important;
+  min-height: 7px !important;
+  top: -5em !important;
+  left: 6em !important;
+  background-color: #fa6f1c !important;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    58% 76%,
+    46% 99%,
+    33% 76%,
+    0% 75%
+  );
+}
+.cause-card-img {
+  position: relative;
+}
+.cause-card-img span {
+  position: absolute;
+  font-size: 13px !important;
+  top: 1em !important;
+  left: 3em !important;
+}
+.pagination p:hover {
+  cursor: pointer;
+  background-color: var(--orange) !important;
+  border: 1px solid var(--orange) !important;
+  color: var(--white) !important;
+}
+.music-img {
+  width: 100%;
+  min-height: 200px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative;
+}
+.music-img-1 {
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/upcoming-event.jpg)
+    no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.music-img-1:hover {
+  background: linear-gradient(#fa6d1cc4, #fa6d1cc4),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/upcoming-event.jpg);
+}
+.music-img-2 {
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/latest-project-1.jpg)
+    no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.music-img-2:hover {
+  background: linear-gradient(#fa6d1cc4, #fa6d1cc4),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/latest-project-1.jpg);
+}
+.music-img-3 {
+  background: url(https://themes.wplook.com/html/charity/assets/images/temp/latest-project-2.jpg)
+    no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.music-img-3:hover {
+  background: linear-gradient(#fa6d1cc4, #fa6d1cc4),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/latest-project-2.jpg);
+}
+.music-img svg {
+  position: absolute;
+  opacity: 0 !important;
+  transition: all ease 0.5s !important;
+}
+.music:hover .music-img svg {
+  opacity: 1 !important;
+}
+/* blog section css */
+.gelia {
+  padding: 5px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #fff !important;
+  position: absolute !important;
+  top: 51em !important;
+  left: 175px;
+}
+.blog-3rd-cont {
+  width: 100%;
+  height: 357px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.087), rgba(0, 0, 0, 0.128)),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/post-image-3.jpg)
+      no-repeat;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.blog-3rd-cont:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.532), rgba(0, 0, 0, 0.299)),
+    url(https://themes.wplook.com/html/charity/assets/images/temp/post-image-3.jpg);
+}
+.kelia {
+  padding: 5px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #fff !important;
+  position: absolute !important;
+  top: -2em !important;
+  /* left: 75px; */
+}
+.blog-4th-cont {
+  width: 100%;
+  height: 200px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 2em;
+  border-left: 1px solid #cacaca !important;
+  background-color: #f0f1f5 !important;
+}
+.quotes {
+  position: absolute !important;
+  top: -2em !important;
+}
+.round-pages {
+  width: 100%;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.round-pages p {
+  margin: 10px !important;
+  width: 15px !important;
+  height: 15px !important;
+  opacity: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 0 !important;
+  border-radius: 50% !important;
+  background-color:#C65410 !important;
+}
+.round-pages p:hover {
+  cursor: pointer !important;
+  background-color: #97400C !important;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+@media (max-width: 1399px) {
+  .carousel-control-prev {
+    left: 22em;
+    top: -60.1em;
+  }
+  .carousel-control-next {
+    left: 32em;
+    top: -62em;
+  }
+  .third-car-prev {
+    top: -36em !important;
+    left: 56em !important;
+  }
+  .third-car-next {
+    top: -38.5em !important;
+    left: 58em !important;
+  }
+}
+@media (max-width: 1199px) {
+  .event {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .event-sub {
+    width: 100% !important;
+    /* justify-self: center !important; */
+  }
+  .staff-flex {
+    flex-wrap: wrap-reverse !important;
+  }
+  .third-car-prev {
+    top: -97em !important;
+    left: 47em !important;
+  }
+  .third-car-next {
+    top: -99.5em !important;
+    left: 49em !important;
+  }
+}
+@media (max-width: 991px) {
+  .slide-1-sub .box1 {
+    width: 40%;
+  }
+  .carousel-control-prev {
+    left: 29em;
+    top: -60.1em;
+  }
+  .third-car-prev {
+    top: -69em !important;
+    left: 32em !important;
+  }
+  .third-car-next {
+    top: -71.5em !important;
+    left: 35em !important;
+  }
+  .about-card-div {
+    flex-wrap: wrap !important;
+  }
+  .about {
+    flex-wrap: wrap !important;
+  }
+  .long-side,
+  .short-side {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 1em !important;
+  }
+  .about {
+    gap: 0em !important;
+    padding: 0em !important;
+  }
+  .up-img .aug {
+    left: 29.5em !important;
+  }
+  .music-img {
+    min-height: 400px !important;
+  }
+}
+@media (max-width: 767px) {
+  .slide-1-sub .box1 {
+    width: 52%;
+  }
+  .slide-2-sub .box2 {
+    top: 22em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+  .event-news {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .evnt-img {
+    width: 100% !important;
+    min-height: 425px !important;
+  }
+  .evnt-text {
+    width: 100% !important;
+    height: 50% !important;
+    margin-top: 2em !important;
+  }
+  .evnt-img p {
+    position: static;
+  }
+  .mem-img {
+    width: 45%;
+  }
+  .mem-text {
+    width: 55%;
+    border: 1px solid #e6e1e170;
+  }
+  .up-img .aug {
+    left: 0em !important;
+  }
+}
+@media (max-width: 575px) {
+  .topheader {
+    min-height: 40px !important;
+  }
+  .top-sub-header {
+    padding: 0em 2em !important;
+  }
+  .topheader .top-icons p {
+    border: none !important;
+  }
+  .navbar {
+    margin-top: 12% !important;
+  }
+  .slide-1-sub .box1 {
+    width: 90%;
+    top: 19em;
+  }
+  .staff {
+    display: grid !important;
+  }
+  .mem-img,
+  .mem-text {
+    width: 100%;
+    border: 1px solid #e6e1e170;
+  }
+  .short-btn {
+    width: 100%;
+    height: 100%;
+    padding: 5px !important;
+  }
+  .Go {
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+  }
+  .event-div,
+  .staff-div {
+    left: 2em;
+  }
+}
+@media (max-width: 425px) {
+  .slide-1-sub .box1 {
+    top: 7em;
+  }
+  .dot {
+    display: none !important;
+  }
+}
+
+/* 
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+*/

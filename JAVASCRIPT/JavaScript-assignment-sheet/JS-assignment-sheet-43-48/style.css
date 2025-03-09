@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: kids;
+  src: url(./Comfy\ Feeling.otf);
+}
+html,
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.441), rgba(0, 0, 0, 0.509)),
+    url(https://png.pngtree.com/background/20210717/original/pngtree-assignments-school-education-colorful-cool-picture-image_1428192.jpg)
+      no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  letter-spacing: 0.1em;
+  word-spacing: 0.3em;
+  padding: 2em;
+}
+h1 {
+  font-family: kids;
+  font-size: 40px;
+  padding: 20px;
+  letter-spacing: 0.2em;
+}
+a {
+  text-decoration: none;
+}
+.bigBox {
+  width: 1000px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+}
+.box {
+  width: 300px;
+  height: 100%;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #eee;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.box img {
+  width: 100%;
+  height: 90%;
+  border-radius: 12px;
+  object-fit: cover;
+  filter: drop-shadow(5px 5px 10px #000000);
+}
+h3 {
+  font-size: 15px;
+  text-align: center;
+  color: black;
+  margin: 5px 0px;
+  letter-spacing: 0.1em;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  border-radius: 5px;
+  color: black;
+}
+.img-container {
+  width: 50%;
+  height: 300px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  filter: drop-shadow(5px 5px 10px #000000);
+}
+.q4-img {
+  width: 95%;
+  height: 93%;
+  border-radius: 12px;
+  object-fit: cover;
+  filter: drop-shadow(1px 1px 10px #00000098);
+}
+.counter {
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#count {
+  font-size: 50px;
+  font-size: 600;
+  color: black;
+}
+.flex-box {
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+}

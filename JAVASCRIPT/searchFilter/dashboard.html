@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin-Dashboard</title>
+    <!-- favicon icon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/web-icon.png"
+      type="image/x-icon"
+    />
+    <!-- cdn link of iconify -->
+    <script src="https://code.iconify.design/1/1.0.0/iconify.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div id="dashboard">
+      <!-- sideBar -->
+      <div class="sidebar">
+        <div class="logo">
+          <h1 class="LoginTitle">
+            <img src="./assets/web-icon.png" width="40" height="40" />ADMIN.
+          </h1>
+        </div>
+        <ul type="none" id="dashboardPages">
+          <!-- list append from JS file -->
+        </ul>
+        <div class="discount">
+          <p>Go Pro Account</p>
+          <span>Save 25%</span><br />
+          <img src="./assets/discount-img.png" width="100" height="100" />
+        </div>
+        <div class="flexBox">
+          <img
+            src="./assets/userBoy.png"
+            id="userAvatar"
+            width="60"
+            height="60"
+          />
+          <div>
+            <p id="gotUserName">Alice</p>
+            <span>free Account</span>
+          </div>
+        </div>
+        <!-- toggle bar -->
+        <svg
+          id="toggle"
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill=" #010080"
+            stroke=" #010080"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2.1"
+            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+          />
+        </svg>
+      </div>
+      <!-- main Dashboard Content -->
+      <div class="mainContent">
+        <div class="firstContent">
+          <h1 style="color: var(--blue)">
+            Hello Dear , <span class="gotUserName"></span>👋🏻
+          </h1>
+          <div class="MsgIcons">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="none"
+                  stroke="#fff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="10"
+                  stroke-width="1.5"
+                  d="m21 21l-4-4m2-6a8 8 0 1 1-16 0a8 8 0 0 1 16 0"
+                />
+              </svg>
+            </span>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+              >
+                <g fill="none" stroke="#fff" stroke-width="1.5">
+                  <path
+                    d="M18.75 9.71v-.705C18.75 5.136 15.726 2 12 2S5.25 5.136 5.25 9.005v.705a4.4 4.4 0 0 1-.692 2.375L3.45 13.81c-1.011 1.575-.239 3.716 1.52 4.214a25.8 25.8 0 0 0 14.06 0c1.759-.498 2.531-2.639 1.52-4.213l-1.108-1.725a4.4 4.4 0 0 1-.693-2.375Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    d="M7.5 19c.655 1.748 2.422 3 4.5 3s3.845-1.252 4.5-3"
+                  />
+                </g>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <!-- dashboard container -->
+        <div id="dashboardContainer">
+          <div class="left">
+            <div class="FlexBox">
+              <input type="text" placeholder="Search Item ..." id="searchItem" />
+              <!-- dropdown Content -->
+              <div class="dropDown">
+                <img src="./assets/category.png" width="20" height="20">
+                <p>Categories</p>
+                <div class="dropdownContent" id="dropdownContent">
+                  <p data-value="category-1">category-1</p>
+                  <hr>
+                </div>
+              </div>
+              <!-- Price Content -->
+              <div class="price">
+                <img src="./assets/price.png" width="20" height="20">
+                <p>Price</p>
+                <div class="priceContent">
+                  <p data-value="price-1" class="lowPrice">Low Price</p>
+                  <p data-value="price-1" class="highPrice">High Price</p>
+                </div>
+              </div>
+              <!-- Sorting Content -->
+              <div class="sort">
+                <img src="./assets/sort.png" width="20" height="20">
+                <p>Sort</p>
+                <div class="sortContent">
+                  <p data-value="aec" class="ascendingOrder">Ascending</p>
+                  <p data-value="dec" class="descendingOrder">Descending</p>
+                  
+                </div>
+              </div>
+              <!-- wishList -->
+              <div class="wishList">
+                <span id="addtoCart">0</span>
+                <img src="./assets/cart.png" width="30" height="30">
+              </div>
+            </div>
+            <div class="productBox">
+              <h2>New Products Available</h2>
+              <p>
+                Latest <span>4</span> Products, you can view details of each
+                item .
+              </p>
+              <table id="productTable">
+                <tr>
+                  <th>Product</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Warranty</th>
+                  <th>Ratings</th>
+                  <th>Category</th>
+                  <th>Stock</th>
+                  <th>wish List</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- dashboard ends here -->
+      </div>
+    </div>
+    <!-- custom script file -->
+    <script src="index.js"></script>
+    <script src="dashboard.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>

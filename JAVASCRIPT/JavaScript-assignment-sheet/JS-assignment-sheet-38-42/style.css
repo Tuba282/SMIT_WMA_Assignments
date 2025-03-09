@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: kids;
+  src: url(./Comfy\ Feeling.otf);
+}
+html,
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.441), rgba(0, 0, 0, 0.509)),
+    url(https://miro.medium.com/v2/resize:fit:1200/1*LyZcwuLWv2FArOumCxobpA.png)
+    no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    letter-spacing: .1em;
+    word-spacing: .3em;
+    padding: 2em;
+  }
+  h1 {
+  font-family: kids; 
+  /* margin-top: 20%; */
+  font-size: 40px;
+  padding: 20px;
+  letter-spacing: 0.2em;
+}
+table{
+  text-align: center;
+  width: 650px;
+  height: 300px;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+}

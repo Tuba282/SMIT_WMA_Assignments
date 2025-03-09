@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin-Cart</title>
+    <!-- favicon icon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/web-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <!-- loader -->
+    <div id="cartLoader" style="display: none">
+      <img src="./assets/loader.gif" alt="loader" />
+    </div>
+    <!-- container -->
+    <div class="container" id="cartContainer">
+      <div class="cart">
+        <div class="productImage">
+          <img src="" alt="Product Image" />
+        </div>
+        <div class="productDetails">
+          <h1 class="title"></h1>
+          <p class="price"></p>
+          <p class="rating"></p>
+          <p class="stock"></p>
+          <p class="warranty"></p>
+          <div class="category">
+            Category:
+            <span></span>
+          </div>
+          <p class="description"></p>
+        </div>
+      </div>
+    </div>
+    <script src="cart.js"></script>
+  </body>
+</html>
