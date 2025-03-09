@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yumCorner | Recipe</title>
+    <link
+      rel="shortcut icon"
+      href="./aseets/icons/webicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@iconify/iconify@latest/dist/iconify.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <link rel="stylesheet" href="recipe.css" />
+
+  <body>
+    <div class="mainContainer">
+      <div class="subContainer">
+        <!-- for fixed width layout -->
+        <nav id="navbar">
+          <div class="logo">
+            <img src="./aseets/icons/logo.png" class="logoImg glow" />
+          </div>
+          <div class="links">
+            <img src="./aseets/icons/navIcons-(1).png" class="navLink glow" />
+            <img src="./aseets/icons/navIcons-(3).png" class="navLink glow" />
+            <img src="./aseets/icons/navIcons-(4).png" class="navLink glow" />
+            <img src="./aseets/icons/navIcons-(5).png" class="navLink glow" />
+
+            <img src="./aseets/icons/bar.png" class="bar glow" id="bar" />
+          </div>
+          <div class="overLay">
+            <div class="subOverlay">
+              <img src="./aseets/icons/cross.png" id="cross" class="glow" />
+              <ul type="none" class="overlayUl">
+                <li>
+                  <img src="./aseets/icons/li.png"  width="15" height="15" /><a
+                    href="../index.html" 
+                  >
+                    Home</a
+                  >
+                </li>
+                <li>
+                  <img src="./aseets/icons/li.png" width="15" height="15" /><a
+                    href="../about/index.html"
+                  >
+                    About</a
+                  >
+                </li>
+                <li>
+                  <img src="./aseets/icons/li.png" width="15" height="15" /><a
+                    href="../login/login.html"
+                  >
+                    Login/SignUp</a
+                  >
+                </li>
+                <li>
+                  <img src="./aseets/icons/li.png" width="15" height="15" /><a
+                    href="../contact/contact.html"
+                  >
+                    Contact</a
+                  >
+                </li>
+                <li>
+                  <img src="./aseets/icons/li.png" width="15" height="15" /><a
+                    href="../blog/blog.html"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <img src="./aseets/icons/li.png" width="15" height="15" /><a
+                    href=""
+                    >Recipe</a
+                  >
+                </li>
+                <li>
+                  <img src="./aseets/icons/li.png" width="15" height="15" /><a
+                    href="../profile/index.html"
+                    >Profile</a
+                  >
+                </li>
+              </ul>
+              <img
+                src="./aseets/icons/ver-line.png"
+                class="overlayImg1"
+                height="400"
+                width="50"
+              />
+              <img src="./aseets/icons/hor-line.png" class="overlayImg2" />
+              <div class="overlayDiv">
+                <img
+                  src="./aseets/icons/overlayLogo.png"
+                  width="180"
+                  height="150"
+                />
+                <h2>Our Promise</h2>
+                <p>
+                  YumCorner is committed to using the freshest ingredients,
+                  creating unforgettable dining experiences, and serving our
+                  community with love and care. Join us on this gastronomic
+                  adventure, and let every meal at YumCorner be a celebration of
+                  taste and joy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Header  -->
+        <div class="header">
+          <h2>Recipe</h2>
+          <p>
+            "Immerse yourself in a visual feast of delectable dishes, from
+            mouth-watering appetizers to heavenly desserts. Each image tells a
+            story of flavor, passion, and creativity. Explore our curated
+            collection and find inspiration for your next culinary adventure.
+            Let the vibrant colors and exquisite presentations ignite your love
+            for cooking and dining."
+          </p>
+          <!-- <button >Add Recipe button</button> -->
+        </div>
+        
+        <!-- serach filters -->
+        <div class="filter">
+          <div class="searchFilter">
+            <div class="inputDiv">
+              <div class="dropDown">
+                <div class="category">
+                  Regional<img
+                    src="./aseets/imgs/down-arrow.png"
+                    class="down-arrow"
+                    width="15"
+                    height="15"
+                  />
+                </div>
+                <div class="cateResults">
+                  <!-- <span>cate-1</span>
+                  <span>cate-2</span>
+                  <span>cate-3</span> -->
+                </div>
+              </div>
+              <input
+                type="text"
+                id="searchItem"
+                placeholder="Search here ..."
+              />
+              <img
+                src="./aseets/imgs/search.png"
+                width="22"
+                height="22"
+                class="searchImg"
+              />
+            </div>
+            <div class="sortDiv">
+              <div class="dropDown">
+                <div class="type">
+                  Types<img
+                    src="./aseets/imgs/down-arrow.png"
+                    class="type-arrow"
+                    width="15"
+                    height="15"
+                  />
+                </div>
+                <div class="typeResults">
+                  <!-- <span>Ascending</span> -->
+                </div>
+              </div>
+              <div class="dropDown">
+                <div class="sorting">
+                  Sort By<img
+                    src="./aseets/imgs/down-arrow.png"
+                    class="sort-arrow"
+                    width="15"
+                    height="15"
+                  />
+                </div>
+                <div class="sortResults">
+                  <span onclick="sortByAsce()">Ascending</span>
+                  <span onclick="sortByDesc()">Descending</span>
+                  <span onclick="highServing()">High Servings</span>
+                  <span onclick="lowCarbs()">Low Carbs</span>
+                </div>
+              </div>
+              <div
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-bs-whatever="@mdo"
+                class="favList"
+              >
+                Fav List
+                <img src="./aseets/imgs/favRecipe.png" width="25" height="25" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- recipes section -->
+        <div class="recipe-container">
+          <!--recipe cards will be shown here -->
+          <!-- <div class="recipe">
+            <div class="img" style="background: url(./aseets/imgs/img.png) no-repeat;background-position: center;background-size: cover;">
+              <div class="AddToFav">
+                <img src="./aseets/imgs/saveNot.png" class="Notsave show" width="25" height="25">
+                <img src="./aseets/imgs/save.png" class="save hide" width="25" height="25">
+              </div>
+              <div class="AddToFav share">
+                <img src="./aseets/imgs/share.png" class="Notsave" width="20" height="20">
+              </div>
+              <div class="nutritions">
+                <div class="box">Fat <span>0.48</span></div>
+                <div class="box">Iron <span>345.78</span></div>
+                <div class="box">Carbs <span>589.44</span></div>
+              </div>
+            </div>
+            <div class="text">
+              <h3>Korean Bibimbap</h3>
+              <div class="rating">
+                <img src="./aseets/imgs/starFill.png" width="20" height="20">
+                <img src="./aseets/imgs/starFill.png" width="20" height="20">
+                <img src="./aseets/imgs/starFill.png" width="20" height="20">
+                <img src="./aseets/imgs/starFill.png" width="20" height="20">
+                <img src="./aseets/imgs/starFill.png" width="20" height="20">
+                <span> (4.5) </span>
+              </div>
+              <p  class="flexBox">Korean Dish</p>
+              <p class="flexBox"> Cook Time 05 Minutes 
+                <span class="spanImg"><img src="./aseets/imgs/cookTime.png" width="20" height="20"></span>
+              </p>
+              <p class="flexBox"><span class="viewRecipe">view recipe</span> 
+                <span class="spanImg"><img src="./aseets/imgs/viewRecipe.png" width="18" height="18"></span>
+              </p>
+              <p class="flexBox"><span class="viewRecipe">serving </span>
+                <span class="spanImg"><img src="./aseets/imgs/thumbsup.png" width="18" height="18"></span>
+              </p>
+            </div>
+            
+          </div> -->
+        </div>
+        <br /><br />
+        <!-- pagination -->
+        <nav aria-label="...">
+          <ul class="pagination pagination-lg justify-content-center">
+            <li onclick="moveTo(`1`)" class="page-item">
+              <span class="page-link" style="color: var(--orange)" href="#"
+                >1</span
+              >
+            </li>
+            <li onclick="moveTo(`2`)" class="page-item">
+              <span class="page-link" style="color: var(--orange)" href="#"
+                >2</span
+              >
+            </li>
+            <li onclick="moveTo(`3`)" class="page-item">
+              <span class="page-link" style="color: var(--orange)" href="#"
+                >3</span
+              >
+            </li>
+            <li onclick="moveTo(`4`)" class="page-item">
+              <span class="page-link" style="color: var(--orange)" href="#"
+                >4</span
+              >
+            </li>
+            <li onclick="moveTo(`5`)" class="page-item">
+              <span class="page-link" style="color: var(--orange)" href="#"
+                >5</span
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Favorite List id="favList"-->
+        <div
+          class="favRecipeModal modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1
+                  class="modal-title fs-5"
+                  style="font-family: title; color: var(--green)"
+                  id="exampleModalLabel "
+                >
+                  Favorite Recipes
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body" id="favRecipeModal">
+                <!-- fav Recipes will apear here! -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card COntainer -->
+        <div class="card-container">
+          <h2>Trending Recipes This Week</h2>
+          <br /><br />
+          <div class="card-sec">
+            <div class="card">
+              <p>
+                <span> Bold flavors </span>and vibrant spices come together in
+                this dish that will leave your taste buds dancing. Quick to
+                prepare and absolutely delicious. The mix of aromatic herbs and
+                savory ingredients will transport you to a
+                <span> culinary adventure</span>. Great for impressing guests or
+                simply treating yourself.
+              </p>
+              <img
+                src="https://www.shutterstock.com/image-photo/fried-salmon-steak-cooked-green-600nw-2489026949.jpg"
+              />
+            </div>
+            <div class="card">
+              <p>
+                Indulge in this <span> creamy </span>delight that boasts layers
+                of flavor and texture. Sure to become a family favorite. The
+                velvety sauce mixed with tender chunks of meat or vegetables is
+                a crowd-pleaser. A perfect combination of
+                <span> fresh ingredients</span> and hearty goodness. Pair it
+                with your favorite side dish to complete the meal.
+              </p>
+              <img
+                src="https://www.howtocook.recipes/wp-content/uploads/2021/11/Steak-recipe-500x500.jpg"
+              />
+            </div>
+            <div class="card">
+              <p>
+                Treat yourself to a <span> sweet </span> escape with this
+                delectable dessert. Rich, luscious, and just the right amount of
+                indulgence. A treat that brings joy to every bite. The blend of
+                <span>chocolatey</span> goodness and subtle hints of vanilla
+                will satisfy your sweet tooth. Ideal for
+                <span>celebrating special moments</span> or winding down after a
+                long day.
+              </p>
+              <img
+                src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Corndogs-7832ef6.jpg?quality=90&resize=556,505"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- addRecipe Modal -->
+        <div id="recipeModal" class="recipeModal">
+          <div class="modalContent">
+            <div class="recipeImgDiv addRecipeImg">
+              <input
+                type="file"
+                id="uploadImage"
+                name="uploadImage"
+                required
+                style="display: none"
+              />
+              <img
+                src="./aseets/imgs/addRecipeImage.png"
+                class="recipeAddImg"
+              />
+              <p>Add Image</p>
+            </div>
+            <form id="recipeForm">
+              <h2>Add Recipe</h2>
+              <div class="form-group">
+                <label for="recipeName">Recipe Title:</label>
+                <input type="text" id="recipeName" name="recipeName" required />
+              </div>
+
+              <div class="form-group">
+                <label for="ingredients">Ingredients:</label>
+                <div id="ingredients-container">
+                  <div class="ingredient-input">
+                    <input
+                      type="text"
+                      class="ings"
+                      name="ingredients[]"
+                      required
+                    />
+                    <button type="button" class="add-ingredient-btn">+</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea
+                  id="description"
+                  name="description"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="cookingSteps">Cooking Steps:</label>
+                <div id="steps-container">
+                  <div class="step-input">
+                    <span class="step-number" style="font-family: title"
+                      >1.
+                    </span>
+                    <input
+                      type="text"
+                      class="cookStep"
+                      name="cookingSteps[]"
+                      required
+                    />
+                    <button type="button" class="add-step-btn">+</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="nutritions">Nutritions:</label>
+                <div id="nutrition-container">
+                  <div class="nutri-input">
+                    <label for="userFat">Fat:</label>
+                    <input
+                      width="50"
+                      type="text"
+                      id="userFat"
+                      name="userFat"
+                      maxlength="3"
+                      required
+                    />
+                    <label for="userIron">Iron:</label>
+                    <input
+                      width="50"
+                      type="text"
+                      id="userIron"
+                      name="userIron"
+                      maxlength="3"
+                      required
+                    />
+                    <label for="userCarb">Carb:</label>
+                    <input
+                      width="50"
+                      type="text"
+                      id="userCarb"
+                      name="userCarb"
+                      maxlength="3"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="nutritions">Specifications:</label>
+                <div id="nutrition-container">
+                  <div class="nutri-input">
+                    <label for="userFat">Cook time:</label>
+                    <input
+                      width="50"
+                      type="text"
+                      id="userCookTime"
+                      name="userCookTime"
+                      maxlength="2"
+                      required
+                    />
+                    <label for="userIron">Serving:</label>
+                    <input
+                      width="50"
+                      type="text"
+                      id="userServing"
+                      name="userServing"
+                      maxlength="2"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group" id="mainselection">
+                <label for="category">Category:</label>
+                <div id="category" name="category" required>
+                  <p>
+                    Choices
+                    <img
+                      src="./aseets/imgs/down-arrow.png"
+                      width="10"
+                      height="10"
+                    />
+                  </p>
+                  <div class="dropdown-options">
+                    <span onclick='category("vegetarian")'>Vegetarian</span>
+                    <span onclick='category("non-vegetarian")'>Non-Vegetarian</span>
+                    <span onclick='category("desserts")'>Desserts</span>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="addRecipe">Done</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- add Recipe Button -->
+        <div class="conatiner d-flex justify-content-center">
+          <div class="add-recipe-button">
+            <div class="table" id="openModalBtn">
+              <p class="mb-0">Add Recipe</p>
+            </div>
+          </div>
+          <!--  -->
+          <!-- <div class="add-recipe-button">
+            <div class="table" id="">
+              <p class="mb-0" onclick="window.location.pathname=`/userCollection/userCollection.html`">See Collection</p>
+            </div>
+          </div> -->
+        </div>
+
+        <!-- comment section start -->
+
+        <div
+          class="container-xxl bg-light px-lg-5 mt-5 px-3 py-5 comment-section text-dark mx-auto mb-3 pb-5 mt-3 mb-lg-5"
+        >
+          <div class="p-1 p-lg-2 text-dark">
+            <h2
+              class="text-center mt-1"
+              style="
+                font-size: 80px;
+                color: var(--orange);
+                font-family: heading;
+                font-weight: 800;
+              "
+            >
+              Comments
+            </h2>
+            <p
+              class="text-center"
+              style="
+                font-family: 'title', serif;
+                color: var(--green) !important;
+              "
+            >
+              We love hearing from you! Your feedback and suggestions help us
+              bring more delicious and exciting content to YumCorner. Please
+              share your thoughts, ideas, and favorite recipes in the comments
+              below. Let's create a community of food lovers together!We love
+              hearing from you! Your feedback and suggestions help us bring more
+              delicious and exciting content to YumCorner. Please share your
+              thoughts, ideas, and favorite recipes in the comments below. Let's
+              create a community of food lovers together!
+            </p>
+          </div>
+
+          <!-- here all comments will add dynamically -->
+          <div class="container mt-0 mb-0" id="randomComments"></div>
+
+          <div
+            class="container p-lg-3 mb-5"
+            style="color: var(--green)"
+            id="userComments"
+          >
+            <strong
+              class="text-dark display-6"
+              style="
+                font-family: title !important;
+                color: var(--green) !important;
+              "
+              >Comment here...</strong
+            ><br /><br />
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea2"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="text-end">
+              <button class="px-3 btn border post-btn2" id="post-btn2">
+                Post
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- comment section end-->
+
+        <div class="gallery swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://matchthemes.com/demohtml/dina/images/gallery/gallery-1.jpg"
+                class="shortgaleryImg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://matchthemes.com/demohtml/dina/images/gallery/gallery-2.jpg"
+                class="shortgaleryImg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://matchthemes.com/demohtml/dina/images/gallery/gallery-3.jpg"
+                class="shortgaleryImg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://matchthemes.com/demohtml/dina/images/gallery/gallery-4.jpg"
+                class="shortgaleryImg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://matchthemes.com/demohtml/dina/images/gallery/gallery-5.jpg"
+                class="shortgaleryImg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://matchthemes.com/demohtml/dina/images/gallery/gallery-6.jpg"
+                class="shortgaleryImg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://matchthemes.com/demohtml/dina/images/gallery/gallery-7.jpg"
+                class="shortgaleryImg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://matchthemes.com/demohtml/dina/images/gallery/gallery-8.jpg"
+                class="shortgaleryImg"
+              />
+            </div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script>
+            var swiper = new Swiper(".gallery", {
+              slidesPerView: 6,
+              spaceBetween: 5,
+              loop: true,
+              centeredSlides: true,
+              autoplay: {
+                delay: 1000,
+                disableOnInteraction: false,
+              },
+              breakpoints: {
+                280: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                340: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                440: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                540: {
+                  slidesPerView: 3,
+                  spaceBetween: 0,
+                },
+                640: {
+                  slidesPerView: 3,
+                  spaceBetween: 0,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 7,
+                  spaceBetween: 50,
+                },
+              },
+            });
+          </script>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+          <div class="footerAbout">
+            <img src="./aseets/logoWhite.png" width="250" height="200" />
+            <p>
+              We invite you to join us at YumCorner and embark on a culinary
+              journey like no other. Whether you are in the mood for a quick
+              bite or a leisurely meal.
+            </p>
+            <div class="links">
+              <img
+                src="./aseets/icons/navIcons-(1).png"
+                width="30"
+                height="30"
+                class="footerLink glow google"
+              />
+              <img
+                src="./aseets/icons/navIcons-(3).png"
+                width="30"
+                height="30"
+                class="footerLink glow linkedin"
+              />
+              <img
+                src="./aseets/icons/navIcons-(4).png"
+                width="30"
+                height="30"
+                class="footerLink glow facebook"
+              />
+              <img
+                src="./aseets/icons/navIcons-(5).png"
+                width="30"
+                height="30"
+                class="footerLink glow tiktok"
+              />
+            </div>
+          </div>
+          <div class="footerLinks">
+            <h2>About Links</h2>
+            <div>
+              <p>
+                <span
+                  ><img
+                    src="./aseets/icons/footerIcons-(3).png"
+                    width="30"
+                    height="30"
+                /></span>
+              </p>
+              <p>M.A Jinnah Road<span>Karachi, Pakistan</span></p>
+            </div>
+            <div>
+              <p>
+                <span
+                  ><img
+                    src="./aseets/icons/footerIcons-(2).png"
+                    width="30"
+                    height="30"
+                /></span>
+              </p>
+              <p>Get Touch with<span>+923514485945</span></p>
+            </div>
+            <div>
+              <p>
+                <span
+                  ><img
+                    src="./aseets/icons/footerIcons-(1).png"
+                    width="30"
+                    height="30"
+                /></span>
+              </p>
+              <p>Get Recent Update<span>yumCorner@gmail.com</span></p>
+            </div>
+          </div>
+          <div class="footerImgs">
+            <h2>Instagram Clicks</h2>
+            <div>
+              <p>
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/baked-potato-skins.jpg"
+                  width="80"
+                  height="80"
+                />
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/chocolate-cupcakes.jpg"
+                  width="80"
+                  height="80"
+                />
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/coconut-curry-fried-chicken.jpg"
+                  width="80"
+                  height="80"
+                />
+              </p>
+              <p>
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/double-tomato-bruschetta.jpg"
+                  width="80"
+                  height="80"
+                />
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/marinated-grilled-shrimp.jpg"
+                  width="80"
+                  height="80"
+                />
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/pumpkin-cookies.jpg"
+                  width="80"
+                  height="80"
+                />
+              </p>
+              <p>
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/double-tomato-bruschetta.jpg"
+                  width="80"
+                  height="80"
+                />
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/summer-berry.jpg"
+                  width="80"
+                  height="80"
+                />
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/sriracha-beef-skewers.jpg"
+                  width="80"
+                  height="80"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footerEnd">
+          <hr />
+          <br />
+          <p>
+            © <span class="year">2025</span> YumCorner. All Rights Reserved.
+          </p>
+          <br />
+        </div>
+      </div>
+
+      <!-- recipe detail modal-->
+      <div class="recipeDetailOverLay">
+        <div class="recipeOverlay" id="recipeOverlay">
+          <!-- <div class="recipeDetails">
+          <div class="page cover-front" onclick="movePage(this, 1)"></div>
+          <div class="page cover-front" onclick="movePage(this, 2)">
+            <img class="img" src="./aseets/imgs/img.png" />
+          </div>
+          <div class="page text-page text-page-3" onclick="movePage(this, 3)">
+
+            
+            <h2 class="color">Special</h2>
+            <h2 class="colored">Chiken Pasta Biryani</h2>
+            <div class="icons">
+              <span><img src="./aseets/imgs/icons(3).png" width="30" height="30"/>Serving <span>2</span></span>
+              <span><img src="./aseets/imgs/icons(4).png" width="30" height="30"/> Method <span>Open</span></span>
+              <span><img src="./aseets/imgs/icons(6).png" width="30" height="30"/>CookTime <span>45 </span></span>
+              <span><img src="./aseets/imgs/icons(1).png" width="30" height="30"/>PrepTime <span>10 </span></span>
+            </div>
+            <div class="halfPortion">
+              
+                <h2>Instructions</h2>
+                <ul type="none" id="instructions">
+                  <li><img src="./aseets/imgs/icons(5).png" width="15" height="15"> Boil the pasta in a large pot of salted water until al dente.</li>
+                  <li><img src="./aseets/imgs/icons(5).png" width="15" height="15"> Drain the pasta and set aside.</li>
+                  <li><img src="./aseets/imgs/icons(5).png" width="15" height="15"> In a large skillet, heat the oil over medium heat.</li>
+                  <li><img src="./aseets/imgs/icons(5).png" width="15" height="15"> Add the onion and garlic and cook until soft.</li>
+                  <li><img src="./aseets/imgs/icons(5).png" width="15" height="15"> Add the chicken and cook until browned.</li>
+                  <li><img src="./aseets/imgs/icons(5).png" width="15" height="15"> Add the tomatoes, tomato paste, and spices.</li>
+                  <li><img src="./aseets/imgs/icons(5).png" width="15" height="15"> Simmer for 10 minutes.</li>
+                  <li><img src="./aseets/imgs/icons(5).png" width="15" height="15"> Add the pasta and stir to combine.</li>
+                  <li><img src="./aseets/imgs/icons(5).png" width="15" height="15"> Serve hot with a sprinkle of fresh herbs.</li>
+                  
+                </ul><br>
+                <div class="icons rat-vid">
+                  <span class="text">"This video provides a comprehensive guide for the recipe, covering all the steps and ingredients needed."</span>
+                  <span  class="video" 
+                  style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(./aseets/imgs/img.png) no-repeat;
+                  background-position: center;
+                  background-size: cover;"><img src="./aseets/imgs/solar--chat-round-video-bold.png"/></span>
+                </div>
+            </div>
+            
+          </div>
+          <div class="page text-page text-page-4" onclick="movePage(this, 4)">
+            <h2>Description</h2>
+            <p>Even though this chicken teriyaki dish uses just three ingredients, the flavor is outstanding, and you can't beat the quick cooking time! This effortless weeknight meal starts with browning pieces of boneless chicken thighs in a hot pan. Soy sauce and brown sugar are added, infusing the meat with the perfect balance of sweet and salty. The liquid sizzles and thickens in the pan into a delectable teriyaki sauce that envelops the chicken, ensuring each bite is packed with flavor. Paired with fluffy white rice, this dish goes from stove to table in 30 minutes, proving that minimal effort can yield maximum satisfaction.</p>
+            <h2>Thank you ...</h2>
+          </div>
+        </div> -->
+        </div>
+      </div>
+      <!-- recipeOverLay Ends here -->
+    </div>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script type="module" src="recipe.js" defer></script>
+    <script type="module" src="commentsec.js" defer></script>
+  </body>
+</html>

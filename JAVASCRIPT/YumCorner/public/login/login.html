@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yumCorner | Login/Signup</title>
+    <link
+      rel="shortcut icon"
+      href="./aseets/icons/webicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@iconify/iconify@latest/dist/iconify.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <link rel="stylesheet" href="login.css" />
+  <body>
+    <div class="mainContainer">
+      <div class="subContainer">
+        <!-- for fixed width layout -->
+        <!-- <form id="login-form">
+          
+        </form> -->
+        <div class="loginBox">
+          <div class="img">
+            <img src="./aseets/imgs/rightArrow.png" class="rightArrow" />
+          </div>
+          <!-- signUp form -->
+          <form id="signUp-form" class="form">
+            <h2>Sign Up Here !</h2>
+            <div class="input-group">
+              <label for="signUserName">Full Name</label>
+              <input
+                type="text"
+                id="signUserName"
+                name="signUserName"
+                placeholder="Enter Your Full Name"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="signupEmail">Email</label>
+              <input
+                type="email"
+                id="signupEmail"
+                name="signupEmail"
+                placeholder="Enter Your Email"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="signupContact" >Contact</label>
+              <input
+                type="text"
+                id="signupContact"
+                name="signupContact"
+                maxlength="11"
+                placeholder="Enter Your Contact"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="signupPassword">Password</label>
+              <input
+                type="password"
+                id="signupPassword"
+                name="signupPassword"
+                placeholder="Enter Your Password"
+                required
+              />
+            </div>
+            <div class="checkBox">
+              <input type="checkbox" class="show-password" /> Show Password
+            </div>
+            <button type="submit">Sign Up</button>
+            <div class="orLoginWith">
+              <img src="./aseets/imgs/line.png" height="1" width="100" />or<img
+                src="./aseets/imgs/line.png"
+                height="1"
+                width="100"
+              />
+            </div>
+            <button id="google-signUp-button" type="button">
+              Go with Google
+              <img
+                src="./aseets/imgs/google.png"
+                class="glow"
+                height="15"
+                width="15"
+              />
+            </button>
+            <p class="goToLogin">
+              Already Have an Account ? <span id="goToLogin">Login</span>
+            </p>
+          </form>
+          <!-- login form -->
+          <form id="login-form" class="form" style="display: none">
+            <h2>Login to Your Account</h2>
+            <p id="createAccount">Don't Have an Account ?</p>
+            <div class="input-group">
+              <label for="loginEmail">Email</label>
+              <input
+                type="email"
+                id="loginEmail"
+                name="email"
+                placeholder="Enter Your Email"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="loginPassword">Password</label>
+              <input
+                type="password"
+                id="loginPassword"
+                name="password"
+                placeholder="Enter Your Password"
+                required
+              />
+            </div>
+            <div class="checkBox">
+              <input type="checkbox" class="show-password" /> Show Password
+            </div>
+            <button type="submit">Login</button>
+            <div class="orLoginWith">
+              <img src="./aseets/imgs/line.png" height="1" width="100" />or<img
+                src="./aseets/imgs/line.png"
+                height="1"
+                width="100"
+              />
+            </div>
+            <button id="google-login-button" type="button">
+              Login with Google
+              <img
+                src="./aseets/imgs/google.png"
+                class="glow"
+                height="15"
+                width="15"
+              />
+            </button>
+            <p id="forgot-password-link">Forgot Password ?</p>
+            <button id="logout-button" style="display: none">Logout</button>
+          </form>
+          <!-- forget password -->
+          <form id="forgetPasswordForm" class="form" style="display: none">
+            <h2>Forgot Password ?</h2>
+            <p>
+              Remember your password ? <span id="backToLogin">Login here</span>
+            </p>
+            <div class="input-group">
+              <label for="recoveryEmail">Recovery Email</label>
+              <input
+                type="email"
+                id="recoveryEmail"
+                name="recoveryEmail"
+                placeholder="Enter Your Email"
+                required
+              />
+            </div>
+            <button type="submit">Reset Password</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script type="module" src="login.js"></script>
+  </body>
+</html>

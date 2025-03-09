@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Poppins", serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: heading;
+  src: url(./aseets/fonts/BroncoPersonalUse.ttf);
+}
+@font-face {
+  font-family: rough;
+  src: url(./aseets/fonts/RougeScript-Regular.ttf);
+}
+@font-face {
+  font-family: title;
+  src: url(./aseets/fonts/Kodchasan-Regular.ttf);
+}
+:root {
+  --black: #000;
+  --orange: #daa13e;
+  --green: #616247;
+  --white: #fff;
+}
+.mainContainer {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.subContainer {
+  max-width: 1550px;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./aseets/imgs/masaly.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+  text-shadow: 1px 1px 1px #000000 !important;
+}
+/* loginBox */
+.loginBox {
+  width: 65%;
+  min-height: 650px;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white);
+  border-radius: 12px;
+}
+
+.loginBox .img,
+.loginBox .form {
+  width: 50%;
+  height: 660px;
+}
+.loginBox .img {
+  background: url(./aseets/imgs/formBackground.jpeg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 12px;
+  position: relative;
+}
+.rightArrow {
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  right: -9em;
+  transform: rotate(230deg);
+  top: -4em;
+}
+.loginBox .form,
+#signUp-form {
+  width: 50%;
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.loginBox .form h2,
+#signUp-form h2 {
+  line-height: 0.9em;
+  font-size: 50px;
+  font-family: heading;
+  font-weight: 600;
+  color: var(--orange);
+}
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+.input-group label {
+  color: var(--green);
+  font-family: title;
+  font-weight: 600;
+}
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  color: var(--green);
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  background: #daa13e4e;
+}
+.checkBox {
+  gap: 10px;
+  font-size: 14px;
+  position: relative;
+  color: var(--orange);
+}
+input[type="checkbox"] {
+  margin-top: 10px;
+  width: 10px;
+  height: 10px;
+}
+input[type="checkbox"]:checked::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 20%;
+  background-color: var(--orange);
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+button[type="submit"],
+#logout-button {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  background: var(--green);
+  color: var(--white);
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+.orLoginWith {
+  width: 100%;
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.glow {
+  filter: drop-shadow(0px 0px 1px #222222);
+}
+button[type="button"] {
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+  background: var(--orange);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+#forgot-password-link {
+  color: var(--green);
+  cursor: pointer;
+}
+button[type="button"]:active,
+button[type="submit"]:active,
+#logout-button :active {
+  transform: scale(0.9);
+}
+
+#forgetPasswordForm p {
+  font-family: title;
+  color: var(--green);
+}
+#forgetPasswordForm p #backToLogin {
+  color: var(--orange);
+  cursor: pointer;
+  font-family: title;
+  text-decoration: underline;
+}
+#goToLogin,
+.goToLogin,
+#createAccount {
+  color: var(--green);
+  cursor: pointer;
+}
+#goToLogin {
+  text-decoration: underline;
+}.toastify-center {
+  font-family: title;
+  font-size: 15px;
+  color: var(--white) !important;
+  background-color: #daa13e !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 3px #0000007d;
+  box-shadow: 0px 0px 5px #00000080;
+}
+.toastify-center img {
+  filter: drop-shadow(0px 0px 5px #00000080);
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+@media (max-width: 1400px) {
+  .rightArrow {
+    display: none;
+  }
+}
+@media (max-width: 1350px) {
+  .loginBox {
+    flex-direction: column;
+  }
+  .subContainer {
+    padding: 2em;
+  }
+  .loginBox .img {
+    width: 100%;
+    height: 300px;
+  }
+  .loginBox .form,
+  #signUp-form,
+  #forgetPasswordForm {
+    padding: 1em;
+    width: 100%;
+  }
+}
+@media (max-width: 1150px) {
+}
+@media (max-width: 1080px) {
+}
+@media (max-width: 950px) {
+  #navbar .navLink {
+    display: none;
+  }
+  #navbar {
+    padding: 1em;
+    justify-content: center;
+  }
+  #navbar .logo {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer .footerAbout,
+  .footer .footerImgs,
+  .footer .footerLinks {
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .footer .footerImgs {
+    display: grid;
+    gap: 20px;
+  }
+  .footer .footerImgs div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+}
+@media (max-width: 850px) {
+  .subOverlay {
+    width: 95%;
+    min-height: 95%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .subOverlay .overlayUl {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+  }
+  .subOverlay .overlayDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+  }
+  .overlayImg1,
+  .overlayDiv h2,
+  .overlayDiv p {
+    display: none;
+  }
+  .overlayImg2 {
+    display: block;
+    width: 80%;
+    height: 20px;
+    margin: 10px 0px;
+  }
+}
+@media (max-width: 750px) {
+  .loginBox {
+    width: 80%;
+  }
+}
+@media (max-width: 660px) {
+}
+@media (max-width: 550px) {
+  .loginBox {
+    width: 100%;
+  }
+  .loginBox {
+    padding: 1em;
+  }
+}
+@media (max-width: 425px) {
+  .loginBox .form h2,
+  #signUp-form h2,
+  #forgetPasswordForm h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .subContainer {
+    padding: 1em;
+  }
+}

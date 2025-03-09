@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yumCorner |Admin Portal</title>
+    <link
+      rel="shortcut icon"
+      href="./aseets/icons/webicon.png"
+      type="image/x-icon"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@iconify/iconify@latest/dist/iconify.min.js"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <style>
+    .gallery {
+      width: 100%;
+    }
+    .galeryImg {
+      width: 160px;
+      height: 144px;
+
+      filter: grayscale(100%);
+    }
+    .galeryImg:hover {
+      filter: grayscale(0%);
+    }
+    .profileSwiperImg {
+      width: 300px;
+      height: 300px;
+    }
+    .galleryWapper {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+    }
+    a {
+      color: var(--white) !important;
+    }
+    .tableHeading {
+      background: #daa13e !important;
+    }
+    tr {
+      display: table-row !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+    td,
+    th {
+      font-family: title;
+      font-size: 15px;
+    }
+    th {
+      background: var(--green) !important;
+      color: var(--white) !important;
+    }
+    .trBtn {
+      width: 80px;
+      border: none;
+      outline: none;
+      color: var(--white);
+      background: var(--orange);
+      border-radius: 5px;
+    }
+    .trBtn:active {
+      transform: scale(0.9);
+    }
+    @media (max-width: 650px) {
+      td,
+      th {
+        font-size: 12px;
+      }
+    }
+  </style>
+  <body>
+    <div class="mainContainer">
+      <div class="subContainer">
+        <!-- for fixed width layout -->
+        <nav id="navbar">
+          <div class="logo" data-aos="fade-up" data-aos-duration="1000">
+            <img src="./aseets/icons/logo.png" class="logoImg glow" />
+          </div>
+          <div class="links">
+            <img
+              src="./aseets/icons/navIcons-(1).png"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="navLink glow"
+            />
+            <img
+              src="./aseets/icons/navIcons-(3).png"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              class="navLink glow"
+            />
+            <img
+              src="./aseets/icons/navIcons-(4).png"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              class="navLink glow"
+            />
+            <img
+              src="./aseets/icons/navIcons-(5).png"
+              data-aos="fade-right"
+              data-aos-duration="2500"
+              class="navLink glow"
+            />
+
+            <img src="./aseets/icons/bar.png" class="bar glow" id="bar" />
+          </div>
+          <div class="overLay">
+            <div class="subOverlay">
+              <img src="./aseets/icons/cross.png" id="cross" class="glow" />
+              <ul type="none" class="overlayUl">
+                <li>
+                  <img src="./aseets/icons/li.png" width="15" height="15" /><a
+                    href="#"
+                  >
+                    Home</a
+                  >
+                </li>
+                <li>
+                  <img src="./aseets/icons/li.png" width="15" height="15" /><a
+                    href="./about/index.html"
+                  >
+                    About</a
+                  >
+                </li>
+                <li>
+                  <img src="./aseets/icons/li.png" width="15" height="15" /><a
+                    href="./gallery/gal.html"
+                  >
+                    Gallery</a
+                  >
+                </li>
+                <li>
+                  <img src="./aseets/icons/li.png" width="15" height="15" /><a
+                    href="./contact/contact.html"
+                  >
+                    Contact</a
+                  >
+                </li>
+                <li>
+                  <img src="./aseets/icons/li.png" width="15" height="15" /><a
+                    href="./blog/blog.html"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <img src="./aseets/icons/li.png" width="15" height="15" /><a
+                    href="./recipe/recipe.html"
+                    >Recipe</a
+                  >
+                </li>
+                <li>
+                  <img src="./aseets/icons/li.png" width="15" height="15" /><a
+                    href="./profile/index.html"
+                    >Profile</a
+                  >
+                </li>
+              </ul>
+              <img
+                src="./aseets/icons/ver-line.png"
+                class="overlayImg1"
+                height="400"
+                width="50"
+              />
+              <img src="./aseets/icons/hor-line.png" class="overlayImg2" />
+              <div class="overlayDiv">
+                <img
+                  src="./aseets/icons/overlayLogo.png"
+                  width="180"
+                  height="150"
+                  class="overlayLogo"
+                />
+                <h2>Our Promise</h2>
+                <p>
+                  YumCorner is committed to using the freshest ingredients,
+                  creating unforgettable dining experiences, and serving our
+                  community with love and care. Join us on this gastronomic
+                  adventure, and let every meal at YumCorner be a celebration of
+                  taste and joy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- header -->
+        <div class="swiper profileSwiper">
+          <div class="swiper-wrapper profileSwiperWrapper">
+            <!-- first slider -->
+            <div class="swiper-slide profileSwiperSlide">
+              <h2>Admin Portal</h2>
+              <p>
+                "This is your central hub to manage all user interactions on our
+                YumCorner website. View and oversee the details of users who
+                have signed up or logged in. Keep track of user activities,
+                manage profiles, and ensure smooth operations. Your role is
+                crucial in maintaining a seamless and efficient experience for
+                everyone visiting our platform."
+              </p>
+            </div>
+          </div>
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              spaceBetween: 30,
+              effect: "fade",
+              loop: true,
+              centeredSlides: true,
+              autoplay: {
+                delay: 5300,
+                disableOnInteraction: false,
+              },
+            });
+          </script>
+        </div>
+        <!-- galery section -->
+        <div class="gallery swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-1.png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-2.png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-3.png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-4.png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-5.png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-6.png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-7.png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-8.png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-9.png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-10.png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-11.png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-12.png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-13.png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-14.png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-15.png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-16.png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/pro-marq-17.png" class="galeryImg" />
+            </div>
+          </div>
+          <script>
+            var swiper = new Swiper(".gallery", {
+              slidesPerView: 6,
+              spaceBetween: 5,
+              loop: true,
+              centeredSlides: true,
+              autoplay: {
+                delay: 500,
+                disableOnInteraction: false,
+              },
+              speed: 1500,
+              breakpoints: {
+                280: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                340: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                440: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                540: {
+                  slidesPerView: 3,
+                  spaceBetween: 0,
+                },
+                640: {
+                  slidesPerView: 3,
+                  spaceBetween: 0,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 7,
+                  spaceBetween: 50,
+                },
+              },
+            });
+          </script>
+        </div>
+
+        <!-- user Table -->
+        <table class="table table-striped" style="text-align: center">
+          <thead>
+            <tr class="tableHeading">
+              <th scope="col" class="SNo.">S No.</th>
+              <th scope="col" class="Name">Name</th>
+              <th scope="col" class="Email">Email</th>
+              <th scope="col" class="Contact">Contact</th>
+              <th scope="col" class="TimeStamp">TimeStamp</th>
+              <th scope="col" class="User-Admin fw-bold">User/Admin</th>
+              <th scope="col" class="Status">Status</th>
+              <th scope="col" class="Action">Action</th>
+            </tr>
+          </thead>
+          <tbody id="userTableBody"></tbody>
+        </table>
+
+        <!-- Edit Modal -->
+        <!-- Button trigger modal -->
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header" style="background: #61624776">
+                <h1
+                  class="modal-title fs-5 fw-bold"
+                  style="font-family: title; color: var(--green)"
+                  id="staticBackdropLabel"
+                >
+                  Modal title
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form id="editForm">
+                  <div class="mb-3">
+                    <label
+                      for="editName"
+                      class="col-form-label"
+                      style="font-family: title; color: var(--green)"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      style="font-family: title; color: var(--green)"
+                      id="editName"
+                      placeholder="Change Your Name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="editEmail"
+                      class="col-form-label"
+                      style="font-family: title; color: var(--green)"
+                      >Email</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      style="font-family: title; color: var(--green)"
+                      id="editEmail"
+                      placeholder="Change Your Email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="editContact"
+                      class="col-form-label"
+                      style="font-family: title; color: var(--green)"
+                      >Contact</label
+                    >
+                    <input
+                      type="text"
+                      maxlength="11"
+                      class="form-control"
+                      style="font-family: title; color: var(--green)"
+                      id="editContact"
+                      placeholder="Change Your Conatct"
+                    />
+                  </div>
+                  <button type="submit" class="trBtn">Done</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+          <div class="footerAbout">
+            <img src="./aseets/logoWhite.png" width="250" height="200" />
+            <p>
+              We invite you to join us at YumCorner and embark on a culinary
+              journey like no other. Whether you are in the mood for a quick
+              bite or a leisurely meal.
+            </p>
+            <div class="links">
+              <img
+                src="./aseets/icons/navIcons-(1).png"
+                width="30"
+                height="30"
+                class="footerLink glow google"
+              />
+              <img
+                src="./aseets/icons/navIcons-(3).png"
+                width="30"
+                height="30"
+                class="footerLink glow linkedin"
+              />
+              <img
+                src="./aseets/icons/navIcons-(4).png"
+                width="30"
+                height="30"
+                class="footerLink glow facebook"
+              />
+              <img
+                src="./aseets/icons/navIcons-(5).png"
+                width="30"
+                height="30"
+                class="footerLink glow tiktok"
+              />
+            </div>
+          </div>
+          <div class="footerLinks">
+            <h2>About Links</h2>
+            <div>
+              <p>
+                <span
+                  ><img
+                    src="./aseets/icons/footerIcons-(3).png"
+                    width="30"
+                    height="30"
+                /></span>
+              </p>
+              <p>M.A Jinnah Road<span>Karachi, Pakistan</span></p>
+            </div>
+            <div>
+              <p>
+                <span
+                  ><img
+                    src="./aseets/icons/footerIcons-(2).png"
+                    width="30"
+                    height="30"
+                /></span>
+              </p>
+              <p>Get Touch with<span>+923514485945</span></p>
+            </div>
+            <div>
+              <p>
+                <span
+                  ><img
+                    src="./aseets/icons/footerIcons-(1).png"
+                    width="30"
+                    height="30"
+                /></span>
+              </p>
+              <p>Get Recent Update<span>yumCorner@gmail.com</span></p>
+            </div>
+          </div>
+          <div class="footerImgs">
+            <h2>Instagram Clicks</h2>
+            <div>
+              <p>
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/baked-potato-skins.jpg"
+                  width="80"
+                  height="80"
+                />
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/chocolate-cupcakes.jpg"
+                  width="80"
+                  height="80"
+                />
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/coconut-curry-fried-chicken.jpg"
+                  width="80"
+                  height="80"
+                />
+              </p>
+              <p>
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/double-tomato-bruschetta.jpg"
+                  width="80"
+                  height="80"
+                />
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/marinated-grilled-shrimp.jpg"
+                  width="80"
+                  height="80"
+                />
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/pumpkin-cookies.jpg"
+                  width="80"
+                  height="80"
+                />
+              </p>
+              <p>
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/double-tomato-bruschetta.jpg"
+                  width="80"
+                  height="80"
+                />
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/summer-berry.jpg"
+                  width="80"
+                  height="80"
+                />
+                <img
+                  src="https://matchthemes.com/demohtml/dina/images/menu/sriracha-beef-skewers.jpg"
+                  width="80"
+                  height="80"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footerEnd">
+          <hr />
+          <br />
+          <p>
+            © <span class="year">2025</span> YumCorner. All Rights Reserved.
+          </p>
+          <br />
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script type="module" src="admin.js"></script>
+  </body>
+</html>
