@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picked Vegetables</title>
+
+    <!-- animate cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Swiper cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Bootstrap css -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"
+      integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- custome style sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-xxl">
+      <!-- Navbar -->
+
+      <nav class="navbar navbar-expand-md  fixed-top bg-light-subtle">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./assets/logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto gap-2 mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true">Blogs</a>
+              </li>
+            </ul>
+            <div class="navbar-nav align-items-center">
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-outline-dark rounded-pill">
+                  Add to Cart
+                </button>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- hero section -->
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner container col-xxl-8 px-4 py-5">
+          <div class="carousel-item active p-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-lg-6 text-md-center text-center text-lg-start">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                  Vegetable
+                  <span class="text-warning"
+                    ><br />
+                    Shop</span
+                  >
+                </h1>
+                <p class="lead">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap, the world’s most popular front-end open source
+                  toolkit, featuring Sass variables and mixins.
+                </p>
+                <div
+                  class="d-grid gap-2 d-md-flex justify-content-md-center my-sm-3 justify-content-lg-start"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-warning btn-lg px-4 me-md-2 rounded-0"
+                  >
+                    Buy Now
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-dark btn-lg px-4 rounded-0"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+              <div class="col-12 col-sm-8 col-lg-4" style="margin: 0 auto">
+                <img
+                  src="./assets/hero-img.png"
+                  class="d-block mx-lg-auto img-fluid justify-content-center align-items-center"
+                  alt="Bootstrap Themes"
+                  width="700"
+                  height="500"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item p-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-lg-6 text-md-center text-center text-lg-start">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                  Vegetable
+                  <span class="text-warning"
+                    ><br />
+                    Shop</span
+                  >
+                </h1>
+                <p class="lead">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap, the world’s most popular front-end open source
+                  toolkit, featuring Sass variables and mixins.
+                </p>
+                <div
+                  class="d-grid gap-2 d-md-flex justify-content-md-center my-sm-3 justify-content-lg-start"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-warning btn-lg px-4 me-md-2 rounded-0"
+                  >
+                    Buy Now
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-dark btn-lg px-4 rounded-0"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+              <div class="col-12 col-sm-8 col-lg-4" style="margin: 0 auto">
+                <img
+                  src="./assets/hero-img.png"
+                  class="d-block mx-lg-auto img-fluid justify-content-center align-items-center"
+                  alt="Bootstrap Themes"
+                  width="700"
+                  height="500"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item p-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-lg-6 text-md-center text-center text-lg-start">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                  Vegetable
+                  <span class="text-warning"
+                    ><br />
+                    Shop</span
+                  >
+                </h1>
+                <p class="lead">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap, the world’s most popular front-end open source
+                  toolkit, featuring Sass variables and mixins.
+                </p>
+                <div
+                  class="d-grid gap-2 d-md-flex justify-content-md-center my-sm-3 justify-content-lg-start"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-warning btn-lg px-4 me-md-2 rounded-0"
+                  >
+                    Buy Now
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-dark btn-lg px-4 rounded-0"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+              <div class="col-12 col-sm-8 col-lg-4" style="margin: 0 auto">
+                <img
+                  src="./assets/hero-img.png"
+                  class="d-block mx-lg-auto img-fluid justify-content-center align-items-center"
+                  alt="Bootstrap Themes"
+                  width="700"
+                  height="500"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div
+            class="animate__animated animate__fadeInRight col-lg-6 text-md-center text-center text-lg-start"
+          >
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              Vegetable
+              <span class="text-warning"
+                ><br />
+                Shop</span
+              >
+            </h1>
+            <p class="lead">
+              Quickly design and customize responsive mobile-first sites with
+              Bootstrap, the world’s most popular front-end open source toolkit,
+              featuring Sass variables and mixins.
+            </p>
+            <div
+              class="d-grid gap-2 d-md-flex justify-content-md-center my-sm-3 justify-content-lg-start"
+            >
+              <button
+                type="button"
+                class="btn btn-warning btn-lg px-4 me-md-2 rounded-0"
+              >
+                Buy Now
+              </button>
+              <button type="button" class="btn btn-dark btn-lg px-4 rounded-0">
+                Read More
+              </button>
+            </div>
+          </div>
+          <div
+            class="animate__animated animate__fadeInLeft col-12 col-sm-8 col-lg-6"
+            style="margin: 0 auto !important"
+          >
+            <img
+              src="./assets/hero-img.png"
+              class="d-block mx-lg-auto img-fluid justify-content-center align-items-center"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div> -->
+      <!-- side buttons -->
+      <div
+        class="animate__animated animate__fadeInUp d-flex gap-2 justify-content-center justify-content-lg-start pb-5"
+      >
+        <button class="btn btn-warning rounded-circle lh-1" type="button">
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 12h14m-7-7l-7 7l7 7"
+              />
+            </svg>
+          </span>
+        </button>
+        <button class="btn btn-warning rounded-circle lh-1" type="button">
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 12H5m7 7l7-7l-7-7"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+
+      <!-- About Section -->
+      <section
+        class="animate__animated animate__fadeInUp py-5 bg-body-secondary text-center container"
+      >
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">
+              <img src="./assets/about-img-1.png" alt="" />
+            </h1>
+            <h1 class="fw-bold">About Our Shop</h1>
+            <h1 class="fw-light">
+              <img
+                src="./assets/about-img-2.png"
+                class="d-block mx-lg-auto img-fluid"
+                alt=""
+              />
+            </h1>
+            <p class="lead text-body-secondary">
+              Something short and leading about the collection below—its
+              contents, the creator, etc. Make it short and sweet, but not too
+              short so folks don’t simply skip over it entirely.
+            </p>
+            <p>
+              <a href="#" class="btn btn-dark my-2 rounded-0">Read More</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card Section -->
+      <div
+        class="row py-lg-5 text-center container flex-sm-wrap"
+        style="margin: 0 auto !important"
+      >
+        <div class="col mx-auto">
+          <h1 class="fw-light">
+            <img src="./assets/about-img-1.png" alt="" />
+          </h1>
+          <h1 class="fw-bold">Our Vegetables</h1>
+          <p class="lead text-body-secondary">
+            Reader will be distracted by the readable content of a
+          </p>
+          <div
+            class="row gap-4 justify-content-center justify-content-xl-between"
+            style="margin: 0 auto !important"
+          >
+            <!-- card 1 -->
+            <div
+              class="animate__animated animate__fadeInUp col-xl-2 col-lg-4 col-md-4 col-sm-5 col-xs-3 card border-0 shadow-sm rounded-0"
+              style="border: 1px dashed grey !important"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./assets/veg-img(1).png" alt="" />
+                </h5>
+                <h5 class="card-title fw-bold">
+                  $<span class="text-warning">10</span><br />Tomato <br /><span
+                    class="text-warning"
+                    >1kg</span
+                  >
+                </h5>
+                <p class="card-text">adipiscing elit, sed do eiusmod tempor.</p>
+                <a href="#" class="btn btn-dark rounded-1">Buy Now</a>
+              </div>
+            </div>
+            <!--  -->
+            <!-- card 2 -->
+            <div
+              class="animate__animated animate__fadeInUp col-xl-2 col-lg-4 col-md-4 col-sm-5 col-xs-3 card border-0 shadow-sm rounded-0"
+              style="border: 1px dashed grey !important"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./assets/veg-img(2).png" alt="" />
+                </h5>
+                <h5 class="card-title fw-bold">
+                  $<span class="text-warning">10</span><br />Tomato <br /><span
+                    class="text-warning"
+                    >1kg</span
+                  >
+                </h5>
+                <p class="card-text">adipiscing elit, sed do eiusmod tempor.</p>
+                <a href="#" class="btn btn-dark rounded-1">Buy Now</a>
+              </div>
+            </div>
+            <!--  -->
+            <!-- card 3 -->
+            <div
+              class="animate__animated animate__fadeInUp col-xl-2 col-lg-4 col-md-4 col-sm-5 col-xs-3 card border-0 shadow-sm rounded-0"
+              style="border: 1px dashed grey !important"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./assets/veg-img(3).png" alt="" />
+                </h5>
+                <h5 class="card-title fw-bold">
+                  $<span class="text-warning">10</span><br />Cabbage <br /><span
+                    class="text-warning"
+                    >1kg</span
+                  >
+                </h5>
+                <p class="card-text">adipiscing elit, sed do eiusmod tempor.</p>
+                <a href="#" class="btn btn-dark rounded-1">Buy Now</a>
+              </div>
+            </div>
+            <!--  -->
+            <!-- card 4 -->
+            <div
+              class="animate__animated animate__fadeInUp col-xl-2 col-lg-4 col-md-4 col-sm-5 col-xs-3 card border-0 shadow-sm rounded-0"
+              style="border: 1px dashed grey !important"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./assets/veg-img(4).png" alt="" />
+                </h5>
+                <h5 class="card-title fw-bold">
+                  $<span class="text-warning">10</span><br />Lady-finger
+                  <br /><span class="text-warning">1kg</span>
+                </h5>
+                <p class="card-text">adipiscing elit, sed do eiusmod tempor.</p>
+                <a href="#" class="btn btn-dark rounded-1">Buy Now</a>
+              </div>
+            </div>
+            <!--  -->
+            <!-- card 5 -->
+            <div
+              class="animate__animated animate__fadeInUp col-xl-2 col-lg-4 col-md-8 col-sm-5 col-xs-10 card border-0 shadow-sm rounded-0"
+              style="border: 1px dashed grey !important"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./assets/veg-img(5).png" alt="" />
+                </h5>
+                <h5 class="card-title fw-bold">
+                  $<span class="text-warning">10</span><br />Bottle-Gourd
+                  <br /><span class="text-warning">1kg</span>
+                </h5>
+                <p class="card-text">adipiscing elit, sed do eiusmod tempor.</p>
+                <a href="#" class="btn btn-dark rounded-1">Buy Now</a>
+              </div>
+            </div>
+            <!--  -->
+            <!-- card 6 -->
+            <div
+              class="animate__animated animate__fadeInUp col-xl-2 col-lg-4 col-md-4 col-sm-5 col-xs-3 card border-0 shadow-sm rounded-0"
+              style="border: 1px dashed grey !important"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./assets/veg-img(6).png" alt="" />
+                </h5>
+                <h5 class="card-title fw-bold">
+                  $<span class="text-warning">10</span><br />Potato <br /><span
+                    class="text-warning"
+                    >1kg</span
+                  >
+                </h5>
+                <p class="card-text">adipiscing elit, sed do eiusmod tempor.</p>
+                <a href="#" class="btn btn-dark rounded-1">Buy Now</a>
+              </div>
+            </div>
+            <!-- card 7 -->
+            <div
+              class="animate__animated animate__fadeInUp col-xl-2 col-lg-4 col-md-4 col-sm-5 col-xs-3 card border-0 shadow-sm rounded-0"
+              style="border: 1px dashed grey !important"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./assets/veg-img(7).png" alt="" />
+                </h5>
+                <h5 class="card-title fw-bold">
+                  $<span class="text-warning">10</span><br />Capsicum
+                  <br /><span class="text-warning">1kg</span>
+                </h5>
+                <p class="card-text">adipiscing elit, sed do eiusmod tempor.</p>
+                <a href="#" class="btn btn-dark rounded-1">Buy Now</a>
+              </div>
+            </div>
+            <!-- card 8 -->
+            <div
+              class="animate__animated animate__fadeInUp col-xl-2 col-lg-4 col-md-4 col-sm-5 col-xs-3 card border-0 shadow-sm rounded-0"
+              style="border: 1px dashed grey !important"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./assets/veg-img(8).png" alt="" />
+                </h5>
+                <h5 class="card-title fw-bold">
+                  $<span class="text-warning">10</span><br />Pumpkin-Patch
+                  <br /><span class="text-warning">1kg</span>
+                </h5>
+                <p class="card-text">adipiscing elit, sed do eiusmod tempor.</p>
+                <a href="#" class="btn btn-dark rounded-1">Buy Now</a>
+              </div>
+            </div>
+            <!-- card 9 -->
+            <div
+              class="animate__animated animate__fadeInUp col-xl-2 col-lg-4 col-md-4 col-sm-5 col-xs-3 card border-0 shadow-sm rounded-0"
+              style="border: 1px dashed grey !important"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./assets/veg-img(9).png" alt="" />
+                </h5>
+                <h5 class="card-title fw-bold">
+                  $<span class="text-warning">10</span><br />Green chilli
+                  <br /><span class="text-warning">1kg</span>
+                </h5>
+                <p class="card-text">adipiscing elit, sed do eiusmod tempor.</p>
+                <a href="#" class="btn btn-dark rounded-1">Buy Now</a>
+              </div>
+            </div>
+            <!-- card 10 -->
+            <div
+              class="animate__animated animate__fadeInUp col-xl-2 col-lg-4 col-md-8 col-sm-5 col-xs-4 card border-0 shadow-sm rounded-0"
+              style="border: 1px dashed grey !important"
+            >
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./assets/veg-img(10).png" alt="" />
+                </h5>
+                <h5 class="card-title fw-bold">
+                  $<span class="text-warning">10</span><br />Kof-Radish
+                  <br /><span class="text-warning">1kg</span>
+                </h5>
+                <p class="card-text">adipiscing elit, sed do eiusmod tempor.</p>
+                <a href="#" class="btn btn-dark rounded-1">Buy Now</a>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+
+          <p style="margin-top: 5%">
+            <a href="#" class="btn btn-dark my-2 rounded-0">Read More</a>
+          </p>
+        </div>
+      </div>
+      <!-- Why Chose Us -->
+
+      <!-- About Section -->
+      <section
+        class="animate__animated animate__fadeInUp bg-body-secondary py-5 text-center container"
+      >
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">
+              <img src="./assets/about-img-1.png" alt="" />
+            </h1>
+            <h1 class="fw-bold">Why Chose Us</h1>
+            <h1 class="fw-light">
+              <img
+                src="./assets/Chose-us img.png"
+                class="d-block mx-lg-auto img-fluid"
+                alt=""
+              />
+            </h1>
+            <p class="lead text-body-secondary">
+              Something short and leading about the collection below—its
+              contents, the creator, etc. Make it short and sweet, but not too
+              short so folks don’t simply skip over it entirely.
+            </p>
+            <p>
+              <a href="#" class="btn btn-dark my-2 rounded-0">Read More</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- swiper slider -->
+      <section
+        class="swip-sec animate__animated animate__fadeInUp py-5 text-center container"
+      >
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <!-- swiper slider -->
+            <div class="swiper mySwiper text-center">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h1 class="fw-light">
+                    <img src="./assets/about-img-1.png" alt="" />
+                  </h1>
+                  <h1 class="fw-bold mb-5">Testimonial</h1>
+                  <div
+                    class="img-div d-flex justify-content-center"
+                    style="margin: 0 auto"
+                  >
+                    <img
+                      src="./assets/office boy.jpg"
+                      width="100"
+                      height="100"
+                      alt=""
+                    />
+                    <p class="text-warning fw-light py-5 px-2">
+                      <span class="text-dark fw-bold">Magna <br /></span
+                      >Consectetur adipiscing
+                    </p>
+                  </div>
+
+                  <p class="lead text-body-secondary">
+                    Something short and leading about the collection below—its
+                    contents, the creator, etc. Make it short and sweet, but not
+                    too short so folks don’t simply skip over it entirely.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <h1 class="fw-light">
+                    <img src="./assets/about-img-1.png" alt="" />
+                  </h1>
+                  <h1 class="fw-bold mb-5">Testimonial</h1>
+                  <div
+                    class="img-div d-flex justify-content-center"
+                    style="margin: 0 auto"
+                  >
+                    <img
+                      src="./assets/office girl.jpeg"
+                      width="100"
+                      height="100"
+                      alt=""
+                    />
+                    <p class="text-warning fw-light py-5 px-2">
+                      <span class="text-dark fw-bold">Magna <br /></span
+                      >Consectetur adipiscing
+                    </p>
+                  </div>
+
+                  <p class="lead text-body-secondary">
+                    Something short and leading about the collection below—its
+                    contents, the creator, etc. Make it short and sweet, but not
+                    too short so folks don’t simply skip over it entirely.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <h1 class="fw-light">
+                    <img src="./assets/about-img-1.png" alt="" />
+                  </h1>
+                  <h1 class="fw-bold mb-5">Testimonial</h1>
+                  <div
+                    class="img-div d-flex justify-content-center"
+                    style="margin: 0 auto"
+                  >
+                    <img
+                      src="./assets/office men.jpg"
+                      width="100"
+                      height="100"
+                      alt=""
+                    />
+                    <p class="text-warning fw-light py-5 px-2">
+                      <span class="text-dark fw-bold">Magna <br /></span
+                      >Consectetur adipiscing
+                    </p>
+                  </div>
+
+                  <p class="lead text-body-secondary">
+                    Something short and leading about the collection below—its
+                    contents, the creator, etc. Make it short and sweet, but not
+                    too short so folks don’t simply skip over it entirely.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+              var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                centeredSlides: true,
+                autoplay: {
+                  delay: 2500,
+                  disableOnInteraction: false,
+                },
+                keyboard: {
+                  enabled: true,
+                },
+                pagination: {
+                  el: ".swiper-pagination",
+                  type: "fraction",
+                },
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+              });
+            </script>
+            <div class="Tamator">
+              <img
+                class="tamator1"
+                width="60"
+                height="60"
+                src="./assets/tamator.png"
+                alt=""
+              />
+              <img
+                class="tamator2"
+                width="60"
+                height="60"
+                src="./assets/tamator.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <style>
+          .swiper {
+            width: 100%;
+          }
+          .swiper .swiper-button-next,
+          .swiper .swiper-button-prev {
+            background-color: #ffca2c;
+            border-radius: 10%;
+            padding: 20px;
+            width: 30px;
+            height: 30px;
+            font-weight: 600;
+            color: white !important;
+          }
+
+          .mySwiper .swiper-button-next:hover,
+          .mySwiper .swiper-button-prev:hover {
+            background-color: white;
+            color: #ffca2c !important;
+          }
+
+          .swiper .swiper-button-next::after,
+          .swiper .swiper-button-prev::after {
+            font-size: 18px;
+          }
+        </style>
+      </section>
+      <!-- contect sec -->
+      <div class="container bg-body-secondary col-xl-10 z-3 col-xxl-12 px-5 py-5 ">
+        <div class="row align-items-center text-center g-3 ">
+          <h1 class="fw-bold mb-5">
+            <img src="./assets/about-img-1.png" alt="" /><br> Contact Us
+          </h1>
+          <div class="col-md-10 mx-auto col-lg-5 mt-lg-5">
+            <form class="p-4 p-sm-0 p-md-5 rounded-3 ">
+              <div class=" text-secondary form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Your Name">
+                <label for="floatingInput">Your Name</label>
+              </div>
+              <div class=" text-secondary form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email</label>
+              </div>
+              <div class=" text-secondary form-floating mb-3">
+                <input type="number" class="form-control" id="floatingPassword" placeholder="number">
+                <label for="floatingPassword">Phone Number</label>
+              </div>
+              <div class=" mb-3" >
+                <textarea class="form-control"  placeholder="Message"  id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 text-center text-lg-start p-2  bg-light">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.467314328774!2d66.99279921104903!3d24.84788414566847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb315fee6a1fa4f%3A0x866c69ae434cde18!2sTower%20Bus%20Stop!5e0!3m2!1sen!2sus!4v1724602510511!5m2!1sen!2sus" style="border:0; width: 100%; height: 400px;" class="d-block mx-auto img-fluid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- footer section -->
+      <footer class="py-5 px-3 bg-warning">
+        <div class="row gap-3 justify-content-around justify-content-md-center justify-content-sm-center">
+          <div class="col-10 col-xxl-2 col-md-4  col-sm-5 mb-3">
+            <h5>Address</h5>
+            <ul class="nav flex-column ">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="border p-2 rounded-circle border-dark fa-solid fa-location-dot" style="color: #000000;"></i>&nbsp; No.123 Chalingt Gates,</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="border p-2 rounded-circle border-dark fa-solid fa-phone" style="color: #000000;"></i>&nbsp;( +01 9876543210 )</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="border p-2 rounded-circle border-dark fa-solid fa-envelope" style="color: #000000;"></i>&nbsp;Locations</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-10 col-xxl-2 col-md-4  col-sm-5 mb-3">
+            <h5>Social link</h5>
+            <ul class="nav flex-column ">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="border p-2 rounded-circle border-dark fa-brands fa-facebook-f" style="color: #000000;"></i>&nbsp; Facebook</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="border p-2 rounded-circle border-dark fa-brands fa-twitter" style="color: #000000;"></i>&nbsp; Twitter</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="border p-2 rounded-circle border-dark fa-brands fa-instagram" style="color: #000000;"></i>&nbsp; Instagram</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="border p-2 rounded-circle border-dark fa-brands fa-linkedin" style="color: #000000;"></i>&nbsp; Linkedin</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 col-xxl-4 offset-md-1 mb-3 justify-content-center">
+            <form>
+              <div class=" flex-column flex-sm-row px-sm-5 w-100 gap-2  justify-content-sm-center">
+                <h5>Newsletter</h5>
+                <input id="newsletter1" type="text" class="form-control rounded-0" placeholder="Email address">
+                <button class="btn btn-dark mt-4 rounded-pill" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+      </footer>
+      <div class="d-flex flex-column flex-sm-row bg-light justify-content-center text-center py-2 border-top">
+        <p>© 2024 Picked Vegetables Designed by <b>Tuba Jan</b>. All rights reserved.</p>
+        
+      </div>
+    </div>
+
+    <br /><br /><br /><br /><br />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

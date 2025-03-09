@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+  scroll-behavior: smooth;
+}
+:root {
+  --m-color: #6e9b82;
+  --dark-color: #3c5536;
+  --text: whitesmoke;
+  --body-light: #fafff9;
+  --body-color: #f4fff6;
+}
+.main-container {
+  max-width: 1920px !important;
+  margin: 0 auto !important;
+  background-color: var(--m-color);
+}
+.wrapper {
+  max-width: 1000px !important;
+  min-height: 100%;
+  margin: 0 auto !important;
+}
+.top-bar {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 40px !important;
+  padding-top: 10px !important;
+  margin: 0 auto !important;
+  color: var(--text);
+}
+.header {
+  padding: 2em !important;
+  display: grid !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 auto !important;
+  gap: 30px !important;
+  background-color: var(--body-color) !important;
+}
+.logo img {
+  width: 400px !important;
+  height: 100px !important;
+}
+.header .links ul {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+.header .links ul li {
+  color: var(--m-color);
+}
+/* serum section css */
+.serum {
+  display: grid !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 2em !important;
+  background-color: var(--body-color);
+  color: var(--m-color);
+}
+.serum-btn {
+  width: 200px;
+  height: 40px;
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  border: 2px solid var(--m-color);
+}
+.serum-btn:hover {
+  background-color: var(--m-color);
+  color: var(--body-color) !important;
+  cursor: pointer;
+}
+.serum-btn span {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.serum img {
+  width: 100%;
+
+  min-height: 325px;
+}
+/* article section css */
+.article {
+  width: 100%;
+  min-height: 700px !important;
+  padding: 2em !important ;
+  background-color: var(--body-light);
+}
+.art {
+  width: 100% !important;
+  min-height: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.art-img,
+.art-text {
+  width: 50% !important;
+  height: 350px !important;
+}
+.art-img img {
+  width: 100%;
+  height: 100%;
+}
+.art-text {
+  padding: 4em;
+  line-height: 1em;
+}
+.art-text h2 {
+  line-height: 1.2em;
+}
+.art-text p,
+.product .p {
+  width: 100px;
+  cursor: pointer;
+  border-bottom: 2px solid var(--dark-color);
+}
+.art-btn {
+  width: 300px;
+  height: 50px;
+  background-color: var(--m-color);
+  color: var(--text);
+  margin: 0 auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.art-btn:hover {
+  cursor: pointer;
+  background-color: transparent !important;
+  color: var(--m-color);
+  border: 2px solid var(--m-color);
+}
+/* products section css */
+.product {
+  width: 100%;
+  min-height: 700px !important;
+  padding: 2em !important ;
+  background-color: white;
+}
+.product .Card {
+  width: 264px !important;
+  min-height: 418px !important;
+}
+.product .Card img {
+  width: 100%;
+  height: 264px;
+}
+.pro-card {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+/* semi footer section css */
+.semi-footer {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 2em !important;
+  background-color: var(--body-color);
+  color: var(--m-color);
+}
+.semi-footer-btn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--m-color);
+  color: var(--text);
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.semi-footer-btn:hover {
+  cursor: pointer;
+  background-color: transparent !important;
+  color: var(--m-color);
+  border: 2px solid var(--m-color);
+}
+.semi-text img {
+  width: 233px !important;
+  height: 80px !important;
+}
+.semi-img {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0em 1em !important;
+}
+.semi-img img {
+  width: 152px !important;
+  height: 152px !important;
+}
+/* footer */
+.footer {
+  padding: 2em 0em !important;
+  background-color: var(--m-color);
+  color: var(--body-light);
+}
+.footer .links ul {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+@media (max-width: 880px) {
+  .semi-footer {
+    flex-wrap: wrap-reverse !important;
+  }
+  .semi-text,
+  .semi-img {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .semi-footer-btn {
+    margin: 0 auto !important;
+  }
+}
+@media (max-width: 767px) {
+  .art {
+    flex-wrap: wrap-reverse !important;
+  }
+  .art-img,
+  .art-text {
+    width: 100% !important;
+    height: 350px !important;
+  }
+  .art-img img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+  }
+  .art-text {
+    padding: 4em 0em;
+  }
+}
+@media (max-width: 676px) {
+  .pro-card .Card {
+    padding: 0px 10px !important;
+  }
+}
+@media (max-width: 576px) {
+  .pro-card {
+    flex-wrap: wrap-reverse !important;
+  }
+}
+@media (max-width: 425px) {
+  .top-bar p,
+  .header .links ul li {
+    font-size: 12px !important;
+  }
+  .logo img {
+    width: 250px !important;
+    height: 70px !important;
+  }
+  .semi-img img {
+    width: 122px !important;
+    height: 122px !important;
+  }
+}
+@media (max-width: 350px) {
+  .semi-img img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .footer-text .d-flex {
+    gap: 0em 30px !important;
+  }
+}

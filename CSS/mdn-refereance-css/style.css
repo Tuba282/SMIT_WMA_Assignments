@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+header {
+  width: 100vw;
+  height: 70px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  justify-content: space-evenly;
+}
+.logo {
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav {
+  display: flex;
+  flex-grow: 0.4;
+}
+nav a {
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+nav a:hover {
+  background-color: rgb(10, 10, 10);
+  color: white;
+  border-radius: 70px;
+}
+.butn {
+  flex-grow: 0.2;
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+.butn button {
+  padding: 7px 15px;
+  border-radius: 10px;
+}
+.login {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-weight: bold;
+}
+.login:hover {
+  background-color: rgb(10, 10, 10);
+  color: white;
+}
+.signup {
+  font-weight: bold;
+}
+.signup:hover {
+  background-color: rgb(10, 10, 10);
+  color: white;
+}
+
+/* Content */
+.Content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.side {
+  width: 200px;
+  border: 2px solid white;
+}
+.middle {
+  flex-grow: 2;
+  padding: 2%;
+  overflow-y: auto;
+}
+.rightside {
+  flex-grow: 0.2;
+}
+.leftside {
+  flex-grow: 0.3;
+  padding-left: 2%;
+  overflow-x: hidden;
+}
+.para {
+  font-size: 15px;
+  text-align: justify;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0 20px;
+  line-height: 1.9em;
+}
+.heading {
+  margin: 20px 0;
+  font-size: 30px;
+  padding: 0 20px;
+}
+.btn {
+  width: 100px;
+  font-size: 15px;
+  display: flex;
+  margin: 20px 0;
+  margin-left: 8px;
+  justify-content: space-evenly;
+  padding: 10px 20px 10px 20px;
+  border-radius: 50px;
+  border: 2px solid rgb(65, 61, 61);
+  color: rgb(65, 61, 61);
+  background-color: transparent;
+}
+.select {
+  width: 300px;
+  justify-content: center;
+  padding-left: 20px;
+}
+.select .dropDown {
+  width: 150px;
+  height: 30px;
+  background-color: transparent;
+  font-size: 15px;
+  border: none;
+  appearance: none;
+  margin: 20px 0px;
+}
+.dropDown:focus {
+  outline: none;
+  padding-left: 10px;
+  background-color: transparent;
+}
+.head {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: lighter;
+  margin-left: -5px;
+}
+.heading1 {
+  font-size: 20px;
+  margin: 15px;
+}
+.right_para {
+  font-size: 15px;
+  margin: 15px;
+}
+
+/* media querry 986px */
+@media only screen and (max-width: 986px) {
+  header {
+    width: 100%;
+  }
+  .butn {
+    width: 150px;
+  }
+  .butn button {
+    padding: 2px 5px;
+  }
+}
+
+/* media querry 768px */
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  .butn {
+    display: none;
+  }
+  .butn button {
+    padding: 2px 5px;
+    flex-grow: 0;
+  }
+  nav {
+    flex-grow: 0;
+    width: 550px;
+  }
+  .rightside {
+    display: none;
+  }
+  .Content {
+    flex-direction: row-reverse;
+  }
+}
+
+/* media querry 620px */
+@media only screen and (max-width: 620px) {
+  nav {
+    display: none;
+  }
+  .butn {
+    display: flex;
+    height: 50px;
+    text-align: right;
+    padding: 5px 10px;
+  }
+  .butn button {
+    padding: 5px;
+  }
+  .leftside {
+    display: none;
+  }
+  .Content {
+    flex-direction: row-reverse;
+  }
+}
+
+/* media querry 425px */
+@media only screen and (max-width: 425px) {
+  header {
+    width: 100%;
+  }
+  .butn button {
+    display: flex;
+    padding: 5px;
+  }
+  nav {
+    display: none;
+  }
+}

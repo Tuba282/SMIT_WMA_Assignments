@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+@font-face {
+  font-family: top_heading;
+  src: url(./assets/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: cod-font;
+  src: url(./assets/Raleway-Light.ttf);
+}
+@font-face {
+  font-family: simple-text;
+  src: url(./assets/Raleway-Regular.ttf);
+}
+:root {
+  --primary-color: #a13d3f;
+  --secondary-color: #f5f5f5;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(0, 0, 0) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.918) 0px 0px 0px 1px;
+}
+
+.parent {
+  background: var(--secondary-color);
+  height: 90vh;
+  width: 45%;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.child1 {
+  height: 80%;
+  width: 50%;
+  position: absolute;
+  left: -10%;
+  top: 10%;
+  border-radius: 11px;
+}
+
+.child1- {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 11px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.icons {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.options {
+  width: 100%;
+  height: 65%;
+  position: relative;
+}
+
+.options img {
+  width: 95%;
+  justify-content: center;
+  position: absolute;
+  left: -15%;
+  filter: drop-shadow(16px 16px 20px #272727);
+  height: 100%;
+}
+
+.gap {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 0px 0px 11px 11px;
+  background: var(--secondary-color);
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  border: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+}
+.child2 {
+  height: 80%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 10%;
+  border-radius: 0px 11px 11px 0px;
+}
+.child2- {
+  height: 100%;
+  padding: 10px;
+  width: 100%;
+}
+.cod {
+  color: rgba(24, 23, 23, 0.747);
+  font-size: 12px;
+  font-family: cod-font;
+  font-weight: bold;
+  word-spacing: 0.09em;
+}
+.Rupees .dolar {
+  font-size: 30px;
+}
+.ammount {
+  font-size: 80px;
+  color: var(--primary-color);
+}
+.options2 {
+  width: 70%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.bx1,
+.bx2,
+.bx3,
+.bx4 {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  border: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.bx img {
+  width: 100%;
+  height: 100%;
+}
+.top-heading {
+  font-family: top_heading;
+}
+.list {
+  margin-top: 8px;
+  list-style: inside disc;
+  font-family: simple-text;
+}
+.btn {
+  width: 40%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  margin-top: 15px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: cod-font;
+  font-size: 15px;
+  font-weight: 800;
+}
+@media only screen and (min-width: 1350px) {
+  .child2 {
+    right: 20px;
+  }
+  .child1 {
+    left: -15%;
+  }
+}
+@media only screen and (max-width: 1350px) and (min-width: 1000px) {
+  .parent {
+    width: 60%;
+  }
+
+  .child2 {
+    height: 95%;
+    top: 0;
+    width: 50%;
+padding-left: 2%;
+  }
+  .child1 {
+    height: 100%;
+    top: 0;
+    width: 50%;
+    left: 0;
+  }
+  .options img {
+    width: 100%;
+    left: -18%;
+  }
+
+  .gap {
+    border-radius: 0px 0px 0px 11px;
+  }
+  .child1- {
+    border-radius: 11px 0px 0px 11px;
+  }
+  .ammount {
+    font-size: 80px;
+  }
+}
+@media only screen and (min-width: 780px) and (max-width: 1000px) {
+  .main {
+    box-shadow: none;
+  }
+  .parent {
+    display: grid;
+  }
+  .child2 {
+    height: 95%;
+    top: 110%;
+    width: 100%;
+  }
+  .child1 {
+    height: 100%;
+    top: 0;
+
+    width: 100%;
+    left: 0;
+  }
+  .options img {
+    width: 90%;
+    left: 2%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .main {
+    box-shadow: none;
+  }
+  .parent {
+    width: 90%;
+    display: grid;
+  }
+  .child2 {
+    height: 95%;
+    top: 110%;
+    width: 100%;
+  }
+  .child1 {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+  }
+  .options img {
+    width: 70%;
+    height: 100%;
+    left: 8%;
+  }
+}

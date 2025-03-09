@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.hero {
+  background: linear-gradient(90deg, #c1dee8 0%, #fbd9b9 100%) !important;
+  border-radius: 10px;
+}
+
+.google-cards {
+  max-width: 1920px !important;
+  min-height: 100% !important;
+}
+.card-container {
+  width: 100% !important;
+  min-height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+.gol-card {
+  width: 400px !important;
+  height: 430px !important;
+}
+.google-cards .card-img-top {
+  width: 100% !important;
+  height: 250px !important;
+}
+.transfer-sec {
+  max-width: 1920px !important;
+  min-height: 100% !important;
+}
+.transfer-content {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 5em;
+}
+.transfer-text,
+.transfer-img {
+  width: 50%;
+  min-height: 100%;
+}
+.transfer-text {
+  display: grid;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.transfer-text button {
+  display: inline;
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+}
+.transfer-img {
+  height: 580px;
+  border-radius: 14px;
+  background: url(./assets/transfer-img.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.num-box {
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px 2em;
+  align-items: center;
+}
+.num-1,
+.num-2,
+.num-3 {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.num-1 span,
+.num-2 span,
+.num-3 span {
+  font-size: 50px;
+  font-weight: bold;
+}
+.last-sec {
+  max-width: 1920px !important;
+  min-height: 457px !important;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 5em;
+  background: linear-gradient(90deg, #c1dee8 0%, #fbd9b9 100%);
+}
+.last-sec-text,
+.last-sec-img {
+  width: 50%;
+  min-height: 100%;
+}
+.last-sec-text {
+  padding: 5em 0em;
+}
+.last-sec-img img {
+  min-width: 320px;
+  max-width: 750px;
+}
+@media (max-width: 992px) {
+  .navbar {
+    border-radius: 0 !important;
+  }
+  * .card-container {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 30px;
+    padding: 2em;
+  }
+  .google-cards p,
+  .google-cards h1 {
+    text-align: center;
+  }
+  .transfer-content {
+    flex-wrap: wrap;
+  }
+  .transfer-text,
+  .transfer-img {
+    width: 100%;
+    min-height: 100%;
+  }
+  .transfer-img {
+    background-size: contain;
+  }
+  .last-sec {
+    min-height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .last-sec-text,
+  .last-sec-img {
+    width: 100%;
+    min-height: 100%;
+  }
+  .last-sec-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .hero-input {
+    width: 367px;
+  }
+  .hero-para2 {
+    margin-left: -105px;
+  }
+  .transfer-content {
+    padding: 2em 1em;
+  }
+  .last-sec {
+    padding: 2em 1em;
+  }
+}
+@media (max-width: 380px) {
+  .hero-input {
+    width: 290px;
+  }
+  .hero-para2 {
+    margin-left: -90px;
+  }
+  .num-box {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px 1em;
+    align-items: center;
+  }
+}

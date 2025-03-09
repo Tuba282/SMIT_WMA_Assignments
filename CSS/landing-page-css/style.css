@@ -1,0 +1,946 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: para;
+}
+body {
+  background-color: #7b7b7c;
+}
+@font-face {
+  font-family: heading;
+  src: url(./assets/Roboto-MediumItalic.ttf);
+}
+@font-face {
+  font-family: para;
+  src: url(./assets/Roboto-LightItalic.ttf);
+}
+.main_span {
+  color: #000000;
+}
+/* navbar start */
+body {
+  padding: 0px 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.nav {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.862);
+  color: white;
+}
+.logo {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: heading;
+}
+.links {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* navbar end */
+/* hero section start */
+.parent {
+  width: 100vw;
+  height: 92vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.464), rgba(0, 0, 0, 0.574)),
+    url(./assets/office-table.jpg) no-repeat center;
+  background-size: cover;
+}
+.child {
+  width: 50%;
+  height: 90%;
+  padding: 10px;
+}
+.child2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.child2 .head1 {
+  margin-top: 1.5em;
+  font-size: 50px;
+}
+.subchild2 {
+  width: 80%;
+  height: 350px;
+}
+.subchild2 .para1 {
+  margin-top: 1.5em;
+  line-height: 1.3em;
+  word-spacing: 0.2em;
+}
+.bton {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 3px;
+  margin-top: 5%;
+  color: whitesmoke;
+  background-color: #6e6e6f;
+}.bton2{
+  
+  color: #6e6e6f;
+  background-color:whitesmoke;
+}
+.topimg {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  object-position: top center;
+}
+/* hero section end */
+/* text section start*/
+.textMainsection {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+.textMainsection h1 {
+  padding-top: 5%;
+  height: 20%;
+  font-size: 50px;
+}
+.textMainsection .pa {
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.textMainsection .textSection {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aba4a4;
+  background-color: rgb(2, 2, 2);
+}
+.textChild {
+  width: 50%;
+  height: 100%;
+  padding: 0px 1em;
+}
+.textchild1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+.heroImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.subtextchild2 h5 {
+  font-size: 18px;
+  color: whitesmoke;
+}
+.subtextchild2 {
+  text-align: left;
+  line-height: 2.2em;
+  font-size: 15px;
+  padding-top: 5%;
+}
+/* text section end*/
+/* simple text section start */
+.simpleTextSection {
+  width: 100vw;
+  height: 300px;
+  padding: 5% 20px 0px 20px;
+  text-align: center;
+}
+.simpleTextSection h1 {
+  height: 40%;
+  font-size: 50px;
+}
+.simpleTextSection p {
+  height: 60%;
+  padding-top: 1%;
+  font-size: 15px;
+}
+
+/* simple text section end */
+/* num section start */
+.numSection {
+  width: 100vw;
+  height: 350px;
+  text-align: center;
+  padding-top: 2%;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.464), rgba(0, 0, 0, 0.574)),
+    url(./assets/topbody.jpg) no-repeat;
+  background-size: cover;
+  background-position: cover;
+  background-attachment: fixed;
+}
+.numBox {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  margin-top: 1%;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.num {
+  width: 220px;
+  height: 100%;
+  margin: 0;
+}
+.numicons {
+  font-size: 50px;
+  margin: 0;
+}
+.numBox p {
+  font-size: 70px;
+  font-family: heading;
+  margin: 0;
+}
+.numBox .downs {
+  margin: 0;
+  font-family: heading;
+  font-size: 28px;
+}
+/* num section end */
+/* flip section start */
+.mainFlipSection {
+  width: 100vw;
+  height: 100vh;
+  background: tan;
+}
+.mainFlipSection h1 {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 5%;
+}
+.mainFlipSection .pa {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 1%;
+}
+.flipchild {
+  width: 100vw;
+  height: 78vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flipchild1 {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.9em;
+  background-color: rgb(209, 222, 135);
+}
+.subflipchild1 {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20%;
+  line-height: 2em;
+}
+.flipchild2 {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(222, 135, 196);
+}
+.bton {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 3px;
+  margin-top: 5%;
+}
+.flipImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* flip section end */
+/* just image start */
+.justImgSection {
+  width: 100vw;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(./assets/head-set.png) no-repeat center;
+  background-position: center;
+  background-size: contain;
+}
+
+/* just image end */
+/* gallery section start */
+
+.galleryMainSection {
+  width: 100vw;
+  height: 115vh;
+  background-color: #000000;
+  margin: 0 auto;
+  color: whitesmoke;
+}
+.gallerySection {
+  width: 100%;
+  height: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.galleryMainSection h1 {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 5%;
+}
+.gallerySection img {
+  width: 220px;
+  border: 8px double rgb(255, 255, 255);
+  border-radius: 20px;
+  height: 200px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* gallery section end */
+/* contact section start */
+
+.contactMainSection {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.29)),
+    url(./assets/mix-minimal-nordic-interior-design-with-japanese-wabi-sabi-style.jpg)
+      no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.contactparent {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 13px;
+  background-color:rgba(1, 1, 1, 0.677);
+}
+.con1,
+.con2 {
+  width: 50%;
+  padding: 20px;
+  height: 100%;
+}
+.con1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.con1 h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 19px;
+  color: white;
+}
+.con1 input {
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 2px solid grey;
+  padding: 0px 20px;
+  outline: none;
+}
+.con1 textarea {
+  width: 80%;
+  height: 70px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 2px solid grey;
+  padding: 10px 20px;
+  outline: none;
+}
+.con1 button {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  color: whitesmoke;
+  background-color: #6e6e6f;
+}
+.con2 {
+  height: 100%;
+  display: flex;
+  color: white;
+  border-radius: 0px 13px 13px 0px;
+  background-color: #6e6e6f;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.con2 h1 {
+  height: 20%;
+  padding: 0 1em;
+}
+.con2 p {
+  height: 10%;
+  padding: 0 1em;
+}
+.con2 .icon_text {
+  height: 70%;
+  margin-top: 2em;
+  padding: 0 1em;
+}
+.icon_text .text {
+  margin-top: 0.8em;
+}
+
+/* contact section end */
+/* footer start */
+.footer {
+  width: 100vw;
+  height: 15vh;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-Box {
+  width: 100%;
+  height: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 1em 2em;
+}
+.box {
+  width: 40%;
+  height: 100%;
+  background: rgb(2, 2, 2);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box p {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  border: none;
+  align-items: center;
+  border-radius: 50%;
+  transition: all ease 0.5s;
+}
+.box p:hover {
+  border: 2px solid white;
+  color: white;
+}
+
+.box i {
+  font-size: 30px;
+}
+.small-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 4vh;
+  color: rgb(255, 255, 255);
+}
+/* footer end */
+
+@media (max-width: 1024px) {
+  .child {
+    width: 90vh;
+  }
+  .child2 .head1 {
+    margin-top: 0.8em;
+    font-size: 40px;
+  }
+  .subchild2 {
+    width: 100%;
+    height: 380px;
+    text-align: center;
+  }
+  .child1 {
+    width: 60%;
+  }
+  .topimg {
+    object-fit: fill;
+    margin-top: 0.8em;
+  }
+  .textchild1 {
+    width: 40%;
+  }
+  .textchild2 {
+    width: 60%;
+    font-size: 12px;
+  }
+  .subtextchild2 {
+    width: 100%;
+    height: 400px;
+    line-height: 1.6em;
+  }
+  .subflipchild1 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 0;
+    line-height: 1.3em;
+  }
+  .gallerySection img {
+    width: 180px;
+  }
+  .textChild {
+    width: 50%;
+    height: 100%;
+    padding: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: block;
+  }
+  .logo {
+    width: 100%;
+  }
+  .links {
+    display: none;
+  }
+  .parent {
+    display: block;
+    height: 180vh;
+    margin-top: 6%;
+  }
+  .child {
+    width: 100%;
+    height: 50%;
+  }
+  .subchild2 {
+    width: 100%;
+    padding: 5px 20px;
+    text-align: center;
+  }
+  .child1 {
+    margin-top: 1em;
+    height: 42%;
+    padding: 0;
+  }
+  .textMainsection {
+    /* height: 120vh; */
+  }
+  .heroImg {
+    width: 100%;
+    object-fit: contain;
+  }
+  .textMainsection .textSection {
+    display: block;
+  }
+  .textChild {
+    width: 100%;
+    height: 100%;
+  }
+  .simpleTextSection {
+    margin-top: 60%;
+  }
+  .simpleTextSection h1 {
+    height: 24%;
+    font-size: 40px;
+  }
+  /* ............................................................... */
+  .mainFlipSection {
+    width: 100vw;
+    height: 137vh;
+  }
+  .flipchild {
+    width: 100vw;
+    height: 78vh;
+    display: block;
+  }
+  .flipchild1 {
+    width: 100%;
+    height: 46%;
+    font-size: 12px;
+  }
+  .flipchild2 {
+    width: 100%;
+    height: 100%;
+  }
+  .bton {
+    height: 30px;
+  }
+  .gallerySection img {
+    width: 120px;
+  }
+  .contactMainSection {
+    height: 100vh;
+  }
+  .contactparent {
+    width: 70%;
+    display: block;
+  }
+  .con1 {
+    width: 100%;
+    height: 100%;
+  }
+  .con2 {
+    display: none;
+  }
+  .textChild {
+    width: 100%;
+    height: 100%;
+    padding: 2em 3em;
+  }
+  /* ............................................................... */
+}
+@media (max-width: 670px) {
+  .nav {
+    display: block;
+  }
+  .logo {
+    width: 100%;
+  }
+  .links {
+    display: none;
+  }
+  .parent {
+    display: block;
+    height: 140vh;
+    margin-top: 6%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .child {
+    width: 100%;
+    height: 50%;
+  }
+  .subchild2 {
+    width: 100%;
+  }
+  .child1 {
+    margin-top: 1em;
+    height: 45%;
+  }
+  .child2 {
+    height: 50%;
+  }
+  .textMainsection h1 {
+    height: 15%;
+    font-size: 30px;
+  } /*////////////////////////////////////////////////////////////////// */
+
+  .textChild {
+    width: 100%;
+    height: 100%;
+  }
+  .textchild2 {
+    padding-top: 9%;
+  }
+  .subtextchild2 {
+    height: 100%;
+  }
+  .simpleTextSection {
+    margin-top: 105%;
+    height: 400px;
+  }
+  .simpleTextSection h1 {
+    height: 20%;
+    font-size: 30px;
+  }
+  .simpleTextSection p {
+    height: 60%;
+    padding-top: 0;
+    font-size: 15px;
+  }
+  .numSection {
+    width: 100vw;
+    height: 265px;
+  }
+  .numBox p {
+    font-size: 30px;
+    font-family: heading;
+    margin: 0;
+  }
+  .numBox .downs {
+    margin: 0;
+    font-family: heading;
+    font-size: 17px;
+  }
+  .mainFlipSection {
+    width: 100vw;
+    height: 150vh;
+  }
+  .flipchild {
+    width: 100vw;
+    height: 80vh;
+    display: block;
+  }
+  .flipchild1 {
+    width: 100%;
+    height: 60%;
+  }
+  .flipchild2 {
+    width: 100%;
+    height: 100%;
+  }
+  .justImgSection {
+    height: 300px;
+  }
+  .gallerySection {
+    height: 86%;
+  }
+  .contactparent {
+    width: 80%;
+    display: block;
+  }
+
+  .con1,
+  .con2 {
+    width: 100%;
+    height: 64%;
+  }
+  .box {
+    width: 80%;
+  }
+  .box i {
+    font-size: 25px;
+  }
+}
+@media (max-width: 450px) {
+  .nav {
+    display: block;
+  }
+  .logo {
+    width: 100%;
+  }
+  .links {
+    width: 100%;
+  }
+  .parent {
+    display: block;
+    height: 150vh;
+    margin-top: 10%;
+  }
+  .child {
+    width: 100%;
+    height: 50%;
+  }
+  .subchild2 {
+    width: 100%;
+  }
+  .child1 {
+    margin-top: 1em;
+    height: 30%;
+  }
+  .topimg {
+    object-fit: contain;
+  }
+  .child2 .child2 {
+    margin-top: -10%;
+    height: 50%;
+  }
+  .textMainsection p {
+    height: 33%;
+  }
+  .heroImg {
+    object-fit: cover;
+  }
+
+  .subtextchild2 {
+    width: 100%;
+    height: 400px;
+  }
+  .simpleTextSection {
+    margin-top: 186%;
+    height: 400px;
+  }
+  .simpleTextSection h1 {
+    height: 20%;
+    font-size: 30px;
+  }
+  .simpleTextSection p {
+    height: 60%;
+    padding-top: 0;
+    font-size: 15px;
+  }
+  .mainFlipSection {
+    width: 100vw;
+    height: 220vh;
+  }
+  .flipchild {
+    width: 100vw;
+    height: 80vh;
+    display: block;
+  }
+  .flipchild1 {
+    width: 100%;
+    height: 70%;
+  }
+  .flipchild2 {
+    width: 100%;
+    height: 100%;
+  }
+  .justImgSection {
+    height: 250px;
+  }
+  .gallerySection {
+    height: 87%;
+  }
+  .galleryMainSection {
+    height: 174vh;
+  }
+  .contactparent {
+    width: 100%;
+    display: block;
+  }
+
+  .con1 {
+    width: 100%;
+    height: 100%;
+  }
+  .con2 {
+    display: none;
+  }
+  .box {
+    width: 80%;
+  }
+  .box i {
+    font-size: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .parent {
+    display: block;
+    height: 140vh;
+    margin-top: 6%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .child {
+    width: 100%;
+    height: 50%;
+  }
+  .subchild2 {
+    width: 100%;
+  }
+  .child2 .head1 {
+    margin-top: 1em;
+    font-size: 30px;
+  }
+  .child2 {
+    height: 47%;
+  }
+  .child1 {
+    margin-top: 1em;
+    height: 30%;
+  }
+  .textMainsection {
+    height: 180vh;
+  }
+  .textMainsection .textSection {
+    height: 95%;
+  }
+  .textchild1 {
+    width: 100%;
+    height: 66%;
+    padding: 0px;
+  }
+  .textchild2 {
+    margin-top: -39%;
+    padding-top: 0;
+    font-size: 12px;
+  }
+  .heroImg {
+    width: 100%;
+    height: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    object-fit: contain;
+  }
+  .subtextchild2 {
+    width: 100%;
+    height: 400px;
+  }
+  .simpleTextSection {
+    margin-top: 125%;
+    height: 480px;
+  }
+  .simpleTextSection h1 {
+    height: 20%;
+    font-size: 30px;
+  }
+  .simpleTextSection p {
+    height: 60%;
+    padding-top: 0;
+    font-size: 15px;
+  }
+  .num {
+    width: 220px;
+    height: 58%;
+    margin: 0;
+  }
+  .mainFlipSection {
+    width: 100vw;
+    height: 180vh;
+  }
+  .mainFlipSection h1 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 5%;
+  }
+  .mainFlipSection .pa {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 1%;
+  }
+  .flipchild {
+    width: 100vw;
+    height: 80vh;
+    display: block;
+  }
+  .flipchild1 {
+    width: 100%;
+    height: 68%;
+  }
+  .flipchild2 {
+    width: 100%;
+    height: 67%;
+  }
+  .flipImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .galleryMainSection {
+    height: 307vh;
+  }
+  .gallerySection img {
+    width: 250px;
+  }
+  .small-footer {
+    font-size: 12px;
+  }
+}

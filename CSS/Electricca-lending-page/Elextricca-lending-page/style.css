@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.hero-sec {
+  min-height: 400px !important;
+}
+.navbar-collapse li a:hover {
+  color: black !important;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 25px;
+  padding: 20px;
+  background-color: #ffc107;
+  color: white;
+  font-weight: 900;
+}
+.hero-sec {
+  background: url(./assets/hero-img.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.second-swiper {
+  position: relative;
+}
+.second-swiper-btn1 {
+  position: absolute;
+  left: 16%;
+  top: 75%;
+}
+.second-swiper-btn2 {
+  position: absolute;
+  left: 8%;
+  top: 75%;
+}
+.small{
+  background: url(./assets/shop-bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 992px) {
+  .second-swiper-btn1,.second-swiper-btn2{
+    display: none !important;
+  }
+}

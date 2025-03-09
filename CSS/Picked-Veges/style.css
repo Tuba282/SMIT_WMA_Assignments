@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.Tamator{
+  position: relative;
+}
+.Tamator .tamator1 {
+  position: absolute;
+  left: 0em;
+  top: -29em;
+}
+.Tamator .tamator2 {
+  position: absolute;
+  right: 1em;
+  bottom: -8em;
+}
