@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css"> 
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="mainContainer">
+        <div class="header">
+          <div class="logo">
+            <img src="./assets/logo.png" width="20" height="20" alt="" /><span
+              class="logoText"
+              ><b>UIZ</b></span
+            >
+          </div>
+          <div class="headerText">
+            <span>You</span><span>were</span><span>born</span><span>to</span
+            ><span>win</span>
+          </div>
+          <div id="score" class="stratBtn">
+            Score: <span id="current-score">0</span>
+          </div>
+          <!-- <div id="timer" class="stratBtn">
+            Time Left: <span id="time">10</span>s
+          </div> -->
+        </div>
+        <div class="greenDiv">
+          <div class="rules">
+            <h2>Rules of the Quiz</h2>
+            <br />
+            <div class="line"></div>
+            <ol id="rules" class="d-grid lead"></ol>
+            <div class="line"></div>
+            <br />
+            <div class="stratBtn" id="stratBtn" type="button" onclick="initializeQuiz();">
+              Start Game
+            </div>
+          </div>
+          <div class="quiz">
+            <!-- quote container -->
+            <div class="quote" >
+              <img src="./assets/hourGlass.png" class="hourGlass" />
+              <img src="./assets/boy.png" class="boy" />
+              <p>
+                Success is a journey, not just a destination. It requires
+                determination, resilience, and the courage to continue despite
+                failures.
+              </p>
+            </div>
+            <!--  quiz Container-->
+            <div class="quizDiv" >
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                </div>
+                </div>
+            </div>
+
+            <!-- End Result -->
+            
+            <div class="endResult" id="endDiv">
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="quiz.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,532 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+html,
+body {
+  background-color: #014b91;
+}
+.conatiner {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00a8e6;
+  background-image: linear-gradient(
+    180deg,
+    #00a8e6 0%,
+    #018ed2 24%,
+    #0169b4 49%,
+    #00529c 75%,
+    #014b91 100%
+  );
+}
+.atm-mainContainer {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.784) 0px 50px 100px -20px,
+    rgba(255, 255, 255, 0.3) 0px 30px 60px -30px,
+    rgb(10, 37, 64) 0px -2px 6px 0px inset;
+}
+.logo {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo img,
+.start img {
+  width: 200px;
+  height: 60px;
+}
+.footer {
+  width: 100%;
+  height: 30px;
+  padding: 0px 20px;
+  font-size: 12px;
+  word-spacing: 0.2em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+}
+.subContainer {
+  width: 100%;
+  height: calc(100% - 150px);
+  padding: 20px 30px;
+}
+.start {
+  width: 540px;
+  height: 410px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+}
+.start h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start p {
+  color: white;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 18px;
+}
+.start .dipCard {
+  width: 150px;
+  height: 90px;
+}
+.btnCover {
+  width: 180px;
+  min-height: 80px;
+  border-radius: 10px;
+  display: flex;
+  border: 1px solid #3d82b36f;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  background-image: linear-gradient(
+    315deg,
+    #062e54ac 0%,
+    #4e6c90 28%,
+    #062e54ac 68%
+  );
+  align-self: flex-end;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+button {
+  width: 80%;
+  height: 80%;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #383838;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  background-color: #e4eaec;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+/* Pin CSS SEction */
+
+#pinInput {
+  width: 150px;
+  min-height: 50px;
+  border-radius: 10px;
+  display: flex;
+  border: 1px solid #3d82b3a1;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 8px;
+  background-color: rgba(0, 0, 0, 0.099);
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.flex-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.optBtn {
+  height: 50px;
+  text-wrap: wrap;
+}
+/* enterAmount CSS section */
+.enterAmount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.enterAmount .text,
+.enterAmount .num {
+  align-items: center;
+  width: 50%;
+  margin-top: -10%;
+}
+.enterAmount .text {
+  position: relative;
+  padding: 2em 0em;
+  height: 60%;
+}
+.enterAmount .text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0; /* Moved to right */
+  bottom: 0;
+  border-radius: 5px;
+  width: 2px; /* Width of the border */
+  background-color: #1986c5; /* Border color */
+  box-shadow: 5px 0px 10px #053d5d; /* Box shadow */
+}
+.enterAmount h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 0px;
+  align-items: center;
+}
+.enterAmount p {
+  color: white;
+  text-align: left;
+  font-weight: lighter;
+  margin: 10px 0px;
+  font-size: 15px;
+}
+
+#InputAmount {
+  width: 200px;
+  min-height: 50px;
+  border-radius: 10px;
+  display: flex;
+  border: 1px solid #3d82b3a1;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 8px;
+  background-color: rgba(0, 0, 0, 0.099);
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.AmountBtn {
+  position: relative;
+}
+.AmountBtn .btnCover {
+  position: absolute;
+  top: 0;
+  left: -11em;
+  right: 0;
+  bottom: -15em;
+}
+.numBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.numBtn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  border: 1px solid #3d82b36f;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  background-image: linear-gradient(
+    315deg,
+    #062e54ac 0%,
+    #4e6c90 28%,
+    #062e54ac 68%
+  );
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.numBox button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.896);
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.dolor {
+  position: relative;
+}
+.dolor span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin-top: 4px;
+  cursor: pointer;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Account Information css section */
+
+.trac_detls {
+  width: 100%;
+  min-height: 300px;
+  border-radius: 10px;
+  display: flex;
+  border: 1px solid #3d82b3a1;
+  outline: none;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.099);
+  color: white;
+  text-align: left !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.trac_detls h1 {
+  font-size: 30px;
+  align-self: center;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.trac_detls p {
+  font-size: 16px;
+}
+.slipBtn {
+  width: 100px;
+}
+.cashReady img {
+  width: 50%;
+  height: 100px;
+  margin: 0 auto;
+}
+.error {
+  display: none;
+}
+.slip {
+  width: 300px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 1em 2em;
+  align-items: flex-start;
+  position: relative;
+  filter: drop-shadow(0px -1px 15px #0000006e);
+  box-shadow: rgba(50, 50, 93, 0.784) 0px 50px 100px -20px,
+    rgba(255, 255, 255, 0.3) 0px 30px 60px -30px,
+    rgb(10, 37, 64) 0px -2px 6px 0px inset;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+.check {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00a8e6;
+  background-image: linear-gradient(
+    180deg,
+    #00a8e6 0%,
+    #018ed2 24%,
+    #0169b4 49%,
+    #00529c 75%,
+    #014b91 100%
+  );
+  filter: drop-shadow(0px -1px 15px #0000006e);
+  box-shadow: rgba(50, 50, 93, 0.784) 0px 50px 100px -20px,
+    rgba(255, 255, 255, 0.3) 0px 30px 60px -30px,
+    rgb(10, 37, 64) 0px -2px 6px 0px inset;
+  position: absolute;
+  top: -2em;
+  left: 6em;
+}
+.slipbtn {
+  position: absolute;
+  top: 23em;
+  left: 16em;
+  cursor: pointer;
+}
+.slip h1 {
+  font-size: 30px;
+  color: #014e94;
+  align-self: center;
+  cursor: pointer;
+}
+.slip p {
+  font-size: 16px;
+  color: #014e94;
+  cursor: pointer;
+}
+#errorMessage {
+  font-size: 16px;
+  margin: 10px 0px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
+#start {
+  display: flex;
+}
+#pin {
+  display: none;
+}
+#option {
+  display: none;
+}
+#slip {
+  display: none;
+}
+#enterAmount {
+  display: none;
+}
+#trnInfo {
+  display: none;
+}
+#cashReady {
+  display: none;
+}
+#end {
+  display: none;
+}
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+@media (max-width: 660px) {
+  .atm-mainContainer {
+    width: 90%;
+    height: 90%;
+  }
+  .flex-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .enterAmount {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .enterAmount .text {
+    position: static;
+  }
+  .AmountBtn .btnCover {
+    position: static;
+  }
+  .start {
+    position: static;
+  }
+  .btnCover {
+    width: 120px;
+    min-height: 50px;
+    margin: 0 auto;
+  }
+  .btnCover button {
+    font-size: 12px;
+  }
+  .trac_detls {
+    width: 65%;
+    margin: 0 auto;
+  }
+  .start h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .conatiner {
+    width: 100%;
+    height: 100%;
+  }
+  .atm-mainContainer {
+    width: 500px;
+    margin: 2em;
+    min-height: 400px;
+  }
+  .trac_detls {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .subContainer {
+    width: auto;
+  }
+  .start {
+    max-width: 320px;
+  }
+  .start h1 {
+    text-align: center;
+  }
+  .logo img,
+  .start img {
+    width: 111px;
+    height: 28px;
+  }
+  .slipbtn {
+    position: static;
+  }
+  .check {
+    top: -3.5em;
+  }
+  .AmountBtn .btnCover {
+    position: relative;
+  }
+  .AmountBtn .btnCover {
+    position: absolute;
+    top: 0;
+    left: 4em;
+    right: 0;
+    bottom: 4.5em;
+  }
+  .trac_detls {
+    width: 90%;
+  }
+}

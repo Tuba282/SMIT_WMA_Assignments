@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"
+      integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="calculator">
+        <div class="subCalculator">
+          <div class="img">
+            <div class="top">
+              <div id="time">9:24</div>
+              <div class="roundedBox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+                <path fill="#141C32" d="M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+            </svg></div>
+              <div class="icons">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 1200 1200"
+                >
+                  <path
+                    fill="#fff"
+                    d="M960 1200V0h240v1200zM640 300h240v900H640zM320 600h240v600H320zM0 900h240v300H0z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#fff"
+                    d="M12 21q-1.05 0-1.775-.725T9.5 18.5t.725-1.775T12 16t1.775.725t.725 1.775t-.725 1.775T12 21m-5.65-5.65l-2.1-2.15q1.475-1.475 3.463-2.337T12 10t4.288.875t3.462 2.375l-2.1 2.1q-1.1-1.1-2.55-1.725T12 13t-3.1.625t-2.55 1.725M2.1 11.1L0 9q2.3-2.35 5.375-3.675T12 4t6.625 1.325T24 9l-2.1 2.1q-1.925-1.925-4.462-3.012T12 7T6.563 8.088T2.1 11.1"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="12"
+                  viewBox="0 0 2304 1280"
+                >
+                  <path
+                    fill="#fff"
+                    d="M1920 256v768H256V256zm128 576h128V448h-128V160q0-14-9-23t-23-9H160q-14 0-23 9t-9 23v960q0 14 9 23t23 9h1856q14 0 23-9t9-23zm256-384v384q0 53-37.5 90.5T2176 960v160q0 66-47 113t-113 47H160q-66 0-113-47T0 1120V160Q0 94 47 47T160 0h1856q66 0 113 47t47 113v160q53 0 90.5 37.5T2304 448"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="middle">
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#A0A1A3"
+                    fill-rule="evenodd"
+                    d="m16.75 17l-7.5-5l7.5-5a.901.901 0 1 0-1-1.5l-8.502 5.668a1 1 0 0 0 0 1.664L15.75 18.5a.901.901 0 1 0 1-1.5"
+                  />
+                </svg>
+              </p>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    class="heart"
+                    stroke="#A0A1A3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.1"
+                    d="M19.071 13.142L13.414 18.8a2 2 0 0 1-2.828 0l-5.657-5.657A5 5 0 1 1 12 6.072a5 5 0 0 1 7.071 7.07"
+                  />
+                </svg>
+              </p>
+            </div>
+          </div>
+          <input type="text" id="ShowInput" placeholder="0" style="color: white;" />
+          <div class="buttons">
+            <button class="button operator" onclick="clearOutput()">C</button>
+            <button class="button operator" onclick="deleteLast()">DEL</button>
+            <button class="button operator" onclick="append('%')">%</button>
+            <button class="button operator" onclick="append('/')">/</button>
+            <button class="button number" onclick="append('7')">7</button>
+            <button class="button number" onclick="append('8')">8</button>
+            <button class="button number" onclick="append('9')">9</button>
+            <button class="button operator" onclick="append('*')">x</button>
+            <button class="button number" onclick="append('4')">4</button>
+            <button class="button number" onclick="append('5')">5</button>
+            <button class="button number" onclick="append('6')">6</button>
+            <button class="button operator" onclick="append('-')">-</button>
+            <button class="button number" onclick="append('1')">1</button>
+            <button class="button number" onclick="append('2')">2</button>
+            <button class="button number" onclick="append('3')">3</button>
+            <button class="button operator plus" onclick="append('+')">+</button>
+            <button class="button number" onclick="append('0')">0</button>
+            <button class="button number" onclick="append('.')">.</button>
+            <button class="button equal" onclick="calculate()">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="intex.js"></script>
+  </body>
+</html>

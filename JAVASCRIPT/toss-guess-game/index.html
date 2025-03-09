@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>toss-guess-game</title>
+    <link rel="short icon" href="./assets/toss-web-icon.png" />
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="Game-Selection">
+        <div>
+          <span onclick="toss_game()">Toss</span>
+          <b style="color: #f6def2">/</b>
+          <span onclick="guess_game()">Guess</span>
+        </div>
+      </div>
+      <div class="flex-box">
+        <!-- toss game -->
+        <div class="toss">
+          <h1>Toss Game</h1>
+          <div class="player-name">
+            Welcome
+            <p id="player-name">Guest</p>
+          </div>
+          <div class="div" id="toss-text">User = Heads | System = Tails</div>
+          <div id="toss-output">Winner</div>
+          <div id="tossBtn">
+            <lord-icon
+              onclick="toss_start()"
+              src="https://cdn.lordicon.com/afixdwmd.json"
+              style="width: 90px; height: 90px"
+            >
+            </lord-icon>
+          </div>
+          <div class="toss-text">Click the Button to Continue ...</div>
+        </div>
+        <!-- guess game -->
+        <div class="guess">
+          <h1>Guess Game</h1>
+          <div class="player-name">
+            Welcome
+            <p id="user-name">Guest</p>
+          </div>
+          <div class="guess-text">
+            <p class="div1">System Guess : <b id="sys-guess"></b></p>
+            <p class="div2">Your Guess : <b id="user-guess"></b></p>
+          </div>
+          <div id="guess-output">Winner</div>
+          <div id="guessBtn">
+            <lord-icon
+              src="https://cdn.lordicon.com/hppvxucn.json"
+              onclick="guess_start()"
+              style="width: 90px; height: 90px"
+            ></lord-icon>
+          </div>
+          <div class="toss-text">Click the Button to Continue ...</div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

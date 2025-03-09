@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/web-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="atm-mainContainer">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="" />
+        </div>
+        <div class="subContainer">
+          <!-- start -->
+          <div class="start" id="start">
+            <h1>Welcome to <img src="./assets/logo.png" alt="" /></h1>
+            <p>Please dip your card in the slot and remove it to begin</p>
+            <img src="./assets/cardDip.png" class="dipCard" alt="" />
+            <div class="btnCover startBtn">
+              <button type="button" onClick="start()">Proceed</button>
+            </div>
+          </div>
+          <!-- Pin Entry -->
+          <div class="start pin" id="pin">
+            <h1>Enter PIN</h1>
+            <p>It must be 4 characters long (e.g., 7898)</p>
+            <p class="error" >
+              Oops, something went wrong....
+            </p>
+            <input id="pinInput" type="password" maxlength="4" />
+            <div class="btnCover startBtn">
+              <button type="button" onclick="validatePin()">Proceed</button>
+            </div>
+          </div>
+          <!-- Options -->
+          <form class="start option" id="option">
+            <h1>Please select option</h1>
+            <p>Take a peek at your balance</p>
+            <div class="flex-box">
+              <div class="btnCover optBtn">
+                <button type="button" onclick="slip()">
+                  Account Information
+                </button>
+              </div>
+              <div class="btnCover optBtn">
+                <button type="button" onclick="enterAmount('Deposit')">
+                  Deposit
+                </button>
+              </div>
+              <div class="btnCover optBtn">
+                <button type="button" onclick="enterAmount('Withdraw')">
+                  Withdraw
+                </button>
+              </div>
+            </div>
+          </form>
+          <!-- Enter Amount -->
+          <form
+            class="start enterAmount"
+            id="enterAmount"
+            onsubmit="enterAmount(event)"
+          >
+            <div class="text">
+              <h1>Enter Amount</h1>
+              <p>and click proceed</p>
+              <div class="dolor"><span>$</span></div>
+              <input id="InputAmount" readonly type="text" />
+              <div id="errorMessage"></div>
+            </div>
+            <div class="num">
+              <div class="numBox">
+                <div class="numBtn">
+                  <button type="button" onclick="addNum('1')">1</button>
+                </div>
+                <div class="numBtn">
+                  <button type="button" onclick="addNum('2')">2</button>
+                </div>
+                <div class="numBtn">
+                  <button type="button" onclick="addNum('3')">3</button>
+                </div>
+                <div class="numBtn">
+                  <button type="button" onclick="addNum('4')">4</button>
+                </div>
+                <div class="numBtn">
+                  <button type="button" onclick="addNum('5')">5</button>
+                </div>
+                <div class="numBtn">
+                  <button type="button" onclick="addNum('6')">6</button>
+                </div>
+                <div class="numBtn">
+                  <button type="button" onclick="addNum('7')">7</button>
+                </div>
+                <div class="numBtn">
+                  <button type="button" onclick="addNum('8')">8</button>
+                </div>
+                <div class="numBtn">
+                  <button type="button" onclick="addNum('9')">9</button>
+                </div>
+                <div class="numBtn">
+                  <button type="button" onclick="addNum('0')">0</button>
+                </div>
+                <div class="numBtn">
+                  <button type="button" onclick="del()">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill="#333"
+                        d="M18 3H8.446c-.44 0-1.071.236-1.402.525L.248 9.473a.682.682 0 0 0 0 1.053l6.796 5.947c.331.289.962.527 1.402.527H18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-2.809 11l-2.557-2.557L10.078 14l-1.443-1.443L11.191 10L8.635 7.443L10.078 6l2.557 2.555L15.19 6l1.444 1.443L14.078 10l2.557 2.555z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="AmountBtn">
+              <div class="btnCover">
+                <button type="button" onclick="trnInfo()">Proceed</button>
+              </div>
+            </div>
+          </form>
+          <!-- Transaction Info -->
+          <div class="start trnInfo" id="trnInfo">
+            <div class="trac_detls">
+              <h1 id="action">Transaction Successful</h1>
+              <p>Id : <span id="trsc_id"></span></p>
+              <p>Current Balance : <span id="trsc_crnt_balce"></span></p>
+              <p>Date : <span id="trsc_date"></span></p>
+              <p>Time : <span id="trsc_time"></span></p>
+              <p>Bank card : <span id="trsc_card"></span></p>
+
+              <h1>Thank you</h1>
+            </div>
+            <div class="flex-box">
+              <div class="btnCover slipBtn startBtn">
+                <button type="button" onclick="slip()">Slip</button>
+              </div>
+              <div class="btnCover startBtn">
+                <button type="button" onclick="cashReady()">Proceed</button>
+              </div>
+            </div>
+          </div>
+          <!-- slip -->
+          <div class="start slip" id="slip">
+            <div class="check">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="white"
+                  d="m173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69L432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001"
+                />
+              </svg>
+            </div>
+            <h1>Cash Raceipt</h1>
+            <p>Id : <span id="slip_id"></span></p>
+            <p>Current Balance : <span id="slip_crnt_balce"></span></p>
+            <p>Date : &nbsp;&nbsp;<span id="slip_date"></span></p>
+            <p>Time : &nbsp;&nbsp;<span id="slip_time"></span></p>
+            <p>Bank card : XXXX XX<span id="slip_card"></span></p>
+
+            <div class="btnCover slipbtn">
+              <button type="button" onclick="options()">Back</button>
+            </div>
+          </div>
+          <!-- Cash Ready -->
+          <div class="start cashReady" id="cashReady">
+            <h1>Your Cash is Ready</h1>
+            <img src="./assets/cashReady.png" alt="" />
+            <div class="btnCover startBtn">
+              <button type="button" onclick="end()">Proceed</button>
+            </div>
+          </div>
+          <!-- End -->
+          <div class="start end" id="end">
+            <h1>Thank You ...</h1>
+            <div class="btnCover startBtn">
+              <button type="button" onclick="startAgain()">Start Again</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <p class="para">&copy; 2024 Made by | Tuba Jan All rights reserved</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

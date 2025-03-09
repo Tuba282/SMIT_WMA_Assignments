@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+}
+.mainContainer {
+  width: 1000px;
+  height: 90vh;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background: #f4f4f4;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navbar img {
+  width: 80px;
+  height: 80px;
+}
+.navbar .links {
+  list-style: none;
+  display: flex;
+  gap: 0px 30px;
+  justify-content: center;
+  align-items: center;
+}
+.addToCart {
+  position: relative;
+}
+.addToCart .num {
+  width: 12px;
+  height: 12px;
+  font-size: 8px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: -3px;
+  left: 12px;
+}
+/* slider */
+.slider {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url(./assets/background.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.justText {
+  width: 120px;
+  height: 250px;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  font-weight: lighter;
+}
+
+.ShowBox {
+  width: calc(100% - 500px);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.ShowBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.shadow {
+  width: 400px !important;
+  height: 65px !important;
+  object-fit: none;
+  position: absolute;
+  top: 21em;
+  left: 11em;
+}
+.newCollection {
+  width: 200px;
+  height: 199px;
+  padding: 0.5em;
+}
+.new_h1 {
+  font-size: 30px;
+}
+.new_h5 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+#addToCart {
+  width: 100px;
+  height: 30px;
+  margin: 5px 0px;
+  border-radius: 70px;
+  border: 1px solid rgba(128, 128, 128, 0.221);
+  outline: none;
+  font-size: 15px;
+  font-weight: lighter;
+}
+/* flexBox */
+.flexBox {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 40px;
+}
+.flexBox .flexImg {
+  width: 120px;
+  height: 80px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  font-size: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.221);
+  border-radius: 10px;
+  margin: 10px 0px;
+  background: #ffffff;
+}
+.flexImg img {
+  width: 90px;
+  height: 50px;
+  object-fit: fill;
+}
+.prevArrow,
+.nextArrow {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-radius: 2px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+
+@media (max-width: 1030px) {
+  .justText {
+    display: none;
+  }
+  .mainContainer {
+    width: 700px;
+    height: 101vh;
+    margin-bottom: 20px;
+  }
+  .newCollection {
+    width: 120px;
+  }
+  .ShowBox {
+    width: calc(100% - 200px);
+  }
+}
+@media (max-width: 750px) {
+  .newCollection {
+    display: none;
+  }
+  .ShowBox {
+    width: 100%;
+  }
+  .mainContainer {
+    width: 500px;
+  }
+  .flexBox .flexImg {
+    width: 80px;
+    height: 50px;
+  }
+  .flexImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  .flexImg .name {
+    display: none;
+  }
+  .navbar img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .mainContainer {
+    width: 400px;
+  }
+  .flexBox .flexImg {
+    display: none;
+  }
+  .shadow {
+    width: 267px !important;
+    top: 18em;
+    left: 8em;
+  }
+}
+@media (max-width: 450px) {
+  .mainContainer {
+    width: 350px;
+    height: 70vh;
+  }
+}

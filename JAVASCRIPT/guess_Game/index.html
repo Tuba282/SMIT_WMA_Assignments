@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Game</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/webicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@iconify/iconify@latest/iconify.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <br />
+    <div class="mainContainer">
+      <header class="navbar">
+        <div class="logo">
+          <img src="./assets/logo.png" class="logo-img" alt="" />
+        </div>
+        <ul class="links">
+          <li><a type="button" onclick="number()">Easy</a></li>
+          <li><a type="button" onclick="cityName()">Medium</a></li>
+          <li><a type="button" onclick="Letter()">Hard</a></li>
+        </ul>
+        <svg
+          id="toggle"
+          onlick="toggle()"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="none"
+            stroke="white"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2.1"
+            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+          />
+        </svg>
+      </header>
+      <div class="gameContainer">
+        <!-- number guessing game -->
+        <div id="numberGame">
+          <img src="./assets/Number-Guessing-Game.png" />
+          <p class="rule">Guess the number Between 1-10</p>
+          <div class="flexBox">
+            <input type="text" id="userguess" />
+            <button id="check" type="button" onclick="check()">check</button>
+          </div>
+          <div class="guessParent">
+            <p class="guess">user guess : <span id="userNum"></span></p>
+            <p class="guess">sys guess : <span id="sysNum"></span></p>
+            <p class="guess">remarks : <span id="remarks"></span></p>
+            <p class="guess">attempt : <span id="attempt"></span></p>
+          </div>
+
+          <div class="flexBox" id="restartClose">
+            <button type="button" onclick="restart()">Restart</button>
+            <button type="button" onclick="closeGame()">Close</button>
+          </div>
+        </div>
+        <!-- letter guessing game -->
+        <div id="letterGame">
+          <img src="./assets/Letter-Guessing-Game.png" />
+          <p class="rule">First click then hit the check button ...</p>
+          <div class="letterflexBox">
+            <div class="gridBox">
+              <button type="button" onclick="letter('Q')">Q</button>
+              <button type="button" onclick="letter('W')">W</button>
+              <button type="button" onclick="letter('E')">E</button>
+              <button type="button" onclick="letter('R')">R</button>
+              <button type="button" onclick="letter('T')">T</button>
+              <button type="button" onclick="letter('Y')">Y</button>
+              <button type="button" onclick="letter('U')">U</button>
+              <button type="button" onclick="letter('I')">I</button>
+              <button type="button" onclick="letter('O')">O</button>
+              <button type="button" onclick="letter('P')">P</button>
+            </div>
+            <div class="gridBox">
+              <button type="button" onclick="letter('A')">A</button>
+              <button type="button" onclick="letter('S')">S</button>
+              <button type="button" onclick="letter('D')">D</button>
+              <button type="button" onclick="letter('F')">F</button>
+              <button type="button" onclick="letter('G')">G</button>
+              <button type="button" onclick="letter('H')">H</button>
+              <button type="button" onclick="letter('J')">J</button>
+              <button type="button" onclick="letter('K')">K</button>
+              <button type="button" onclick="letter('L')">L</button>
+            </div>
+            <div class="gridBox">
+              <button type="button" id="LetterCheck" onclick="LetterCheck()">
+                Check
+              </button>
+              <button type="button" onclick="letter('Z')">Z</button>
+              <button type="button" onclick="letter('X')">X</button>
+              <button type="button" onclick="letter('C')">C</button>
+              <button type="button" onclick="letter('V')">V</button>
+              <button type="button" onclick="letter('B')">B</button>
+              <button type="button" onclick="letter('N')">N</button>
+              <button type="button" onclick="letter('M')">M</button>
+              <button type="button" id="LetterDelete" onclick="Del()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="-2 -5 24 24"
+                >
+                  <path
+                    fill="white"
+                    d="m14.414 7l1.414-1.414a1 1 0 0 0-1.414-1.414L13 5.586l-1.414-1.414a1 1 0 1 0-1.414 1.414L11.586 7l-1.414 1.414a1 1 0 1 0 1.414 1.414L13 8.414l1.414 1.414a1 1 0 1 0 1.414-1.414zM7.828 0H18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7.828a2 2 0 0 1-1.414-.586L.707 7.707a1 1 0 0 1 0-1.414L6.414.586A2 2 0 0 1 7.828 0"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="guessParent">
+            <p class="guess">user guess : <span id="userLetr"></span></p>
+            <p class="guess">sys guess : <span id="sysLetr"></span></p>
+            <p class="guess">remarks : <span id="letrRemarks"></span></p>
+            <p class="guess">attempt : <span id="letrAttempt"></span></p>
+          </div>
+          <div class="flexBox" id="letterRestartClose">
+            <button type="button" onclick="letterRestart()">Restart</button>
+            <button type="button" onclick="letterClose()">Close</button>
+          </div>
+        </div>
+        <!-- city guess game -->
+        <div id="flagGame">
+          <img src="./assets/city-guessing-game.png" />
+          <p class="rule">Click the city name then hit the check ...</p>
+          <p class="rule" id="cityHint">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, accusamus vitae esse magnam inventore odit.
+          </p>
+          <div class="cities">
+            <button type="button" onclick="city('Karachi')">Karachi</button>
+            <button type="button" onclick="city('Islamabad')">Islamabad</button>
+            <button type="button" onclick="city('Lahore')">Lahore</button>
+            <button type="button" onclick="city('Sialkot')">Sialkot</button>
+            <button type="button" onclick="city('Faisalabad')">Faisalabad</button>
+            <button type="button" onclick="city('Peshawar')">Peshawar</button>
+            <button type="button" onclick="city('Quetta')">Quetta</button>
+            <button type="button" onclick="city('Multan')">Multan</button>
+            <button type="button" onclick="city('Rawalpindi')">Rawalpindi</button>
+            <button type="button" onclick="city('Gwadar')">Gwadar</button>
+            <button type="button" onclick="city('Chiniot')">Chiniot</button>
+            <button type="button" class="cityCheck" onclick="cityCheck()">Check</button>
+          </div>
+          <div class="guessParent">
+            <p class="guess">user city : <span id="userCity"></span></p>
+            <p class="guess">actual city : <span id="correctCity"></span></p>
+            <p class="guess">remarks : <span id="cityRemarks"></span></p>
+            <p class="guess">attempt : <span id="cityAttempt"></span></p>
+          </div>
+          <div class="flexBox" id="cityRestartClose">
+            <button type="button" onclick="cityRestart()">Restart</button>
+            <button type="button" onclick="cityClose()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

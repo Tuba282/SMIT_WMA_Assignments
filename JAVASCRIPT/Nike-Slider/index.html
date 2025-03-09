@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike-Slider</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <header class="navbar">
+        <div class="logo"><img src="./assets/logo.png" alt="" /></div>
+        <ul class="links">
+          <li>Men</li>
+          <li>Women</li>
+          <li>Kids</li>
+          <li>Sale</li>
+        </ul>
+        <!-- addToCart -->
+        <div class="addToCart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p class="num" id="num">0</p>
+        </div>
+      </header>
+      <section class="slider">
+        <p class="justText">
+          Just <br />
+          Do <br />
+          It
+        </p>
+        <div class="ShowBox">
+          <img id="slideImg" src="./assets/showImg-1.png" alt="" />
+          <img class="shadow" src="./assets/backgroung-shadow.png" />
+        </div>
+        <div class="newCollection">
+          <p class="new_h1">Nike Air Monarch</p>
+          <p class="new_h5">New Collection</p>
+          <p class="new_h5">150 $</p>
+          <button id="addToCart">Add to Cart +</button>
+        </div>
+      </section>
+      <section class="flexBox">
+        <div class="flex prevArrow" id="prevArrow">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="flex flexImg" id="flexImg-1" onclick="flexImg_1()">
+          <span class="img"><img src="./assets/flexImg-1.png" alt="" /></span>
+          <span class="name">Nike Air Force</span>
+        </div>
+        <div class="flex flexImg" id="flexImg-2" onclick="flexImg_2()">
+          <span class="img"><img src="./assets/flexImg-2.png" alt="" /></span>
+          <span class="name">Nike Air Monarch</span>
+        </div>
+        <div class="flex flexImg" id="flexImg-3" onclick="flexImg_3()">
+          <span class="img"><img src="./assets/flexImg-3.png" alt="" /></span>
+          <span class="name">Nike Air Max</span>
+        </div>
+        <div class="flex flexImg" id="flexImg-4" onclick="flexImg_4()">
+          <span class="img"><img src="./assets/flexImg-4.png" alt="" /></span>
+          <span class="name">Nike Air Max</span>
+        </div>
+        <div class="flex nextArrow" id="nextArrow">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

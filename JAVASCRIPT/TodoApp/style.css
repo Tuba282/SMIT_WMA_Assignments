@@ -1,0 +1,616 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "KoHo", sans-serif;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Start-welcome-heading;
+  src: url(./assets/Shrikhand-Regular.ttf);
+}
+.mainConatiner {
+  max-width: 1500px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./assets/Background-3.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.mobileContainer {
+  width: 330px;
+  min-height: 650px;
+  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
+}
+.blackCover {
+  width: 330px;
+  min-height: 650px;
+  border-radius: 30px;
+  padding: 10px;
+  background: url(./assets/Background-1.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.top {
+  width: 100%;
+  height: 30px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -8px;
+}
+.camera {
+  width: 150px;
+  height: 30px;
+  margin-top: -20px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #000;
+}
+.plane {
+  width: 50px;
+  height: 2px;
+  border-radius: 15px;
+  background-color: #121212;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px,
+    rgba(78, 77, 77, 0.249) 0px 0px 0px 3px;
+}
+.circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e0e0e;
+}
+.innerCircle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #2835a3;
+  background-image: linear-gradient(
+    180deg,
+    #2835a3 0%,
+    #0b0d27 33%,
+    #0a294f 66%
+  );
+}
+.middle {
+  width: 100%;
+  position: relative;
+  height: calc(650px - 110px);
+}
+/* Start */
+.start {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  justify-items: flex-start;
+  align-items: center;
+}
+.start .logo {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start h1 {
+  font-weight: 400;
+  color: white;
+  font-size: 28px;
+  margin-top: -1em;
+  font-family: Start-welcome-heading;
+}
+.start #nameInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid white;
+  margin-top: -4em;
+  height: 30px;
+  padding: 0px 8px;
+  color: white;
+  font-family: "Expletus Sans", sans-serif;
+}
+::placeholder {
+  color: white;
+}
+.start h4 {
+  font-weight: 600;
+  color: #af966f;
+  font-size: 20px;
+}
+/* Home */
+.home,
+.task,
+.activity {
+  padding: 2em 0px;
+}
+.navigation {
+  width: 100%;
+  height: 30px;
+  color: #af966f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.date-month-year {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #af966f;
+  font-weight: 600;
+}
+#name {
+  margin-top: 9px;
+  font-weight: 600;
+  color: #af966f;
+  font-family: "Expletus Sans", sans-serif;
+}
+.taskSlider {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  gap: 10px;
+  transform: translateX(220px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 220px;
+  height: 110px;
+  padding: 10px;
+  color: white;
+  overflow-y: scroll;
+  border-radius: 12px;
+  background: #af966f;
+}
+.slide h1 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+.wrapper::-webkit-scrollbar,
+.slide::-webkit-scrollbar,
+#todos::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper,
+.slide,
+#todos {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.slideBtns {
+  display: flex;
+  justify-content: center;
+}
+.flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.text {
+  width: calc(100% - 88px);
+}
+.text p {
+  font-size: 14px;
+  font-weight: lighter;
+  color: white;
+}
+.text span {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.progress-circle {
+  width: 88px;
+  height: 80px;
+  background: conic-gradient(#af966f 0% 0%, #ddd);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.progress-circle::before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #af966f;
+  position: absolute;
+}
+.progress-text {
+  font-size: 24px;
+  color: white;
+  z-index: 1;
+}
+.todoTitle {
+  font-size: 20px;
+}
+.todo {
+  font-size: 12px;
+}
+#todos {
+  width: 100%;
+  height: 370px;
+  padding: 1.2em 0px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+#todos::-webkit-scrollbar {
+  display: none;
+}
+
+#todos {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.taskActivity {
+  width: 105%;
+  height: 250px;
+  padding: 20px;
+  margin-left: -7px;
+  border-radius: 30px 30px 0px 0px;
+  background: white;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  box-shadow: 0px -3px 3px -1px rgba(0, 0, 0, 0.496);
+}
+.taskActivity::-webkit-scrollbar {
+  display: none;
+}
+.taskActivity h1 {
+  font-size: 20px;
+  color: #af966f;
+}
+.flexTodo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f1debfb4;
+}
+.todoText {
+  display: grid;
+  margin-left: -7em;
+}
+#todoTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+#todoTime {
+  font-size: 12px;
+}
+#todoEditBtn {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#todoEditBtn i {
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  color: #c8b598;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 3px solid #af966f;
+  cursor: pointer;
+}
+#todoEditBtn:active {
+  transform: scale(0.9);
+}
+.line-through {
+  text-decoration: line-through;
+}
+/* checkBox */
+.checkbox-wrapper * {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.checkbox-wrapper input[type="checkbox"] {
+  display: none;
+  cursor: pointer;
+}
+
+.checkbox-wrapper label {
+  --size: 20px;
+  --shadow: calc(var(--size) * 0.07) calc(var(--size) * 0.1);
+  position: relative;
+  display: block;
+  width: var(--size);
+  height: var(--size);
+  margin: 0 auto;
+  background-color: #af966f;
+  background-image: linear-gradient(
+    43deg,
+    #fff 0%,
+    #af966f 46%,
+    #fff 60% #af966f 100%
+  );
+  border-radius: 50%;
+  box-shadow: 0 var(--shadow) #af966f;
+  cursor: pointer;
+  transition: 0.2s ease transform, 0.2s ease background-color,
+    0.2s ease box-shadow;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.checkbox-wrapper label:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  width: calc(var(--size) * 0.7);
+  height: calc(var(--size) * 0.7);
+  margin: 0 auto;
+  background-color: #fff;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  box-shadow: inset 0 var(--shadow) #af966f;
+  transition: 0.2s ease width, 0.2s ease height;
+}
+
+.checkbox-wrapper label:hover:before {
+  width: calc(var(--size) * 0.55);
+  height: calc(var(--size) * 0.55);
+  box-shadow: inset 0 var(--shadow) #af966f;
+}
+
+.checkbox-wrapper label:active {
+  transform: scale(0.9);
+}
+
+.checkbox-wrapper .tick_mark {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  left: calc(var(--size) * -0.05);
+  width: calc(var(--size) * 0.6);
+  height: calc(var(--size) * 0.6);
+  margin: 0 auto;
+  margin-left: calc(var(--size) * 0.14);
+  transform: rotateZ(-40deg);
+}
+
+.checkbox-wrapper .tick_mark:before,
+.checkbox-wrapper .tick_mark:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  border-radius: 2px;
+  opacity: 0;
+  transition: 0.2s ease transform, 0.2s ease opacity;
+}
+
+.checkbox-wrapper .tick_mark:before {
+  left: 0;
+  bottom: 0;
+  width: calc(var(--size) * 0.1);
+  height: calc(var(--size) * 0.3);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.23);
+  transform: translateY(calc(var(--size) * -0.68));
+}
+
+.checkbox-wrapper .tick_mark:after {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(var(--size) * 0.1);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.23);
+  transform: translateX(calc(var(--size) * 0.78));
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + label {
+  background-color: #af966f;
+  background-image: linear-gradient(
+    43deg,
+    #fff 0%,
+    #af966f 46%,
+    #fff 60% #af966f 100%
+  );
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + label:before {
+  width: 0;
+  height: 0;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + label .tick_mark:before,
+.checkbox-wrapper input[type="checkbox"]:checked + label .tick_mark:after {
+  transform: translate(0);
+  opacity: 1;
+}
+.Bottom {
+  width: 105%;
+  height: 70px;
+  border-radius: 0px 0px 30px 30px;
+  margin-left: -7px;
+  margin-top: 5px;
+  margin-bottom: -0.7em;
+  background: white;
+}
+.bottomIcons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bottomIcons p {
+  font-size: 10px;
+  font-weight: bolder;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  color: #af966f;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#add {
+  border-radius: 50%;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#add:active {
+  transform: scale(0.9);
+}
+.add {
+  border-radius: 12px;
+  width: 290px;
+  height: 180px;
+  display: flex;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 9em;
+  background: #af966f;
+}
+.errorMessage {
+  text-align: center;
+  color: #af966f;
+  display: none;
+}
+.subAdd {
+  width: 96%;
+  height: 92%;
+  border-radius: 12px;
+  background: white;
+}
+.subAdd input {
+  width: 85%;
+  height: 35px;
+  border: none;
+  font-size: 15px;
+  outline: none;
+  margin: 8px auto;
+  margin-left: 1.5em;
+  padding: 5px 8px;
+  background: #af966f;
+}
+#addTask,
+#closeTask {
+  width: 40%;
+  height: 30px;
+  border: 1px solid rgba(128, 128, 128, 0.162);
+  outline: none;
+  margin: 10px 0px;
+  padding: 5px 8px;
+}
+.calendar-container {
+  width: 290px;
+  border: 1px solid #ddd;
+  background: #af966f;
+  border-radius: 8px;
+  overflow: hidden;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.calendar-body {
+  width: 290px;
+  padding: 0px;
+}
+.calendar-header {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background: #f7f7f7;
+  color: #af966f;
+  border-bottom: 1px solid #ddd;
+}
+.calendar-header span {
+  cursor: pointer;
+}
+.calendar-weekdays,
+.calendar-dates {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calendar-weekdays div,
+.calendar-dates div {
+  width: 14.28%;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+.calendar-dates div {
+  border: 1px solid #ffffff36;
+  cursor: pointer;
+  font-size: 12px;
+  margin-bottom: -1px; /* To avoid border overlap */
+}
+.current-day {
+  background-color: white; /* Highlight current day with yellow background */
+  color: #af966f; /* Darker text for contrast */
+  font-weight: bold; /* Bold font */
+  padding: 5px; /* Some padding */
+}
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* #start {
+  display: grid;
+} */
+#displayHome {
+  display: grid;
+}
+#displayTask {
+  display: none;
+}
+#displayActivity {
+  display: none;
+}
+.add {
+  display: none;
+}

@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --blue: #47a4e4;
+  --lightBlue: #cbe8fe;
+}
+.mainContainer {
+  max-width: 1500px;
+  height: 100%;
+  margin: 0 auto;
+}
+.navbar {
+  height: 70px;
+  padding: 1em;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #82c9fc6b;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.logo-img {
+  width: 200px;
+  height: 50px;
+}
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+  list-style-type: none;
+}
+.links a {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #47a4e4;
+  text-decoration: none;
+}
+.links a:hover {
+  color: #ffffff;
+}
+#toggle {
+  display: none;
+}
+.show-links {
+  max-height: 200px;
+  opacity: 1;
+}
+.gameContainer {
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  border-radius: 10px;
+  background: var(--lightBlue);
+  background: url(./assets/body.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#numberGame,
+#letterGame,
+#flagGame {
+  width: 593px;
+  height: 493px;
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.562);
+  display: none;
+}
+#numberGame img,
+#letterGame img,
+#flagGame img {
+  width: 100%;
+  height: 100px;
+}
+.flexBox {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.flexBox input,
+.flexBox button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100px;
+  border: 1px solid rgba(128, 128, 128, 0.352);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  height: 30px;
+}
+.flexBox button {
+  background: white;
+  font-weight: bold;
+  color: var(--blue);
+  transition: all ease 0.1s;
+}
+.flexBox button:active {
+  transform: translateY(5px);
+}
+.flexBox input {
+  padding: 2px 8px;
+}
+.guessParent,
+.rule {
+  width: 400px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: var(--blue);
+  line-height: 1.8em;
+  text-transform: capitalize;
+}
+.guessParent #userNum,
+.guessParent #sysNum,
+.guessParent #remarks,
+.guessParent #attempt {
+  font-weight: bolder;
+  padding: 0px 5px;
+}
+#restartClose,
+#letterRestartClose,
+#cityRestartClose {
+  display: none;
+}
+/* letterGame css section */
+
+.letterflexBox {
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.letterflexBox .gridBox {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.letterflexBox .gridBox button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  outline: none;
+  background: #47a4e4;
+  border-radius: 5px;
+  box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  color: white;
+  transition: all ease 0.1s;
+}
+.letterflexBox .gridBox button:active {
+  transform: translateY(5px);
+}
+#LetterCheck,
+#LetterDelete {
+  width: 60px;
+}
+/* city guess game */
+.cities {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 auto;
+}
+.cities button {
+  width: 80px;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  background: #47a4e4;
+  border-radius: 5px;
+  box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  color: white;
+  transition: all ease 0.1s;
+}
+.cities button:active {
+  transform: translateY(5px);
+}
+.cityCheck {
+  color: #47a4e4 !important;
+  background: white !important;
+}
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+
+@media (max-width: 650px) {
+  .links {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  .links.show-links a:hover {
+    width: 100%;
+    border-bottom: 2px solid #47a4e4;
+    border-radius: 2px;
+    padding: 5px;
+    padding-left: 10px;
+    color: #47a4e4;
+  }
+  #toggle {
+    display: block;
+  }
+  .links.show-links {
+    display: flex;
+  }
+  /* number letter media querry */
+  .gameContainer {
+    width: 70%;
+  }
+  #letterGame,
+  #numberGame {
+    width: 97%;
+    min-height: 400px;
+    padding: 20px;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  #letterGame img,
+  #numberGame img {
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .letterflexBox .gridBox button {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+  #LetterCheck,
+  #LetterDelete {
+    width: 35px;
+  }
+}
+@media (max-width: 550px) {
+  .gameContainer {
+    width: 90%;
+  }
+}
+@media (max-width: 550px) {
+  .gameContainer {
+    width: 100%;
+  }
+}

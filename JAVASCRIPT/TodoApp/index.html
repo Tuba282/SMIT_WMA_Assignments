@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <!-- webicon -->
+    <link
+      rel="shortcut icon"
+      href="https://biogartler.com/images/Icons_Beitrag/Icon_ToDo_400px.png"
+      type="image/x-icon"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainConatiner">
+      <div class="mobileContainer">
+        <div class="blackCover">
+          <div class="top">
+            <div class="time">12:22</div>
+            <div class="camera">
+              <div class="plane"></div>
+              <div class="circle"><div class="innerCircle"></div></div>
+            </div>
+            <div class="icons">
+              <!-- signals -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill="white"
+                  d="M2 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm6-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm6-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"
+                />
+              </svg>
+              <!-- wifi -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="white"
+                  d="M2.06 10.06c.51.51 1.32.56 1.87.1c4.67-3.84 11.45-3.84 16.13-.01c.56.46 1.38.42 1.89-.09c.59-.59.55-1.57-.1-2.1c-5.71-4.67-13.97-4.67-19.69 0c-.65.52-.7 1.5-.1 2.1m7.76 7.76l1.47 1.47c.39.39 1.02.39 1.41 0l1.47-1.47c.47-.47.37-1.28-.23-1.59a4.28 4.28 0 0 0-3.91 0c-.57.31-.68 1.12-.21 1.59m-3.73-3.73c.49.49 1.26.54 1.83.13a7.06 7.06 0 0 1 8.16 0c.57.4 1.34.36 1.83-.13l.01-.01c.6-.6.56-1.62-.13-2.11c-3.44-2.49-8.13-2.49-11.58 0c-.69.5-.73 1.51-.12 2.12"
+                />
+              </svg>
+              <!-- battery -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="20"
+                viewBox="0 0 2304 1280"
+              >
+                <path
+                  fill="white"
+                  d="M1920 256v768H256V256zm128 576h128V448h-128V160q0-14-9-23t-23-9H160q-14 0-23 9t-9 23v960q0 14 9 23t23 9h1856q14 0 23-9t9-23zm256-384v384q0 53-37.5 90.5T2176 960v160q0 66-47 113t-113 47H160q-66 0-113-47T0 1120V160Q0 94 47 47T160 0h1856q66 0 113 47t47 113v160q53 0 90.5 37.5T2304 448"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="middle">
+            <!-- Home -->
+            <div class="start" id="displayHome">
+              <div class="logo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 16 16"
+                >
+                  <g
+                    fill="none"
+                    stroke="#C8B598"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M14.5 8A6.5 6.5 0 0 1 8 14.5A6.5 6.5 0 0 1 1.5 8A6.5 6.5 0 0 1 8 1.5A6.5 6.5 0 0 1 14.5 8"
+                    />
+                    <path d="m4.5 7.5l2.5 3l4.5-5" />
+                  </g>
+                </svg>
+              </div>
+              <h1>Welcome to Your Productive Day!</h1>
+              <input
+                id="nameInput"
+                type="text"
+                placeholder="Enter your name ..."
+              />
+              <h4>
+                Every great journey begins with a single step. Let's start
+                planning!
+              </h4>
+            </div>
+            <!-- Task -->
+            <div class="home" id="displayTask">
+              <div class="navigation">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="BackToHome"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                >
+                  <g fill="none">
+                    <path
+                      d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                    />
+                    <path
+                      fill="#c8b598"
+                      d="M3.283 10.94a1.5 1.5 0 0 0 0 2.12l5.656 5.658a1.5 1.5 0 1 0 2.122-2.122L7.965 13.5H19.5a1.5 1.5 0 0 0 0-3H7.965l3.096-3.096a1.5 1.5 0 1 0-2.122-2.121z"
+                    />
+                  </g>
+                </svg>
+                <h1>Activity</h1>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="goToActivity"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                >
+                  <g fill="none">
+                    <path
+                      d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                    />
+                    <path
+                      fill="#c8b598"
+                      d="m15.06 5.283l5.657 5.657a1.5 1.5 0 0 1 0 2.12l-5.656 5.658a1.5 1.5 0 0 1-2.122-2.122l3.096-3.096H4.5a1.5 1.5 0 0 1 0-3h11.535L12.94 7.404a1.5 1.5 0 0 1 2.122-2.121Z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="date-month-year">
+                <span id="date">25</span>,
+                <span id="month">Novenmber</span>
+                <span id="year"> 2024</span>
+              </div>
+              <div id="name">Good Day Friend ...</div>
+
+              <div class="taskSlider">
+                <div class="wrapper">
+                  <div class="slide">
+                    <div class="flexBox">
+                      <div class="text">
+                        <p>
+                          <span>My Plane</span><br />
+                          For Today
+                        </p>
+                        <p id="counter">
+                          <span id="completed">0 </span> of
+                          <span id="total">6</span> completed
+                        </p>
+                      </div>
+                      <div class="progress-circle">
+                        <span class="progress-text">0%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <h1><b>Completed Tasks</b></h1>
+                    <ul id="completedTask"></ul>
+                  </div>
+                  <div class="slide">
+                    <h1><b>Incomplete Tasks</b></h1>
+                    <ul id="uncompleteTask"></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slideBtns">
+                <p id="prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="#c8b598"
+                      fill-rule="evenodd"
+                      d="m16.75 17l-7.5-5l7.5-5a.901.901 0 1 0-1-1.5l-8.502 5.668a1 1 0 0 0 0 1.664L15.75 18.5a.901.901 0 1 0 1-1.5"
+                    />
+                  </svg>
+                </p>
+                <p id="next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="#c8b598"
+                      fill-rule="evenodd"
+                      d="m7.25 17l7.5-5l-7.5-5a.901.901 0 1 1 1-1.5l8.502 5.668a1 1 0 0 1 0 1.664L8.25 18.5a.901.901 0 1 1-1-1.5"
+                    />
+                  </svg>
+                </p>
+              </div>
+              <!-- Task Activity -->
+              <div class="taskActivity">
+                <h1>Today Activity</h1>
+                <div class="flexTodo">
+                  <div class="checkbox-wrapper">
+                    <input id="_checkbox-26" type="checkbox" />
+                    <label for="_checkbox-26">
+                      <div class="tick_mark"></div>
+                    </label>
+                  </div>
+                  <div class="todoText">
+                    <span class="todoTitle">Meal</span>
+                    <span class="todo">Fresh food</span>
+                  </div>
+                  <div class="todoTime">07:30</div>
+                </div>
+                <div class="flexTodo">
+                  <div class="checkbox-wrapper">
+                    <input id="_checkbox-27" type="checkbox" />
+                    <label for="_checkbox-27">
+                      <div class="tick_mark"></div>
+                    </label>
+                  </div>
+                  <div class="todoText">
+                    <span class="todoTitle">Study</span>
+                    <span class="todo">coding time...</span>
+                  </div>
+                  <div class="todoTime">10:30</div>
+                </div>
+                <div class="flexTodo">
+                  <div class="checkbox-wrapper">
+                    <input id="_checkbox-28" type="checkbox" />
+                    <label for="_checkbox-28">
+                      <div class="tick_mark"></div>
+                    </label>
+                  </div>
+                  <div class="todoText">
+                    <span class="todoTitle">Break</span>
+                    <span class="todo">food & naap</span>
+                  </div>
+                  <div class="todoTime">02:00</div>
+                </div>
+                <div class="flexTodo">
+                  <div class="checkbox-wrapper">
+                    <input id="_checkbox-29" type="checkbox" />
+                    <label for="_checkbox-29">
+                      <div class="tick_mark"></div>
+                    </label>
+                  </div>
+                  <div class="todoText">
+                    <span class="todoTitle">Dinner</span>
+                    <span class="todo">healthy food</span>
+                  </div>
+                  <div class="todoTime">07:00</div>
+                </div>
+                <div class="flexTodo">
+                  <div class="checkbox-wrapper">
+                    <input id="_checkbox-30" type="checkbox" />
+                    <label for="_checkbox-30">
+                      <div class="tick_mark"></div>
+                    </label>
+                  </div>
+                  <div class="todoText">
+                    <span class="todoTitle">Code</span>
+                    <span class="todo">Day overview </span>
+                  </div>
+                  <div class="todoTime">08:00</div>
+                </div>
+                <div class="flexTodo">
+                  <div class="checkbox-wrapper">
+                    <input id="_checkbox-31" type="checkbox" />
+                    <label for="_checkbox-31">
+                      <div class="tick_mark"></div>
+                    </label>
+                  </div>
+                  <div class="todoText">
+                    <span class="todoTitle">Goto Bed</span>
+                    <span class="todo">Night Rest</span>
+                  </div>
+                  <div class="todoTime">11:00</div>
+                </div>
+              </div>
+            </div>
+            <!-- Activity -->
+            <div class="task" id="displayActivity">
+              <div class="navigation">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="BackToActivity"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                >
+                  <g fill="none">
+                    <path
+                      d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                    />
+                    <path
+                      fill="#c8b598"
+                      d="M3.283 10.94a1.5 1.5 0 0 0 0 2.12l5.656 5.658a1.5 1.5 0 1 0 2.122-2.122L7.965 13.5H19.5a1.5 1.5 0 0 0 0-3H7.965l3.096-3.096a1.5 1.5 0 1 0-2.122-2.121z"
+                    />
+                  </g>
+                </svg>
+                <h1>Statistics</h1>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="gotoHome"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                >
+                  <g fill="none">
+                    <path
+                      d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                    />
+                    <path
+                      fill="#c8b598"
+                      d="m15.06 5.283l5.657 5.657a1.5 1.5 0 0 1 0 2.12l-5.656 5.658a1.5 1.5 0 0 1-2.122-2.122l3.096-3.096H4.5a1.5 1.5 0 0 1 0-3h11.535L12.94 7.404a1.5 1.5 0 0 1 2.122-2.121Z"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <!-- Main Activity -->
+              <div class="mainActivity">
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                      <span id="month-year"></span>
+                    </div>
+                    <div class="calendar-body">
+                      <div class="calendar-weekdays">
+                          <div>Mon</div>
+                          <div>Tue</div>
+                          <div>Wed</div>
+                          <div>Thu</div>
+                          <div>Fri</div>
+                          <div>Sat</div>
+                          <div>Sun</div>
+                      </div>
+                      <div class="calendar-dates" id="calendar-dates"></div>
+                    </div>
+                </div>
+                <div id="todos">
+                  <div class="flexTodo" id="flexTodo">
+                    <!-- <div class="checkbox-wrapper" >
+                                            <input id="_checkbox-27" type="checkbox">
+                                            <label for="_checkbox-27">
+                                              <div class="tick_mark"></div>
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="todoText">
+                                            <span id="todoTitle">Enter Task</span>
+                                            <span id="todoTime">Timing ...</span>
+                                        </div> -->
+                    <!-- <div id="todoEditBtn" onclick="EditTask()">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add -->
+            <div class="add" id="getTask">
+              <div class="subAdd">
+                <input
+                  type="text"
+                  id="TaskInput"
+                  placeholder="Enter your task ..."
+                />
+                <input
+                  type="text"
+                  id="TimeInput"
+                  placeholder="Enter time ..."
+                />
+                <p class="errorMessage">Please enter both task and time.</p>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                  "
+                >
+                  <button id="addTask">Add</button>
+                  <button id="closeTask">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Bottom">
+            <div class="bottomIcons">
+              <!-- home -->
+              <p id="home">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#af966f"
+                    d="M20.25 10a1.25 1.25 0 1 0-2.5 0zm-14 0a1.25 1.25 0 1 0-2.5 0zm13.866 2.884a1.25 1.25 0 0 0 1.768-1.768zM12 3l.884-.884a1.25 1.25 0 0 0-1.768 0zm-9.884 8.116a1.25 1.25 0 0 0 1.768 1.768zM7 22.25h10v-2.5H7zM20.25 19v-9h-2.5v9zm-14 0v-9h-2.5v9zm15.634-7.884l-9-9l-1.768 1.768l9 9zm-10.768-9l-9 9l1.768 1.768l9-9zM17 22.25A3.25 3.25 0 0 0 20.25 19h-2.5a.75.75 0 0 1-.75.75zm-10-2.5a.75.75 0 0 1-.75-.75h-2.5A3.25 3.25 0 0 0 7 22.25z"
+                  />
+                </svg>
+                <span>Home</span>
+              </p>
+              <!-- Task -->
+              <p id="task">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="#af966f"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.1"
+                    d="M7.014 16.003h4m-4-4.998h8m-5 10.995h1M7.51 22c-1.17-.025-1.97-.1-2.746-.325c-1.05-.275-1.815-1.2-2.04-2.499c-.285-1.224-.185-4.247-.21-7.846c.002-2.791-.125-5.472.325-6.996c.275-.5.5-2.324 4.225-2.3c.625-.024 7.25-.074 8.3.026c3.5.075 3.85 1.874 4.05 3.573c.127 1.25.1 3.248.1 5.372M7.014 2.01c.3 1.624.275 2.674 1.375 2.923c.475.075 1.56.073 2.725.075c1.04.002 2.1.012 2.575-.1c1.175-.274 1.05-1.724 1.35-2.898m3.24 12.369c-1.375 1.4-4.023 3.898-4.023 4.073c-.213.297-.4.9-.524 1.75c-.157.787-.345 1.473-.125 1.673s1.047.032 1.923-.15c.7-.075 1.35-.325 1.674-.574c.475-.42 3.698-3.674 4.072-4.098c.275-.375.3-1.075.06-1.5c-.134-.3-.984-1.1-1.259-1.324a1.52 1.52 0 0 0-1.799.15"
+                    color="#c8b598"
+                  />
+                </svg>
+                <span>Activity</span>
+              </p>
+              <!-- Calender -->
+              <p id="activity">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#af966f"
+                    d="M21 11.11V5a2 2 0 0 0-2-2h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14a2 2 0 0 0 2 2h6.11c1.26 1.24 2.98 2 4.89 2c3.87 0 7-3.13 7-7c0-1.91-.76-3.63-2-4.89M12 3c.55 0 1 .45 1 1s-.45 1-1 1s-1-.45-1-1s.45-1 1-1M5 19V5h2v2h10V5h2v4.68c-.91-.43-1.92-.68-3-.68H7v2h4.1c-.6.57-1.06 1.25-1.42 2H7v2h2.08c-.05.33-.08.66-.08 1c0 1.08.25 2.09.68 3zm11 2c-2.76 0-5-2.24-5-5s2.24-5 5-5s5 2.24 5 5s-2.24 5-5 5m.5-4.75l2.86 1.69l-.75 1.22L15 17v-5h1.5z"
+                  />
+                </svg>
+                <span>Statistics</span>
+              </p>
+              <!-- Add -->
+              <svg
+                id="add"
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                viewBox="0 0 48 48"
+              >
+                <circle cx="24" cy="24" r="21" fill="#af966f" />
+                <g fill="#fff">
+                  <path d="M21 14h6v20h-6z" />
+                  <path d="M14 21h20v6H14z" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
